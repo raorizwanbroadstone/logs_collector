@@ -1,0 +1,2187 @@
+{
+  "collectionTime": "2026-06-17T12:07:04.997434+00:00",
+  "summary": {
+    "subscriptions_processed": 1,
+    "storage_accounts_processed": 2,
+    "total_log_events_collected": 22,
+    "errors": 0
+  },
+  "storage_accounts": [
+    {
+      "subscription_id": "578f7d16-b299-4b9f-8f47-fa0bc5427842",
+      "subscription_name": "Azure subscription 1",
+      "storage_account_id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourceGroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs",
+      "storage_account_name": "demostorageforlogs",
+      "resource_group": "rg-logs",
+      "location": "eastus",
+      "diagnostic_logging_enabled": false,
+      "diagnostic_settings": {
+        "account": {
+          "error": "'MonitorManagementClient' object has no attribute 'diagnostic_settings'"
+        },
+        "blobServices/default": {
+          "error": "'MonitorManagementClient' object has no attribute 'diagnostic_settings'"
+        },
+        "fileServices/default": {
+          "error": "'MonitorManagementClient' object has no attribute 'diagnostic_settings'"
+        },
+        "queueServices/default": {
+          "error": "'MonitorManagementClient' object has no attribute 'diagnostic_settings'"
+        },
+        "tableServices/default": {
+          "error": "'MonitorManagementClient' object has no attribute 'diagnostic_settings'"
+        }
+      },
+      "activity_logs": [
+        {
+          "authorization": {
+            "action": "Microsoft.Storage/storageAccounts/listKeys/action",
+            "scope": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourceGroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs"
+          },
+          "claims": {
+            "aud": "https://management.core.windows.net/",
+            "iss": "https://sts.windows.net/76961126-e318-48ae-a31f-884b4af49fd1/",
+            "iat": "1781695180",
+            "nbf": "1781695180",
+            "exp": "1781699990",
+            "http://schemas.microsoft.com/claims/authnclassreference": "1",
+            "acrs": "p1",
+            "aio": "AcQAO/8cAAAAqQOdZR8UWNiZ+UsU5uBI4PbdyTUJJm10DBubUEWmma2RIwJ5n5EzHj7JmTsJXgv964Y7YIO+EHELZhECyVX7Wny90KBbxgKmdcUHjzDfucxqUeTxeFtPE2VyK07LPGIux+6yfF7vOQ4dfjHj8HuC4Ua6Z704fg/zflCITRCJ/UMyt+aCynQXqwmRwb0GNFL7/ng3jXzUplXvT+WK9rv2fSyqab3x3Vpryyc0WMjcNkFsjCRCoDFxfqCAxuOVW/Dp",
+            "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+            "appid": "c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+            "appidacr": "0",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Anns",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Muhammad",
+            "groups": "764adf92-08a6-431c-813e-3d5ea0f8461b,eb757738-d2db-459c-9fed-d36949e6910d,b5c0b52c-c32d-47f9-bafb-b0a1a8b58e2a,a3ae2213-8adf-4404-ac61-b96eb841d736,225f46e0-a67b-41ca-ba6d-4cb6d358ed49",
+            "idtyp": "user",
+            "ipaddr": "203.128.27.61",
+            "name": "Anns",
+            "http://schemas.microsoft.com/identity/claims/objectidentifier": "c239af0e-1484-42a6-bb79-134bda4e212d",
+            "puid": "10032001F1A54EEB",
+            "rh": "1.AW4AJhGWdhjjrkijH4hLSvSf0UZIf3kAutdPukPawfj2MBMAAHtuAA.",
+            "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+            "sid": "005e066a-1455-33de-7632-d756cc5e92a9",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "p15nHLxZx0ErNCwK372eyZOk8yNu2OsjMMlt2G3kkbI",
+            "http://schemas.microsoft.com/identity/claims/tenantid": "76961126-e318-48ae-a31f-884b4af49fd1",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "anns@cytexio.onmicrosoft.com",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "anns@cytexio.onmicrosoft.com",
+            "uti": "4jwoa7ZE1USixXpXO3sDAA",
+            "ver": "1.0",
+            "wids": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b,3f04f91a-4ad7-4bd3-bcfa-49882ea1a88a",
+            "xms_act_fct": "5 3",
+            "xms_ftd": "e8RX-pg-KopXpfbmc5b_Hk5ftOeJmbuYPUU2_-ydAFUBdXNub3J0aC1kc21z",
+            "xms_idrel": "1 12",
+            "xms_sub_fct": "3 16",
+            "xms_tcdt": "1599014540"
+          },
+          "caller": "anns@cytexio.onmicrosoft.com",
+          "description": "",
+          "id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourceGroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs/events/c1d81330-9309-4c76-a4a5-bf1d1b0f04ca/ticks/639172925781131668",
+          "event_data_id": "c1d81330-9309-4c76-a4a5-bf1d1b0f04ca",
+          "correlation_id": "b46391f7-be9d-408a-909f-a1a2a4d15a9d",
+          "event_name": {
+            "value": "EndRequest",
+            "localized_value": "End request"
+          },
+          "category": {
+            "value": "Administrative",
+            "localized_value": "Administrative"
+          },
+          "http_request": {
+            "client_request_id": "d368c575-e68c-4a46-ab1f-fbae1ed9203b",
+            "client_ip_address": "203.128.27.61",
+            "method": "POST",
+            "uri": "https://management.azure.com/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourceGroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs/listKeys?api-version=2025-08-01&_1781695946981"
+          },
+          "level": "Informational",
+          "resource_group_name": "rg-logs",
+          "resource_provider_name": {
+            "value": "Microsoft.Storage",
+            "localized_value": "Microsoft.Storage"
+          },
+          "resource_id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourceGroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs",
+          "resource_type": {
+            "value": "Microsoft.Storage/storageAccounts",
+            "localized_value": "Microsoft.Storage/storageAccounts"
+          },
+          "operation_id": "55bf93d9-7b9d-4daa-b76f-849f08998807",
+          "operation_name": {
+            "value": "Microsoft.Storage/storageAccounts/listKeys/action",
+            "localized_value": "List Storage Account Keys"
+          },
+          "properties": {
+            "statusCode": "OK",
+            "serviceRequestId": null,
+            "eventCategory": "Administrative",
+            "entity": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourceGroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs",
+            "message": "Microsoft.Storage/storageAccounts/listKeys/action",
+            "hierarchy": "76961126-e318-48ae-a31f-884b4af49fd1/578f7d16-b299-4b9f-8f47-fa0bc5427842"
+          },
+          "status": {
+            "value": "Succeeded",
+            "localized_value": "Succeeded"
+          },
+          "sub_status": {
+            "value": "OK",
+            "localized_value": "OK (HTTP Status Code: 200)"
+          },
+          "event_timestamp": "2026-06-17T11:29:38.113166Z",
+          "submission_timestamp": "2026-06-17T11:30:55.000Z",
+          "subscription_id": "578f7d16-b299-4b9f-8f47-fa0bc5427842",
+          "tenant_id": "76961126-e318-48ae-a31f-884b4af49fd1"
+        },
+        {
+          "authorization": {
+            "action": "Microsoft.Storage/storageAccounts/listKeys/action",
+            "scope": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourceGroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs"
+          },
+          "claims": {
+            "aud": "https://management.core.windows.net/",
+            "iss": "https://sts.windows.net/76961126-e318-48ae-a31f-884b4af49fd1/",
+            "iat": "1781695180",
+            "nbf": "1781695180",
+            "exp": "1781699990",
+            "http://schemas.microsoft.com/claims/authnclassreference": "1",
+            "acrs": "p1",
+            "aio": "AcQAO/8cAAAAqQOdZR8UWNiZ+UsU5uBI4PbdyTUJJm10DBubUEWmma2RIwJ5n5EzHj7JmTsJXgv964Y7YIO+EHELZhECyVX7Wny90KBbxgKmdcUHjzDfucxqUeTxeFtPE2VyK07LPGIux+6yfF7vOQ4dfjHj8HuC4Ua6Z704fg/zflCITRCJ/UMyt+aCynQXqwmRwb0GNFL7/ng3jXzUplXvT+WK9rv2fSyqab3x3Vpryyc0WMjcNkFsjCRCoDFxfqCAxuOVW/Dp",
+            "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+            "appid": "c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+            "appidacr": "0",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Anns",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Muhammad",
+            "groups": "764adf92-08a6-431c-813e-3d5ea0f8461b,eb757738-d2db-459c-9fed-d36949e6910d,b5c0b52c-c32d-47f9-bafb-b0a1a8b58e2a,a3ae2213-8adf-4404-ac61-b96eb841d736,225f46e0-a67b-41ca-ba6d-4cb6d358ed49",
+            "idtyp": "user",
+            "ipaddr": "203.128.27.61",
+            "name": "Anns",
+            "http://schemas.microsoft.com/identity/claims/objectidentifier": "c239af0e-1484-42a6-bb79-134bda4e212d",
+            "puid": "10032001F1A54EEB",
+            "rh": "1.AW4AJhGWdhjjrkijH4hLSvSf0UZIf3kAutdPukPawfj2MBMAAHtuAA.",
+            "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+            "sid": "005e066a-1455-33de-7632-d756cc5e92a9",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "p15nHLxZx0ErNCwK372eyZOk8yNu2OsjMMlt2G3kkbI",
+            "http://schemas.microsoft.com/identity/claims/tenantid": "76961126-e318-48ae-a31f-884b4af49fd1",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "anns@cytexio.onmicrosoft.com",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "anns@cytexio.onmicrosoft.com",
+            "uti": "4jwoa7ZE1USixXpXO3sDAA",
+            "ver": "1.0",
+            "wids": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b,3f04f91a-4ad7-4bd3-bcfa-49882ea1a88a",
+            "xms_act_fct": "5 3",
+            "xms_ftd": "e8RX-pg-KopXpfbmc5b_Hk5ftOeJmbuYPUU2_-ydAFUBdXNub3J0aC1kc21z",
+            "xms_idrel": "1 12",
+            "xms_sub_fct": "3 16",
+            "xms_tcdt": "1599014540"
+          },
+          "caller": "anns@cytexio.onmicrosoft.com",
+          "description": "",
+          "id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourceGroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs/events/70cbf265-41a6-48b0-ac90-8a14090bc52c/ticks/639172925780350457",
+          "event_data_id": "70cbf265-41a6-48b0-ac90-8a14090bc52c",
+          "correlation_id": "b46391f7-be9d-408a-909f-a1a2a4d15a9d",
+          "event_name": {
+            "value": "BeginRequest",
+            "localized_value": "Begin request"
+          },
+          "category": {
+            "value": "Administrative",
+            "localized_value": "Administrative"
+          },
+          "http_request": {
+            "client_request_id": "d368c575-e68c-4a46-ab1f-fbae1ed9203b",
+            "client_ip_address": "203.128.27.61",
+            "method": "POST",
+            "uri": "https://management.azure.com/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourceGroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs/listKeys?api-version=2025-08-01&_1781695946981"
+          },
+          "level": "Informational",
+          "resource_group_name": "rg-logs",
+          "resource_provider_name": {
+            "value": "Microsoft.Storage",
+            "localized_value": "Microsoft.Storage"
+          },
+          "resource_id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourceGroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs",
+          "resource_type": {
+            "value": "Microsoft.Storage/storageAccounts",
+            "localized_value": "Microsoft.Storage/storageAccounts"
+          },
+          "operation_id": "55bf93d9-7b9d-4daa-b76f-849f08998807",
+          "operation_name": {
+            "value": "Microsoft.Storage/storageAccounts/listKeys/action",
+            "localized_value": "List Storage Account Keys"
+          },
+          "properties": {
+            "eventCategory": "Administrative",
+            "entity": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourceGroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs",
+            "message": "Microsoft.Storage/storageAccounts/listKeys/action",
+            "hierarchy": "76961126-e318-48ae-a31f-884b4af49fd1/578f7d16-b299-4b9f-8f47-fa0bc5427842"
+          },
+          "status": {
+            "value": "Started",
+            "localized_value": "Started"
+          },
+          "sub_status": {
+            "value": "",
+            "localized_value": ""
+          },
+          "event_timestamp": "2026-06-17T11:29:38.035045Z",
+          "submission_timestamp": "2026-06-17T11:30:55.000Z",
+          "subscription_id": "578f7d16-b299-4b9f-8f47-fa0bc5427842",
+          "tenant_id": "76961126-e318-48ae-a31f-884b4af49fd1"
+        },
+        {
+          "authorization": {
+            "action": "Microsoft.Storage/storageAccounts/listKeys/action",
+            "scope": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourceGroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs"
+          },
+          "claims": {
+            "aud": "https://management.core.windows.net/",
+            "iss": "https://sts.windows.net/76961126-e318-48ae-a31f-884b4af49fd1/",
+            "iat": "1781695180",
+            "nbf": "1781695180",
+            "exp": "1781699990",
+            "http://schemas.microsoft.com/claims/authnclassreference": "1",
+            "acrs": "p1",
+            "aio": "AcQAO/8cAAAAqQOdZR8UWNiZ+UsU5uBI4PbdyTUJJm10DBubUEWmma2RIwJ5n5EzHj7JmTsJXgv964Y7YIO+EHELZhECyVX7Wny90KBbxgKmdcUHjzDfucxqUeTxeFtPE2VyK07LPGIux+6yfF7vOQ4dfjHj8HuC4Ua6Z704fg/zflCITRCJ/UMyt+aCynQXqwmRwb0GNFL7/ng3jXzUplXvT+WK9rv2fSyqab3x3Vpryyc0WMjcNkFsjCRCoDFxfqCAxuOVW/Dp",
+            "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+            "appid": "c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+            "appidacr": "0",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Anns",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Muhammad",
+            "groups": "764adf92-08a6-431c-813e-3d5ea0f8461b,eb757738-d2db-459c-9fed-d36949e6910d,b5c0b52c-c32d-47f9-bafb-b0a1a8b58e2a,a3ae2213-8adf-4404-ac61-b96eb841d736,225f46e0-a67b-41ca-ba6d-4cb6d358ed49",
+            "idtyp": "user",
+            "ipaddr": "203.128.27.61",
+            "name": "Anns",
+            "http://schemas.microsoft.com/identity/claims/objectidentifier": "c239af0e-1484-42a6-bb79-134bda4e212d",
+            "puid": "10032001F1A54EEB",
+            "rh": "1.AW4AJhGWdhjjrkijH4hLSvSf0UZIf3kAutdPukPawfj2MBMAAHtuAA.",
+            "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+            "sid": "005e066a-1455-33de-7632-d756cc5e92a9",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "p15nHLxZx0ErNCwK372eyZOk8yNu2OsjMMlt2G3kkbI",
+            "http://schemas.microsoft.com/identity/claims/tenantid": "76961126-e318-48ae-a31f-884b4af49fd1",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "anns@cytexio.onmicrosoft.com",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "anns@cytexio.onmicrosoft.com",
+            "uti": "4jwoa7ZE1USixXpXO3sDAA",
+            "ver": "1.0",
+            "wids": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b,3f04f91a-4ad7-4bd3-bcfa-49882ea1a88a",
+            "xms_act_fct": "5 3",
+            "xms_ftd": "e8RX-pg-KopXpfbmc5b_Hk5ftOeJmbuYPUU2_-ydAFUBdXNub3J0aC1kc21z",
+            "xms_idrel": "1 12",
+            "xms_sub_fct": "3 16",
+            "xms_tcdt": "1599014540"
+          },
+          "caller": "anns@cytexio.onmicrosoft.com",
+          "description": "",
+          "id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourceGroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs/events/9a3063d0-083f-4e52-af88-1a04930673d1/ticks/639172925773474677",
+          "event_data_id": "9a3063d0-083f-4e52-af88-1a04930673d1",
+          "correlation_id": "48077afa-bab2-4e3c-bcda-022b917d11e9",
+          "event_name": {
+            "value": "EndRequest",
+            "localized_value": "End request"
+          },
+          "category": {
+            "value": "Administrative",
+            "localized_value": "Administrative"
+          },
+          "http_request": {
+            "client_request_id": "d368c575-e68c-4a46-ab1f-fbae1ed92038",
+            "client_ip_address": "203.128.27.61",
+            "method": "POST",
+            "uri": "https://management.azure.com/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourceGroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs/listKeys?api-version=2025-08-01"
+          },
+          "level": "Informational",
+          "resource_group_name": "rg-logs",
+          "resource_provider_name": {
+            "value": "Microsoft.Storage",
+            "localized_value": "Microsoft.Storage"
+          },
+          "resource_id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourceGroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs",
+          "resource_type": {
+            "value": "Microsoft.Storage/storageAccounts",
+            "localized_value": "Microsoft.Storage/storageAccounts"
+          },
+          "operation_id": "d63b9a8a-07d3-4cb9-9022-b5e5b082c174",
+          "operation_name": {
+            "value": "Microsoft.Storage/storageAccounts/listKeys/action",
+            "localized_value": "List Storage Account Keys"
+          },
+          "properties": {
+            "statusCode": "OK",
+            "serviceRequestId": null,
+            "eventCategory": "Administrative",
+            "entity": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourceGroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs",
+            "message": "Microsoft.Storage/storageAccounts/listKeys/action",
+            "hierarchy": "76961126-e318-48ae-a31f-884b4af49fd1/578f7d16-b299-4b9f-8f47-fa0bc5427842"
+          },
+          "status": {
+            "value": "Succeeded",
+            "localized_value": "Succeeded"
+          },
+          "sub_status": {
+            "value": "OK",
+            "localized_value": "OK (HTTP Status Code: 200)"
+          },
+          "event_timestamp": "2026-06-17T11:29:37.347467Z",
+          "submission_timestamp": "2026-06-17T11:31:28.000Z",
+          "subscription_id": "578f7d16-b299-4b9f-8f47-fa0bc5427842",
+          "tenant_id": "76961126-e318-48ae-a31f-884b4af49fd1"
+        },
+        {
+          "authorization": {
+            "action": "Microsoft.Storage/storageAccounts/listKeys/action",
+            "scope": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourceGroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs"
+          },
+          "claims": {
+            "aud": "https://management.core.windows.net/",
+            "iss": "https://sts.windows.net/76961126-e318-48ae-a31f-884b4af49fd1/",
+            "iat": "1781695180",
+            "nbf": "1781695180",
+            "exp": "1781699990",
+            "http://schemas.microsoft.com/claims/authnclassreference": "1",
+            "acrs": "p1",
+            "aio": "AcQAO/8cAAAAqQOdZR8UWNiZ+UsU5uBI4PbdyTUJJm10DBubUEWmma2RIwJ5n5EzHj7JmTsJXgv964Y7YIO+EHELZhECyVX7Wny90KBbxgKmdcUHjzDfucxqUeTxeFtPE2VyK07LPGIux+6yfF7vOQ4dfjHj8HuC4Ua6Z704fg/zflCITRCJ/UMyt+aCynQXqwmRwb0GNFL7/ng3jXzUplXvT+WK9rv2fSyqab3x3Vpryyc0WMjcNkFsjCRCoDFxfqCAxuOVW/Dp",
+            "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+            "appid": "c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+            "appidacr": "0",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Anns",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Muhammad",
+            "groups": "764adf92-08a6-431c-813e-3d5ea0f8461b,eb757738-d2db-459c-9fed-d36949e6910d,b5c0b52c-c32d-47f9-bafb-b0a1a8b58e2a,a3ae2213-8adf-4404-ac61-b96eb841d736,225f46e0-a67b-41ca-ba6d-4cb6d358ed49",
+            "idtyp": "user",
+            "ipaddr": "203.128.27.61",
+            "name": "Anns",
+            "http://schemas.microsoft.com/identity/claims/objectidentifier": "c239af0e-1484-42a6-bb79-134bda4e212d",
+            "puid": "10032001F1A54EEB",
+            "rh": "1.AW4AJhGWdhjjrkijH4hLSvSf0UZIf3kAutdPukPawfj2MBMAAHtuAA.",
+            "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+            "sid": "005e066a-1455-33de-7632-d756cc5e92a9",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "p15nHLxZx0ErNCwK372eyZOk8yNu2OsjMMlt2G3kkbI",
+            "http://schemas.microsoft.com/identity/claims/tenantid": "76961126-e318-48ae-a31f-884b4af49fd1",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "anns@cytexio.onmicrosoft.com",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "anns@cytexio.onmicrosoft.com",
+            "uti": "4jwoa7ZE1USixXpXO3sDAA",
+            "ver": "1.0",
+            "wids": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b,3f04f91a-4ad7-4bd3-bcfa-49882ea1a88a",
+            "xms_act_fct": "5 3",
+            "xms_ftd": "e8RX-pg-KopXpfbmc5b_Hk5ftOeJmbuYPUU2_-ydAFUBdXNub3J0aC1kc21z",
+            "xms_idrel": "1 12",
+            "xms_sub_fct": "3 16",
+            "xms_tcdt": "1599014540"
+          },
+          "caller": "anns@cytexio.onmicrosoft.com",
+          "description": "",
+          "id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourceGroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs/events/5c5a32cf-18b8-4a72-aced-ca5e1f775582/ticks/639172925772849649",
+          "event_data_id": "5c5a32cf-18b8-4a72-aced-ca5e1f775582",
+          "correlation_id": "48077afa-bab2-4e3c-bcda-022b917d11e9",
+          "event_name": {
+            "value": "BeginRequest",
+            "localized_value": "Begin request"
+          },
+          "category": {
+            "value": "Administrative",
+            "localized_value": "Administrative"
+          },
+          "http_request": {
+            "client_request_id": "d368c575-e68c-4a46-ab1f-fbae1ed92038",
+            "client_ip_address": "203.128.27.61",
+            "method": "POST",
+            "uri": "https://management.azure.com/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourceGroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs/listKeys?api-version=2025-08-01"
+          },
+          "level": "Informational",
+          "resource_group_name": "rg-logs",
+          "resource_provider_name": {
+            "value": "Microsoft.Storage",
+            "localized_value": "Microsoft.Storage"
+          },
+          "resource_id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourceGroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs",
+          "resource_type": {
+            "value": "Microsoft.Storage/storageAccounts",
+            "localized_value": "Microsoft.Storage/storageAccounts"
+          },
+          "operation_id": "d63b9a8a-07d3-4cb9-9022-b5e5b082c174",
+          "operation_name": {
+            "value": "Microsoft.Storage/storageAccounts/listKeys/action",
+            "localized_value": "List Storage Account Keys"
+          },
+          "properties": {
+            "eventCategory": "Administrative",
+            "entity": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourceGroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs",
+            "message": "Microsoft.Storage/storageAccounts/listKeys/action",
+            "hierarchy": "76961126-e318-48ae-a31f-884b4af49fd1/578f7d16-b299-4b9f-8f47-fa0bc5427842"
+          },
+          "status": {
+            "value": "Started",
+            "localized_value": "Started"
+          },
+          "sub_status": {
+            "value": "",
+            "localized_value": ""
+          },
+          "event_timestamp": "2026-06-17T11:29:37.284964Z",
+          "submission_timestamp": "2026-06-17T11:31:28.000Z",
+          "subscription_id": "578f7d16-b299-4b9f-8f47-fa0bc5427842",
+          "tenant_id": "76961126-e318-48ae-a31f-884b4af49fd1"
+        },
+        {
+          "authorization": {
+            "action": "Microsoft.Storage/storageAccounts/fileservices/write",
+            "scope": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs/fileservices/default"
+          },
+          "claims": {
+            "aud": "https://management.core.windows.net/",
+            "iss": "https://sts.windows.net/76961126-e318-48ae-a31f-884b4af49fd1/",
+            "iat": "1781695180",
+            "nbf": "1781695180",
+            "exp": "1781699990",
+            "http://schemas.microsoft.com/claims/authnclassreference": "1",
+            "acrs": "p1",
+            "aio": "AcQAO/8cAAAAqQOdZR8UWNiZ+UsU5uBI4PbdyTUJJm10DBubUEWmma2RIwJ5n5EzHj7JmTsJXgv964Y7YIO+EHELZhECyVX7Wny90KBbxgKmdcUHjzDfucxqUeTxeFtPE2VyK07LPGIux+6yfF7vOQ4dfjHj8HuC4Ua6Z704fg/zflCITRCJ/UMyt+aCynQXqwmRwb0GNFL7/ng3jXzUplXvT+WK9rv2fSyqab3x3Vpryyc0WMjcNkFsjCRCoDFxfqCAxuOVW/Dp",
+            "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+            "appid": "c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+            "appidacr": "0",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Anns",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Muhammad",
+            "groups": "764adf92-08a6-431c-813e-3d5ea0f8461b,eb757738-d2db-459c-9fed-d36949e6910d,b5c0b52c-c32d-47f9-bafb-b0a1a8b58e2a,a3ae2213-8adf-4404-ac61-b96eb841d736,225f46e0-a67b-41ca-ba6d-4cb6d358ed49",
+            "idtyp": "user",
+            "ipaddr": "203.128.27.61",
+            "name": "Anns",
+            "http://schemas.microsoft.com/identity/claims/objectidentifier": "c239af0e-1484-42a6-bb79-134bda4e212d",
+            "puid": "10032001F1A54EEB",
+            "rh": "1.AW4AJhGWdhjjrkijH4hLSvSf0UZIf3kAutdPukPawfj2MBMAAHtuAA.",
+            "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+            "sid": "005e066a-1455-33de-7632-d756cc5e92a9",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "p15nHLxZx0ErNCwK372eyZOk8yNu2OsjMMlt2G3kkbI",
+            "http://schemas.microsoft.com/identity/claims/tenantid": "76961126-e318-48ae-a31f-884b4af49fd1",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "anns@cytexio.onmicrosoft.com",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "anns@cytexio.onmicrosoft.com",
+            "uti": "4jwoa7ZE1USixXpXO3sDAA",
+            "ver": "1.0",
+            "wids": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b,3f04f91a-4ad7-4bd3-bcfa-49882ea1a88a",
+            "xms_act_fct": "5 3",
+            "xms_ftd": "e8RX-pg-KopXpfbmc5b_Hk5ftOeJmbuYPUU2_-ydAFUBdXNub3J0aC1kc21z",
+            "xms_idrel": "1 12",
+            "xms_sub_fct": "3 16",
+            "xms_tcdt": "1599014540"
+          },
+          "caller": "anns@cytexio.onmicrosoft.com",
+          "description": "",
+          "id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs/fileservices/default/events/d7d24b41-7c78-4e21-bc88-768015c24c14/ticks/639172925043862701",
+          "event_data_id": "d7d24b41-7c78-4e21-bc88-768015c24c14",
+          "correlation_id": "761c6249-dbf4-4e62-a9ef-3fa50c3e2b35",
+          "event_name": {
+            "value": "EndRequest",
+            "localized_value": "End request"
+          },
+          "category": {
+            "value": "Administrative",
+            "localized_value": "Administrative"
+          },
+          "http_request": {
+            "client_request_id": "94c36682-78b0-4c81-a9a2-2a4b57b11cd2",
+            "client_ip_address": "203.128.27.61",
+            "method": "PUT",
+            "uri": "https://management.azure.com/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs/fileservices/default?api-version=2025-08-01"
+          },
+          "level": "Informational",
+          "resource_group_name": "rg-logs",
+          "resource_provider_name": {
+            "value": "Microsoft.Storage",
+            "localized_value": "Microsoft.Storage"
+          },
+          "resource_id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs/fileservices/default",
+          "resource_type": {
+            "value": "Microsoft.Storage/storageAccounts/fileservices",
+            "localized_value": "Microsoft.Storage/storageAccounts/fileservices"
+          },
+          "operation_id": "0e3920d4-37de-44f6-951e-513ecbda749c",
+          "operation_name": {
+            "value": "Microsoft.Storage/storageAccounts/fileservices/write",
+            "localized_value": "Put File Service Properties"
+          },
+          "properties": {
+            "statusCode": "OK",
+            "serviceRequestId": null,
+            "eventCategory": "Administrative",
+            "entity": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs/fileservices/default",
+            "message": "Microsoft.Storage/storageAccounts/fileservices/write",
+            "hierarchy": "76961126-e318-48ae-a31f-884b4af49fd1/578f7d16-b299-4b9f-8f47-fa0bc5427842"
+          },
+          "status": {
+            "value": "Succeeded",
+            "localized_value": "Succeeded"
+          },
+          "sub_status": {
+            "value": "OK",
+            "localized_value": "OK (HTTP Status Code: 200)"
+          },
+          "event_timestamp": "2026-06-17T11:28:24.38627Z",
+          "submission_timestamp": "2026-06-17T11:30:44.000Z",
+          "subscription_id": "578f7d16-b299-4b9f-8f47-fa0bc5427842",
+          "tenant_id": "76961126-e318-48ae-a31f-884b4af49fd1"
+        },
+        {
+          "authorization": {
+            "action": "Microsoft.Storage/storageAccounts/fileservices/write",
+            "scope": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs/fileservices/default"
+          },
+          "claims": {
+            "aud": "https://management.core.windows.net/",
+            "iss": "https://sts.windows.net/76961126-e318-48ae-a31f-884b4af49fd1/",
+            "iat": "1781695180",
+            "nbf": "1781695180",
+            "exp": "1781699990",
+            "http://schemas.microsoft.com/claims/authnclassreference": "1",
+            "acrs": "p1",
+            "aio": "AcQAO/8cAAAAqQOdZR8UWNiZ+UsU5uBI4PbdyTUJJm10DBubUEWmma2RIwJ5n5EzHj7JmTsJXgv964Y7YIO+EHELZhECyVX7Wny90KBbxgKmdcUHjzDfucxqUeTxeFtPE2VyK07LPGIux+6yfF7vOQ4dfjHj8HuC4Ua6Z704fg/zflCITRCJ/UMyt+aCynQXqwmRwb0GNFL7/ng3jXzUplXvT+WK9rv2fSyqab3x3Vpryyc0WMjcNkFsjCRCoDFxfqCAxuOVW/Dp",
+            "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+            "appid": "c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+            "appidacr": "0",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Anns",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Muhammad",
+            "groups": "764adf92-08a6-431c-813e-3d5ea0f8461b,eb757738-d2db-459c-9fed-d36949e6910d,b5c0b52c-c32d-47f9-bafb-b0a1a8b58e2a,a3ae2213-8adf-4404-ac61-b96eb841d736,225f46e0-a67b-41ca-ba6d-4cb6d358ed49",
+            "idtyp": "user",
+            "ipaddr": "203.128.27.61",
+            "name": "Anns",
+            "http://schemas.microsoft.com/identity/claims/objectidentifier": "c239af0e-1484-42a6-bb79-134bda4e212d",
+            "puid": "10032001F1A54EEB",
+            "rh": "1.AW4AJhGWdhjjrkijH4hLSvSf0UZIf3kAutdPukPawfj2MBMAAHtuAA.",
+            "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+            "sid": "005e066a-1455-33de-7632-d756cc5e92a9",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "p15nHLxZx0ErNCwK372eyZOk8yNu2OsjMMlt2G3kkbI",
+            "http://schemas.microsoft.com/identity/claims/tenantid": "76961126-e318-48ae-a31f-884b4af49fd1",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "anns@cytexio.onmicrosoft.com",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "anns@cytexio.onmicrosoft.com",
+            "uti": "4jwoa7ZE1USixXpXO3sDAA",
+            "ver": "1.0",
+            "wids": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b,3f04f91a-4ad7-4bd3-bcfa-49882ea1a88a",
+            "xms_act_fct": "5 3",
+            "xms_ftd": "e8RX-pg-KopXpfbmc5b_Hk5ftOeJmbuYPUU2_-ydAFUBdXNub3J0aC1kc21z",
+            "xms_idrel": "1 12",
+            "xms_sub_fct": "3 16",
+            "xms_tcdt": "1599014540"
+          },
+          "caller": "anns@cytexio.onmicrosoft.com",
+          "description": "",
+          "id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs/fileservices/default/events/114e6f8d-a669-48af-a9fd-edf019b89507/ticks/639172925036831006",
+          "event_data_id": "114e6f8d-a669-48af-a9fd-edf019b89507",
+          "correlation_id": "761c6249-dbf4-4e62-a9ef-3fa50c3e2b35",
+          "event_name": {
+            "value": "BeginRequest",
+            "localized_value": "Begin request"
+          },
+          "category": {
+            "value": "Administrative",
+            "localized_value": "Administrative"
+          },
+          "http_request": {
+            "client_request_id": "94c36682-78b0-4c81-a9a2-2a4b57b11cd2",
+            "client_ip_address": "203.128.27.61",
+            "method": "PUT",
+            "uri": "https://management.azure.com/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs/fileservices/default?api-version=2025-08-01"
+          },
+          "level": "Informational",
+          "resource_group_name": "rg-logs",
+          "resource_provider_name": {
+            "value": "Microsoft.Storage",
+            "localized_value": "Microsoft.Storage"
+          },
+          "resource_id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs/fileservices/default",
+          "resource_type": {
+            "value": "Microsoft.Storage/storageAccounts/fileservices",
+            "localized_value": "Microsoft.Storage/storageAccounts/fileservices"
+          },
+          "operation_id": "0e3920d4-37de-44f6-951e-513ecbda749c",
+          "operation_name": {
+            "value": "Microsoft.Storage/storageAccounts/fileservices/write",
+            "localized_value": "Put File Service Properties"
+          },
+          "properties": {
+            "eventCategory": "Administrative",
+            "entity": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs/fileservices/default",
+            "message": "Microsoft.Storage/storageAccounts/fileservices/write",
+            "hierarchy": "76961126-e318-48ae-a31f-884b4af49fd1/578f7d16-b299-4b9f-8f47-fa0bc5427842"
+          },
+          "status": {
+            "value": "Started",
+            "localized_value": "Started"
+          },
+          "sub_status": {
+            "value": "",
+            "localized_value": ""
+          },
+          "event_timestamp": "2026-06-17T11:28:23.6831Z",
+          "submission_timestamp": "2026-06-17T11:30:44.000Z",
+          "subscription_id": "578f7d16-b299-4b9f-8f47-fa0bc5427842",
+          "tenant_id": "76961126-e318-48ae-a31f-884b4af49fd1"
+        },
+        {
+          "authorization": {
+            "action": "Microsoft.Storage/storageAccounts/blobServices/write",
+            "scope": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs/blobServices/default"
+          },
+          "claims": {
+            "aud": "https://management.core.windows.net/",
+            "iss": "https://sts.windows.net/76961126-e318-48ae-a31f-884b4af49fd1/",
+            "iat": "1781695180",
+            "nbf": "1781695180",
+            "exp": "1781699990",
+            "http://schemas.microsoft.com/claims/authnclassreference": "1",
+            "acrs": "p1",
+            "aio": "AcQAO/8cAAAAqQOdZR8UWNiZ+UsU5uBI4PbdyTUJJm10DBubUEWmma2RIwJ5n5EzHj7JmTsJXgv964Y7YIO+EHELZhECyVX7Wny90KBbxgKmdcUHjzDfucxqUeTxeFtPE2VyK07LPGIux+6yfF7vOQ4dfjHj8HuC4Ua6Z704fg/zflCITRCJ/UMyt+aCynQXqwmRwb0GNFL7/ng3jXzUplXvT+WK9rv2fSyqab3x3Vpryyc0WMjcNkFsjCRCoDFxfqCAxuOVW/Dp",
+            "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+            "appid": "c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+            "appidacr": "0",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Anns",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Muhammad",
+            "groups": "764adf92-08a6-431c-813e-3d5ea0f8461b,eb757738-d2db-459c-9fed-d36949e6910d,b5c0b52c-c32d-47f9-bafb-b0a1a8b58e2a,a3ae2213-8adf-4404-ac61-b96eb841d736,225f46e0-a67b-41ca-ba6d-4cb6d358ed49",
+            "idtyp": "user",
+            "ipaddr": "203.128.27.61",
+            "name": "Anns",
+            "http://schemas.microsoft.com/identity/claims/objectidentifier": "c239af0e-1484-42a6-bb79-134bda4e212d",
+            "puid": "10032001F1A54EEB",
+            "rh": "1.AW4AJhGWdhjjrkijH4hLSvSf0UZIf3kAutdPukPawfj2MBMAAHtuAA.",
+            "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+            "sid": "005e066a-1455-33de-7632-d756cc5e92a9",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "p15nHLxZx0ErNCwK372eyZOk8yNu2OsjMMlt2G3kkbI",
+            "http://schemas.microsoft.com/identity/claims/tenantid": "76961126-e318-48ae-a31f-884b4af49fd1",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "anns@cytexio.onmicrosoft.com",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "anns@cytexio.onmicrosoft.com",
+            "uti": "4jwoa7ZE1USixXpXO3sDAA",
+            "ver": "1.0",
+            "wids": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b,3f04f91a-4ad7-4bd3-bcfa-49882ea1a88a",
+            "xms_act_fct": "5 3",
+            "xms_ftd": "e8RX-pg-KopXpfbmc5b_Hk5ftOeJmbuYPUU2_-ydAFUBdXNub3J0aC1kc21z",
+            "xms_idrel": "1 12",
+            "xms_sub_fct": "3 16",
+            "xms_tcdt": "1599014540"
+          },
+          "caller": "anns@cytexio.onmicrosoft.com",
+          "description": "",
+          "id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs/blobServices/default/events/17c1401f-ede5-4143-97b8-152a84fd2f51/ticks/639172925034955729",
+          "event_data_id": "17c1401f-ede5-4143-97b8-152a84fd2f51",
+          "correlation_id": "761c6249-dbf4-4e62-a9ef-3fa50c3e2b35",
+          "event_name": {
+            "value": "EndRequest",
+            "localized_value": "End request"
+          },
+          "category": {
+            "value": "Administrative",
+            "localized_value": "Administrative"
+          },
+          "http_request": {
+            "client_request_id": "d831ea91-6322-4277-9495-2a15d02699ea",
+            "client_ip_address": "203.128.27.61",
+            "method": "PUT",
+            "uri": "https://management.azure.com/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs/blobServices/default?api-version=2025-08-01"
+          },
+          "level": "Informational",
+          "resource_group_name": "rg-logs",
+          "resource_provider_name": {
+            "value": "Microsoft.Storage",
+            "localized_value": "Microsoft.Storage"
+          },
+          "resource_id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs/blobServices/default",
+          "resource_type": {
+            "value": "Microsoft.Storage/storageAccounts/blobServices",
+            "localized_value": "Microsoft.Storage/storageAccounts/blobServices"
+          },
+          "operation_id": "be677490-7c73-44b5-a356-a524dd82632e",
+          "operation_name": {
+            "value": "Microsoft.Storage/storageAccounts/blobServices/write",
+            "localized_value": "Put blob service properties"
+          },
+          "properties": {
+            "statusCode": "OK",
+            "serviceRequestId": null,
+            "eventCategory": "Administrative",
+            "entity": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs/blobServices/default",
+            "message": "Microsoft.Storage/storageAccounts/blobServices/write",
+            "hierarchy": "76961126-e318-48ae-a31f-884b4af49fd1/578f7d16-b299-4b9f-8f47-fa0bc5427842"
+          },
+          "status": {
+            "value": "Succeeded",
+            "localized_value": "Succeeded"
+          },
+          "sub_status": {
+            "value": "OK",
+            "localized_value": "OK (HTTP Status Code: 200)"
+          },
+          "event_timestamp": "2026-06-17T11:28:23.495572Z",
+          "submission_timestamp": "2026-06-17T11:30:44.000Z",
+          "subscription_id": "578f7d16-b299-4b9f-8f47-fa0bc5427842",
+          "tenant_id": "76961126-e318-48ae-a31f-884b4af49fd1"
+        },
+        {
+          "authorization": {
+            "action": "Microsoft.Storage/storageAccounts/blobServices/write",
+            "scope": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs/blobServices/default"
+          },
+          "claims": {
+            "aud": "https://management.core.windows.net/",
+            "iss": "https://sts.windows.net/76961126-e318-48ae-a31f-884b4af49fd1/",
+            "iat": "1781695180",
+            "nbf": "1781695180",
+            "exp": "1781699990",
+            "http://schemas.microsoft.com/claims/authnclassreference": "1",
+            "acrs": "p1",
+            "aio": "AcQAO/8cAAAAqQOdZR8UWNiZ+UsU5uBI4PbdyTUJJm10DBubUEWmma2RIwJ5n5EzHj7JmTsJXgv964Y7YIO+EHELZhECyVX7Wny90KBbxgKmdcUHjzDfucxqUeTxeFtPE2VyK07LPGIux+6yfF7vOQ4dfjHj8HuC4Ua6Z704fg/zflCITRCJ/UMyt+aCynQXqwmRwb0GNFL7/ng3jXzUplXvT+WK9rv2fSyqab3x3Vpryyc0WMjcNkFsjCRCoDFxfqCAxuOVW/Dp",
+            "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+            "appid": "c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+            "appidacr": "0",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Anns",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Muhammad",
+            "groups": "764adf92-08a6-431c-813e-3d5ea0f8461b,eb757738-d2db-459c-9fed-d36949e6910d,b5c0b52c-c32d-47f9-bafb-b0a1a8b58e2a,a3ae2213-8adf-4404-ac61-b96eb841d736,225f46e0-a67b-41ca-ba6d-4cb6d358ed49",
+            "idtyp": "user",
+            "ipaddr": "203.128.27.61",
+            "name": "Anns",
+            "http://schemas.microsoft.com/identity/claims/objectidentifier": "c239af0e-1484-42a6-bb79-134bda4e212d",
+            "puid": "10032001F1A54EEB",
+            "rh": "1.AW4AJhGWdhjjrkijH4hLSvSf0UZIf3kAutdPukPawfj2MBMAAHtuAA.",
+            "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+            "sid": "005e066a-1455-33de-7632-d756cc5e92a9",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "p15nHLxZx0ErNCwK372eyZOk8yNu2OsjMMlt2G3kkbI",
+            "http://schemas.microsoft.com/identity/claims/tenantid": "76961126-e318-48ae-a31f-884b4af49fd1",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "anns@cytexio.onmicrosoft.com",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "anns@cytexio.onmicrosoft.com",
+            "uti": "4jwoa7ZE1USixXpXO3sDAA",
+            "ver": "1.0",
+            "wids": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b,3f04f91a-4ad7-4bd3-bcfa-49882ea1a88a",
+            "xms_act_fct": "5 3",
+            "xms_ftd": "e8RX-pg-KopXpfbmc5b_Hk5ftOeJmbuYPUU2_-ydAFUBdXNub3J0aC1kc21z",
+            "xms_idrel": "1 12",
+            "xms_sub_fct": "3 16",
+            "xms_tcdt": "1599014540"
+          },
+          "caller": "anns@cytexio.onmicrosoft.com",
+          "description": "",
+          "id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs/blobServices/default/events/dcf85721-8a89-4f6e-ba87-f0526760a962/ticks/639172925031517950",
+          "event_data_id": "dcf85721-8a89-4f6e-ba87-f0526760a962",
+          "correlation_id": "761c6249-dbf4-4e62-a9ef-3fa50c3e2b35",
+          "event_name": {
+            "value": "BeginRequest",
+            "localized_value": "Begin request"
+          },
+          "category": {
+            "value": "Administrative",
+            "localized_value": "Administrative"
+          },
+          "http_request": {
+            "client_request_id": "d831ea91-6322-4277-9495-2a15d02699ea",
+            "client_ip_address": "203.128.27.61",
+            "method": "PUT",
+            "uri": "https://management.azure.com/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs/blobServices/default?api-version=2025-08-01"
+          },
+          "level": "Informational",
+          "resource_group_name": "rg-logs",
+          "resource_provider_name": {
+            "value": "Microsoft.Storage",
+            "localized_value": "Microsoft.Storage"
+          },
+          "resource_id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs/blobServices/default",
+          "resource_type": {
+            "value": "Microsoft.Storage/storageAccounts/blobServices",
+            "localized_value": "Microsoft.Storage/storageAccounts/blobServices"
+          },
+          "operation_id": "be677490-7c73-44b5-a356-a524dd82632e",
+          "operation_name": {
+            "value": "Microsoft.Storage/storageAccounts/blobServices/write",
+            "localized_value": "Put blob service properties"
+          },
+          "properties": {
+            "requestbody": "{\"properties\":{\"deleteRetentionPolicy\":{\"enabled\":true,\"days\":7},\"containerDeleteRetentionPolicy\":{\"enabled\":true,\"days\":7}}}",
+            "eventCategory": "Administrative",
+            "entity": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs/blobServices/default",
+            "message": "Microsoft.Storage/storageAccounts/blobServices/write",
+            "hierarchy": "76961126-e318-48ae-a31f-884b4af49fd1/578f7d16-b299-4b9f-8f47-fa0bc5427842"
+          },
+          "status": {
+            "value": "Started",
+            "localized_value": "Started"
+          },
+          "sub_status": {
+            "value": "",
+            "localized_value": ""
+          },
+          "event_timestamp": "2026-06-17T11:28:23.151795Z",
+          "submission_timestamp": "2026-06-17T11:30:44.000Z",
+          "subscription_id": "578f7d16-b299-4b9f-8f47-fa0bc5427842",
+          "tenant_id": "76961126-e318-48ae-a31f-884b4af49fd1"
+        },
+        {
+          "authorization": {
+            "action": "Microsoft.Storage/storageAccounts/write",
+            "scope": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs"
+          },
+          "claims": {
+            "aud": "https://management.core.windows.net/",
+            "iss": "https://sts.windows.net/76961126-e318-48ae-a31f-884b4af49fd1/",
+            "iat": "1781695180",
+            "nbf": "1781695180",
+            "exp": "1781699990",
+            "http://schemas.microsoft.com/claims/authnclassreference": "1",
+            "acrs": "p1",
+            "aio": "AcQAO/8cAAAAqQOdZR8UWNiZ+UsU5uBI4PbdyTUJJm10DBubUEWmma2RIwJ5n5EzHj7JmTsJXgv964Y7YIO+EHELZhECyVX7Wny90KBbxgKmdcUHjzDfucxqUeTxeFtPE2VyK07LPGIux+6yfF7vOQ4dfjHj8HuC4Ua6Z704fg/zflCITRCJ/UMyt+aCynQXqwmRwb0GNFL7/ng3jXzUplXvT+WK9rv2fSyqab3x3Vpryyc0WMjcNkFsjCRCoDFxfqCAxuOVW/Dp",
+            "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+            "appid": "c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+            "appidacr": "0",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Anns",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Muhammad",
+            "groups": "764adf92-08a6-431c-813e-3d5ea0f8461b,eb757738-d2db-459c-9fed-d36949e6910d,b5c0b52c-c32d-47f9-bafb-b0a1a8b58e2a,a3ae2213-8adf-4404-ac61-b96eb841d736,225f46e0-a67b-41ca-ba6d-4cb6d358ed49",
+            "idtyp": "user",
+            "ipaddr": "203.128.27.61",
+            "name": "Anns",
+            "http://schemas.microsoft.com/identity/claims/objectidentifier": "c239af0e-1484-42a6-bb79-134bda4e212d",
+            "puid": "10032001F1A54EEB",
+            "rh": "1.AW4AJhGWdhjjrkijH4hLSvSf0UZIf3kAutdPukPawfj2MBMAAHtuAA.",
+            "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+            "sid": "005e066a-1455-33de-7632-d756cc5e92a9",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "p15nHLxZx0ErNCwK372eyZOk8yNu2OsjMMlt2G3kkbI",
+            "http://schemas.microsoft.com/identity/claims/tenantid": "76961126-e318-48ae-a31f-884b4af49fd1",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "anns@cytexio.onmicrosoft.com",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "anns@cytexio.onmicrosoft.com",
+            "uti": "4jwoa7ZE1USixXpXO3sDAA",
+            "ver": "1.0",
+            "wids": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b,3f04f91a-4ad7-4bd3-bcfa-49882ea1a88a",
+            "xms_act_fct": "5 3",
+            "xms_ftd": "e8RX-pg-KopXpfbmc5b_Hk5ftOeJmbuYPUU2_-ydAFUBdXNub3J0aC1kc21z",
+            "xms_idrel": "1 12",
+            "xms_sub_fct": "3 16",
+            "xms_tcdt": "1599014540"
+          },
+          "caller": "anns@cytexio.onmicrosoft.com",
+          "description": "",
+          "id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs/events/94a3fb8a-66c2-4629-992f-c1bf238d893c/ticks/639172925027080278",
+          "event_data_id": "94a3fb8a-66c2-4629-992f-c1bf238d893c",
+          "correlation_id": "761c6249-dbf4-4e62-a9ef-3fa50c3e2b35",
+          "event_name": {
+            "value": "EndRequest",
+            "localized_value": "End request"
+          },
+          "category": {
+            "value": "Administrative",
+            "localized_value": "Administrative"
+          },
+          "level": "Informational",
+          "resource_group_name": "rg-logs",
+          "resource_provider_name": {
+            "value": "Microsoft.Storage",
+            "localized_value": "Microsoft.Storage"
+          },
+          "resource_id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs",
+          "resource_type": {
+            "value": "Microsoft.Storage/storageAccounts",
+            "localized_value": "Microsoft.Storage/storageAccounts"
+          },
+          "operation_id": "330ee017-7a7a-4494-88d7-42c82fe4737f",
+          "operation_name": {
+            "value": "Microsoft.Storage/storageAccounts/write",
+            "localized_value": "Create/Update Storage Account"
+          },
+          "properties": {
+            "eventCategory": "Administrative",
+            "entity": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs",
+            "message": "Microsoft.Storage/storageAccounts/write",
+            "hierarchy": "76961126-e318-48ae-a31f-884b4af49fd1/578f7d16-b299-4b9f-8f47-fa0bc5427842"
+          },
+          "status": {
+            "value": "Succeeded",
+            "localized_value": "Succeeded"
+          },
+          "sub_status": {
+            "value": "",
+            "localized_value": ""
+          },
+          "event_timestamp": "2026-06-17T11:28:22.708027Z",
+          "submission_timestamp": "2026-06-17T11:30:18.000Z",
+          "subscription_id": "578f7d16-b299-4b9f-8f47-fa0bc5427842",
+          "tenant_id": "76961126-e318-48ae-a31f-884b4af49fd1"
+        },
+        {
+          "authorization": {
+            "action": "Microsoft.Storage/storageAccounts/write",
+            "scope": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs"
+          },
+          "claims": {
+            "aud": "https://management.core.windows.net/",
+            "iss": "https://sts.windows.net/76961126-e318-48ae-a31f-884b4af49fd1/",
+            "iat": "1781695180",
+            "nbf": "1781695180",
+            "exp": "1781699990",
+            "http://schemas.microsoft.com/claims/authnclassreference": "1",
+            "acrs": "p1",
+            "aio": "AcQAO/8cAAAAqQOdZR8UWNiZ+UsU5uBI4PbdyTUJJm10DBubUEWmma2RIwJ5n5EzHj7JmTsJXgv964Y7YIO+EHELZhECyVX7Wny90KBbxgKmdcUHjzDfucxqUeTxeFtPE2VyK07LPGIux+6yfF7vOQ4dfjHj8HuC4Ua6Z704fg/zflCITRCJ/UMyt+aCynQXqwmRwb0GNFL7/ng3jXzUplXvT+WK9rv2fSyqab3x3Vpryyc0WMjcNkFsjCRCoDFxfqCAxuOVW/Dp",
+            "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+            "appid": "c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+            "appidacr": "0",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Anns",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Muhammad",
+            "groups": "764adf92-08a6-431c-813e-3d5ea0f8461b,eb757738-d2db-459c-9fed-d36949e6910d,b5c0b52c-c32d-47f9-bafb-b0a1a8b58e2a,a3ae2213-8adf-4404-ac61-b96eb841d736,225f46e0-a67b-41ca-ba6d-4cb6d358ed49",
+            "idtyp": "user",
+            "ipaddr": "203.128.27.61",
+            "name": "Anns",
+            "http://schemas.microsoft.com/identity/claims/objectidentifier": "c239af0e-1484-42a6-bb79-134bda4e212d",
+            "puid": "10032001F1A54EEB",
+            "rh": "1.AW4AJhGWdhjjrkijH4hLSvSf0UZIf3kAutdPukPawfj2MBMAAHtuAA.",
+            "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+            "sid": "005e066a-1455-33de-7632-d756cc5e92a9",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "p15nHLxZx0ErNCwK372eyZOk8yNu2OsjMMlt2G3kkbI",
+            "http://schemas.microsoft.com/identity/claims/tenantid": "76961126-e318-48ae-a31f-884b4af49fd1",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "anns@cytexio.onmicrosoft.com",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "anns@cytexio.onmicrosoft.com",
+            "uti": "4jwoa7ZE1USixXpXO3sDAA",
+            "ver": "1.0",
+            "wids": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b,3f04f91a-4ad7-4bd3-bcfa-49882ea1a88a",
+            "xms_act_fct": "5 3",
+            "xms_ftd": "e8RX-pg-KopXpfbmc5b_Hk5ftOeJmbuYPUU2_-ydAFUBdXNub3J0aC1kc21z",
+            "xms_idrel": "1 12",
+            "xms_sub_fct": "3 16",
+            "xms_tcdt": "1599014540"
+          },
+          "caller": "anns@cytexio.onmicrosoft.com",
+          "description": "",
+          "id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs/events/431cb97b-3c0b-428e-8e16-5c80530f91ac/ticks/639172924855040484",
+          "event_data_id": "431cb97b-3c0b-428e-8e16-5c80530f91ac",
+          "correlation_id": "761c6249-dbf4-4e62-a9ef-3fa50c3e2b35",
+          "event_name": {
+            "value": "EndRequest",
+            "localized_value": "End request"
+          },
+          "category": {
+            "value": "Administrative",
+            "localized_value": "Administrative"
+          },
+          "http_request": {
+            "client_request_id": "770f3650-6dd5-4f5c-a50f-01f205693404",
+            "client_ip_address": "203.128.27.61",
+            "method": "PUT",
+            "uri": "https://management.azure.com/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs?api-version=2025-08-01"
+          },
+          "level": "Informational",
+          "resource_group_name": "rg-logs",
+          "resource_provider_name": {
+            "value": "Microsoft.Storage",
+            "localized_value": "Microsoft.Storage"
+          },
+          "resource_id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs",
+          "resource_type": {
+            "value": "Microsoft.Storage/storageAccounts",
+            "localized_value": "Microsoft.Storage/storageAccounts"
+          },
+          "operation_id": "4d9e7f15-5f62-464b-8b7c-9baebf8d2924",
+          "operation_name": {
+            "value": "Microsoft.Storage/storageAccounts/write",
+            "localized_value": "Create/Update Storage Account"
+          },
+          "properties": {
+            "statusCode": "Accepted",
+            "serviceRequestId": null,
+            "eventCategory": "Administrative",
+            "entity": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs",
+            "message": "Microsoft.Storage/storageAccounts/write",
+            "hierarchy": "76961126-e318-48ae-a31f-884b4af49fd1/578f7d16-b299-4b9f-8f47-fa0bc5427842"
+          },
+          "status": {
+            "value": "Accepted",
+            "localized_value": "Accepted"
+          },
+          "sub_status": {
+            "value": "Accepted",
+            "localized_value": "Accepted (HTTP Status Code: 202)"
+          },
+          "event_timestamp": "2026-06-17T11:28:05.504048Z",
+          "submission_timestamp": "2026-06-17T11:31:03.000Z",
+          "subscription_id": "578f7d16-b299-4b9f-8f47-fa0bc5427842",
+          "tenant_id": "76961126-e318-48ae-a31f-884b4af49fd1"
+        },
+        {
+          "authorization": {
+            "action": "Microsoft.Storage/storageAccounts/write",
+            "scope": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs"
+          },
+          "claims": {
+            "aud": "https://management.core.windows.net/",
+            "iss": "https://sts.windows.net/76961126-e318-48ae-a31f-884b4af49fd1/",
+            "iat": "1781695180",
+            "nbf": "1781695180",
+            "exp": "1781699990",
+            "http://schemas.microsoft.com/claims/authnclassreference": "1",
+            "acrs": "p1",
+            "aio": "AcQAO/8cAAAAqQOdZR8UWNiZ+UsU5uBI4PbdyTUJJm10DBubUEWmma2RIwJ5n5EzHj7JmTsJXgv964Y7YIO+EHELZhECyVX7Wny90KBbxgKmdcUHjzDfucxqUeTxeFtPE2VyK07LPGIux+6yfF7vOQ4dfjHj8HuC4Ua6Z704fg/zflCITRCJ/UMyt+aCynQXqwmRwb0GNFL7/ng3jXzUplXvT+WK9rv2fSyqab3x3Vpryyc0WMjcNkFsjCRCoDFxfqCAxuOVW/Dp",
+            "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+            "appid": "c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+            "appidacr": "0",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Anns",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Muhammad",
+            "groups": "764adf92-08a6-431c-813e-3d5ea0f8461b,eb757738-d2db-459c-9fed-d36949e6910d,b5c0b52c-c32d-47f9-bafb-b0a1a8b58e2a,a3ae2213-8adf-4404-ac61-b96eb841d736,225f46e0-a67b-41ca-ba6d-4cb6d358ed49",
+            "idtyp": "user",
+            "ipaddr": "203.128.27.61",
+            "name": "Anns",
+            "http://schemas.microsoft.com/identity/claims/objectidentifier": "c239af0e-1484-42a6-bb79-134bda4e212d",
+            "puid": "10032001F1A54EEB",
+            "rh": "1.AW4AJhGWdhjjrkijH4hLSvSf0UZIf3kAutdPukPawfj2MBMAAHtuAA.",
+            "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+            "sid": "005e066a-1455-33de-7632-d756cc5e92a9",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "p15nHLxZx0ErNCwK372eyZOk8yNu2OsjMMlt2G3kkbI",
+            "http://schemas.microsoft.com/identity/claims/tenantid": "76961126-e318-48ae-a31f-884b4af49fd1",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "anns@cytexio.onmicrosoft.com",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "anns@cytexio.onmicrosoft.com",
+            "uti": "4jwoa7ZE1USixXpXO3sDAA",
+            "ver": "1.0",
+            "wids": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b,3f04f91a-4ad7-4bd3-bcfa-49882ea1a88a",
+            "xms_act_fct": "5 3",
+            "xms_ftd": "e8RX-pg-KopXpfbmc5b_Hk5ftOeJmbuYPUU2_-ydAFUBdXNub3J0aC1kc21z",
+            "xms_idrel": "1 12",
+            "xms_sub_fct": "3 16",
+            "xms_tcdt": "1599014540"
+          },
+          "caller": "anns@cytexio.onmicrosoft.com",
+          "description": "",
+          "id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs/events/691c78c3-bd81-456c-8c71-8a0fe273f198/ticks/639172924833165306",
+          "event_data_id": "691c78c3-bd81-456c-8c71-8a0fe273f198",
+          "correlation_id": "761c6249-dbf4-4e62-a9ef-3fa50c3e2b35",
+          "event_name": {
+            "value": "BeginRequest",
+            "localized_value": "Begin request"
+          },
+          "category": {
+            "value": "Administrative",
+            "localized_value": "Administrative"
+          },
+          "http_request": {
+            "client_request_id": "770f3650-6dd5-4f5c-a50f-01f205693404",
+            "client_ip_address": "203.128.27.61",
+            "method": "PUT",
+            "uri": "https://management.azure.com/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs?api-version=2025-08-01"
+          },
+          "level": "Informational",
+          "resource_group_name": "rg-logs",
+          "resource_provider_name": {
+            "value": "Microsoft.Storage",
+            "localized_value": "Microsoft.Storage"
+          },
+          "resource_id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs",
+          "resource_type": {
+            "value": "Microsoft.Storage/storageAccounts",
+            "localized_value": "Microsoft.Storage/storageAccounts"
+          },
+          "operation_id": "4d9e7f15-5f62-464b-8b7c-9baebf8d2924",
+          "operation_name": {
+            "value": "Microsoft.Storage/storageAccounts/write",
+            "localized_value": "Create/Update Storage Account"
+          },
+          "properties": {
+            "requestbody": "{\"sku\":{\"name\":\"Standard_RAGRS\"},\"kind\":\"StorageV2\",\"location\":\"eastus\",\"tags\":\"******\",\"properties\":{\"minimumTlsVersion\":\"TLS1_2\",\"supportsHttpsTrafficOnly\":true,\"allowBlobPublicAccess\":false,\"allowSharedKeyAccess\":true,\"defaultToOAuthAuthentication\":false,\"accessTier\":\"Hot\",\"publicNetworkAccess\":\"Enabled\",\"allowCrossTenantReplication\":false,\"networkAcls\":{\"bypass\":\"AzureServices\",\"defaultAction\":\"Allow\",\"ipRules\":[],\"ipv6Rules\":[]},\"dualStackEndpointPreference\":{\"publishIpv6Endpoint\":false},\"dnsEndpointType\":\"Standard\",\"encryption\":{\"keySource\":\"Microsoft.Storage\",\"services\":{\"blob\":{\"enabled\":true},\"file\":{\"enabled\":true},\"table\":{\"enabled\":true},\"queue\":{\"enabled\":true}},\"requireInfrastructureEncryption\":false}}}",
+            "eventCategory": "Administrative",
+            "entity": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/rg-logs/providers/Microsoft.Storage/storageAccounts/demostorageforlogs",
+            "message": "Microsoft.Storage/storageAccounts/write",
+            "hierarchy": "76961126-e318-48ae-a31f-884b4af49fd1/578f7d16-b299-4b9f-8f47-fa0bc5427842"
+          },
+          "status": {
+            "value": "Started",
+            "localized_value": "Started"
+          },
+          "sub_status": {
+            "value": "",
+            "localized_value": ""
+          },
+          "event_timestamp": "2026-06-17T11:28:03.31653Z",
+          "submission_timestamp": "2026-06-17T11:31:03.000Z",
+          "subscription_id": "578f7d16-b299-4b9f-8f47-fa0bc5427842",
+          "tenant_id": "76961126-e318-48ae-a31f-884b4af49fd1"
+        }
+      ],
+      "storage_diagnostic_logs": {
+        "d0d4e10f-0e11-455d-bd02-86ba33431d44": {
+          "StorageBlobLogs": [],
+          "StorageFileLogs": [],
+          "StorageQueueLogs": [],
+          "StorageTableLogs": []
+        }
+      },
+      "error": null
+    },
+    {
+      "subscription_id": "578f7d16-b299-4b9f-8f47-fa0bc5427842",
+      "subscription_name": "Azure subscription 1",
+      "storage_account_id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourceGroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345",
+      "storage_account_name": "azuredblogstest12345",
+      "resource_group": "logs-test-rg",
+      "location": "eastus",
+      "diagnostic_logging_enabled": false,
+      "diagnostic_settings": {
+        "account": {
+          "error": "'MonitorManagementClient' object has no attribute 'diagnostic_settings'"
+        },
+        "blobServices/default": {
+          "error": "'MonitorManagementClient' object has no attribute 'diagnostic_settings'"
+        },
+        "fileServices/default": {
+          "error": "'MonitorManagementClient' object has no attribute 'diagnostic_settings'"
+        },
+        "queueServices/default": {
+          "error": "'MonitorManagementClient' object has no attribute 'diagnostic_settings'"
+        },
+        "tableServices/default": {
+          "error": "'MonitorManagementClient' object has no attribute 'diagnostic_settings'"
+        }
+      },
+      "activity_logs": [
+        {
+          "authorization": {
+            "action": "Microsoft.Storage/storageAccounts/listKeys/action",
+            "scope": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345"
+          },
+          "claims": {
+            "aud": "https://management.core.windows.net/",
+            "iss": "https://sts.windows.net/76961126-e318-48ae-a31f-884b4af49fd1/",
+            "iat": "1781695180",
+            "nbf": "1781695180",
+            "exp": "1781699990",
+            "http://schemas.microsoft.com/claims/authnclassreference": "1",
+            "acrs": "p1",
+            "aio": "AcQAO/8cAAAAqQOdZR8UWNiZ+UsU5uBI4PbdyTUJJm10DBubUEWmma2RIwJ5n5EzHj7JmTsJXgv964Y7YIO+EHELZhECyVX7Wny90KBbxgKmdcUHjzDfucxqUeTxeFtPE2VyK07LPGIux+6yfF7vOQ4dfjHj8HuC4Ua6Z704fg/zflCITRCJ/UMyt+aCynQXqwmRwb0GNFL7/ng3jXzUplXvT+WK9rv2fSyqab3x3Vpryyc0WMjcNkFsjCRCoDFxfqCAxuOVW/Dp",
+            "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+            "appid": "c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+            "appidacr": "0",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Anns",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Muhammad",
+            "groups": "764adf92-08a6-431c-813e-3d5ea0f8461b,eb757738-d2db-459c-9fed-d36949e6910d,b5c0b52c-c32d-47f9-bafb-b0a1a8b58e2a,a3ae2213-8adf-4404-ac61-b96eb841d736,225f46e0-a67b-41ca-ba6d-4cb6d358ed49",
+            "idtyp": "user",
+            "ipaddr": "203.128.27.61",
+            "name": "Anns",
+            "http://schemas.microsoft.com/identity/claims/objectidentifier": "c239af0e-1484-42a6-bb79-134bda4e212d",
+            "puid": "10032001F1A54EEB",
+            "rh": "1.AW4AJhGWdhjjrkijH4hLSvSf0UZIf3kAutdPukPawfj2MBMAAHtuAA.",
+            "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+            "sid": "005e066a-1455-33de-7632-d756cc5e92a9",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "p15nHLxZx0ErNCwK372eyZOk8yNu2OsjMMlt2G3kkbI",
+            "http://schemas.microsoft.com/identity/claims/tenantid": "76961126-e318-48ae-a31f-884b4af49fd1",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "anns@cytexio.onmicrosoft.com",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "anns@cytexio.onmicrosoft.com",
+            "uti": "4jwoa7ZE1USixXpXO3sDAA",
+            "ver": "1.0",
+            "wids": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b,3f04f91a-4ad7-4bd3-bcfa-49882ea1a88a",
+            "xms_act_fct": "5 3",
+            "xms_ftd": "e8RX-pg-KopXpfbmc5b_Hk5ftOeJmbuYPUU2_-ydAFUBdXNub3J0aC1kc21z",
+            "xms_idrel": "1 12",
+            "xms_sub_fct": "3 16",
+            "xms_tcdt": "1599014540"
+          },
+          "caller": "anns@cytexio.onmicrosoft.com",
+          "description": "",
+          "id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345/events/7a6e5a68-e582-4dc4-a15a-a8ad4d041d2b/ticks/639172940249866427",
+          "event_data_id": "7a6e5a68-e582-4dc4-a15a-a8ad4d041d2b",
+          "correlation_id": "0ca97dcf-7049-4ebd-af36-3d2742d0698b",
+          "event_name": {
+            "value": "EndRequest",
+            "localized_value": "End request"
+          },
+          "category": {
+            "value": "Administrative",
+            "localized_value": "Administrative"
+          },
+          "http_request": {
+            "client_request_id": "b33ef787-230a-4dbd-a137-468f72ce2004",
+            "client_ip_address": "203.128.27.61",
+            "method": "POST",
+            "uri": "https://management.azure.com/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345/listKeys?api-version=2025-08-01"
+          },
+          "level": "Informational",
+          "resource_group_name": "logs-test-rg",
+          "resource_provider_name": {
+            "value": "Microsoft.Storage",
+            "localized_value": "Microsoft.Storage"
+          },
+          "resource_id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345",
+          "resource_type": {
+            "value": "Microsoft.Storage/storageAccounts",
+            "localized_value": "Microsoft.Storage/storageAccounts"
+          },
+          "operation_id": "d44e059e-e584-49ac-9673-ef90c5f7f4d1",
+          "operation_name": {
+            "value": "Microsoft.Storage/storageAccounts/listKeys/action",
+            "localized_value": "List Storage Account Keys"
+          },
+          "properties": {
+            "statusCode": "OK",
+            "serviceRequestId": null,
+            "eventCategory": "Administrative",
+            "entity": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345",
+            "message": "Microsoft.Storage/storageAccounts/listKeys/action",
+            "hierarchy": "76961126-e318-48ae-a31f-884b4af49fd1/578f7d16-b299-4b9f-8f47-fa0bc5427842"
+          },
+          "status": {
+            "value": "Succeeded",
+            "localized_value": "Succeeded"
+          },
+          "sub_status": {
+            "value": "OK",
+            "localized_value": "OK (HTTP Status Code: 200)"
+          },
+          "event_timestamp": "2026-06-17T11:53:44.986642Z",
+          "submission_timestamp": "2026-06-17T11:55:08.000Z",
+          "subscription_id": "578f7d16-b299-4b9f-8f47-fa0bc5427842",
+          "tenant_id": "76961126-e318-48ae-a31f-884b4af49fd1"
+        },
+        {
+          "authorization": {
+            "action": "Microsoft.Storage/storageAccounts/listKeys/action",
+            "scope": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345"
+          },
+          "claims": {
+            "aud": "https://management.core.windows.net/",
+            "iss": "https://sts.windows.net/76961126-e318-48ae-a31f-884b4af49fd1/",
+            "iat": "1781695180",
+            "nbf": "1781695180",
+            "exp": "1781699990",
+            "http://schemas.microsoft.com/claims/authnclassreference": "1",
+            "acrs": "p1",
+            "aio": "AcQAO/8cAAAAqQOdZR8UWNiZ+UsU5uBI4PbdyTUJJm10DBubUEWmma2RIwJ5n5EzHj7JmTsJXgv964Y7YIO+EHELZhECyVX7Wny90KBbxgKmdcUHjzDfucxqUeTxeFtPE2VyK07LPGIux+6yfF7vOQ4dfjHj8HuC4Ua6Z704fg/zflCITRCJ/UMyt+aCynQXqwmRwb0GNFL7/ng3jXzUplXvT+WK9rv2fSyqab3x3Vpryyc0WMjcNkFsjCRCoDFxfqCAxuOVW/Dp",
+            "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+            "appid": "c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+            "appidacr": "0",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Anns",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Muhammad",
+            "groups": "764adf92-08a6-431c-813e-3d5ea0f8461b,eb757738-d2db-459c-9fed-d36949e6910d,b5c0b52c-c32d-47f9-bafb-b0a1a8b58e2a,a3ae2213-8adf-4404-ac61-b96eb841d736,225f46e0-a67b-41ca-ba6d-4cb6d358ed49",
+            "idtyp": "user",
+            "ipaddr": "203.128.27.61",
+            "name": "Anns",
+            "http://schemas.microsoft.com/identity/claims/objectidentifier": "c239af0e-1484-42a6-bb79-134bda4e212d",
+            "puid": "10032001F1A54EEB",
+            "rh": "1.AW4AJhGWdhjjrkijH4hLSvSf0UZIf3kAutdPukPawfj2MBMAAHtuAA.",
+            "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+            "sid": "005e066a-1455-33de-7632-d756cc5e92a9",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "p15nHLxZx0ErNCwK372eyZOk8yNu2OsjMMlt2G3kkbI",
+            "http://schemas.microsoft.com/identity/claims/tenantid": "76961126-e318-48ae-a31f-884b4af49fd1",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "anns@cytexio.onmicrosoft.com",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "anns@cytexio.onmicrosoft.com",
+            "uti": "4jwoa7ZE1USixXpXO3sDAA",
+            "ver": "1.0",
+            "wids": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b,3f04f91a-4ad7-4bd3-bcfa-49882ea1a88a",
+            "xms_act_fct": "5 3",
+            "xms_ftd": "e8RX-pg-KopXpfbmc5b_Hk5ftOeJmbuYPUU2_-ydAFUBdXNub3J0aC1kc21z",
+            "xms_idrel": "1 12",
+            "xms_sub_fct": "3 16",
+            "xms_tcdt": "1599014540"
+          },
+          "caller": "anns@cytexio.onmicrosoft.com",
+          "description": "",
+          "id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345/events/48e30f0e-b45c-43c5-b72e-696d2dced4ca/ticks/639172940249397696",
+          "event_data_id": "48e30f0e-b45c-43c5-b72e-696d2dced4ca",
+          "correlation_id": "0ca97dcf-7049-4ebd-af36-3d2742d0698b",
+          "event_name": {
+            "value": "BeginRequest",
+            "localized_value": "Begin request"
+          },
+          "category": {
+            "value": "Administrative",
+            "localized_value": "Administrative"
+          },
+          "http_request": {
+            "client_request_id": "b33ef787-230a-4dbd-a137-468f72ce2004",
+            "client_ip_address": "203.128.27.61",
+            "method": "POST",
+            "uri": "https://management.azure.com/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345/listKeys?api-version=2025-08-01"
+          },
+          "level": "Informational",
+          "resource_group_name": "logs-test-rg",
+          "resource_provider_name": {
+            "value": "Microsoft.Storage",
+            "localized_value": "Microsoft.Storage"
+          },
+          "resource_id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345",
+          "resource_type": {
+            "value": "Microsoft.Storage/storageAccounts",
+            "localized_value": "Microsoft.Storage/storageAccounts"
+          },
+          "operation_id": "d44e059e-e584-49ac-9673-ef90c5f7f4d1",
+          "operation_name": {
+            "value": "Microsoft.Storage/storageAccounts/listKeys/action",
+            "localized_value": "List Storage Account Keys"
+          },
+          "properties": {
+            "eventCategory": "Administrative",
+            "entity": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345",
+            "message": "Microsoft.Storage/storageAccounts/listKeys/action",
+            "hierarchy": "76961126-e318-48ae-a31f-884b4af49fd1/578f7d16-b299-4b9f-8f47-fa0bc5427842"
+          },
+          "status": {
+            "value": "Started",
+            "localized_value": "Started"
+          },
+          "sub_status": {
+            "value": "",
+            "localized_value": ""
+          },
+          "event_timestamp": "2026-06-17T11:53:44.939769Z",
+          "submission_timestamp": "2026-06-17T11:55:08.000Z",
+          "subscription_id": "578f7d16-b299-4b9f-8f47-fa0bc5427842",
+          "tenant_id": "76961126-e318-48ae-a31f-884b4af49fd1"
+        },
+        {
+          "authorization": {
+            "action": "Microsoft.Storage/storageAccounts/listKeys/action",
+            "scope": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345"
+          },
+          "claims": {
+            "aud": "https://management.core.windows.net/",
+            "iss": "https://sts.windows.net/76961126-e318-48ae-a31f-884b4af49fd1/",
+            "iat": "1781695180",
+            "nbf": "1781695180",
+            "exp": "1781699990",
+            "http://schemas.microsoft.com/claims/authnclassreference": "1",
+            "acrs": "p1",
+            "aio": "AcQAO/8cAAAAqQOdZR8UWNiZ+UsU5uBI4PbdyTUJJm10DBubUEWmma2RIwJ5n5EzHj7JmTsJXgv964Y7YIO+EHELZhECyVX7Wny90KBbxgKmdcUHjzDfucxqUeTxeFtPE2VyK07LPGIux+6yfF7vOQ4dfjHj8HuC4Ua6Z704fg/zflCITRCJ/UMyt+aCynQXqwmRwb0GNFL7/ng3jXzUplXvT+WK9rv2fSyqab3x3Vpryyc0WMjcNkFsjCRCoDFxfqCAxuOVW/Dp",
+            "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+            "appid": "c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+            "appidacr": "0",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Anns",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Muhammad",
+            "groups": "764adf92-08a6-431c-813e-3d5ea0f8461b,eb757738-d2db-459c-9fed-d36949e6910d,b5c0b52c-c32d-47f9-bafb-b0a1a8b58e2a,a3ae2213-8adf-4404-ac61-b96eb841d736,225f46e0-a67b-41ca-ba6d-4cb6d358ed49",
+            "idtyp": "user",
+            "ipaddr": "203.128.27.61",
+            "name": "Anns",
+            "http://schemas.microsoft.com/identity/claims/objectidentifier": "c239af0e-1484-42a6-bb79-134bda4e212d",
+            "puid": "10032001F1A54EEB",
+            "rh": "1.AW4AJhGWdhjjrkijH4hLSvSf0UZIf3kAutdPukPawfj2MBMAAHtuAA.",
+            "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+            "sid": "005e066a-1455-33de-7632-d756cc5e92a9",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "p15nHLxZx0ErNCwK372eyZOk8yNu2OsjMMlt2G3kkbI",
+            "http://schemas.microsoft.com/identity/claims/tenantid": "76961126-e318-48ae-a31f-884b4af49fd1",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "anns@cytexio.onmicrosoft.com",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "anns@cytexio.onmicrosoft.com",
+            "uti": "4jwoa7ZE1USixXpXO3sDAA",
+            "ver": "1.0",
+            "wids": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b,3f04f91a-4ad7-4bd3-bcfa-49882ea1a88a",
+            "xms_act_fct": "5 3",
+            "xms_ftd": "e8RX-pg-KopXpfbmc5b_Hk5ftOeJmbuYPUU2_-ydAFUBdXNub3J0aC1kc21z",
+            "xms_idrel": "1 12",
+            "xms_sub_fct": "3 16",
+            "xms_tcdt": "1599014540"
+          },
+          "caller": "anns@cytexio.onmicrosoft.com",
+          "description": "",
+          "id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345/events/3d3e7b8e-6ec2-4f0b-a2fd-49e0fdc2a2e6/ticks/639172936514142066",
+          "event_data_id": "3d3e7b8e-6ec2-4f0b-a2fd-49e0fdc2a2e6",
+          "correlation_id": "f4248d78-5f7a-44a4-8393-def0a0c4bebf",
+          "event_name": {
+            "value": "EndRequest",
+            "localized_value": "End request"
+          },
+          "category": {
+            "value": "Administrative",
+            "localized_value": "Administrative"
+          },
+          "http_request": {
+            "client_request_id": "ba7ba168-c0d9-4103-8be4-ddb19a704029",
+            "client_ip_address": "203.128.27.61",
+            "method": "POST",
+            "uri": "https://management.azure.com/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345/listKeys?api-version=2025-08-01"
+          },
+          "level": "Informational",
+          "resource_group_name": "logs-test-rg",
+          "resource_provider_name": {
+            "value": "Microsoft.Storage",
+            "localized_value": "Microsoft.Storage"
+          },
+          "resource_id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345",
+          "resource_type": {
+            "value": "Microsoft.Storage/storageAccounts",
+            "localized_value": "Microsoft.Storage/storageAccounts"
+          },
+          "operation_id": "e238a0cf-fdaf-4d39-bf1e-40658009e25a",
+          "operation_name": {
+            "value": "Microsoft.Storage/storageAccounts/listKeys/action",
+            "localized_value": "List Storage Account Keys"
+          },
+          "properties": {
+            "statusCode": "OK",
+            "serviceRequestId": null,
+            "eventCategory": "Administrative",
+            "entity": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345",
+            "message": "Microsoft.Storage/storageAccounts/listKeys/action",
+            "hierarchy": "76961126-e318-48ae-a31f-884b4af49fd1/578f7d16-b299-4b9f-8f47-fa0bc5427842"
+          },
+          "status": {
+            "value": "Succeeded",
+            "localized_value": "Succeeded"
+          },
+          "sub_status": {
+            "value": "OK",
+            "localized_value": "OK (HTTP Status Code: 200)"
+          },
+          "event_timestamp": "2026-06-17T11:47:31.414206Z",
+          "submission_timestamp": "2026-06-17T11:48:54.000Z",
+          "subscription_id": "578f7d16-b299-4b9f-8f47-fa0bc5427842",
+          "tenant_id": "76961126-e318-48ae-a31f-884b4af49fd1"
+        },
+        {
+          "authorization": {
+            "action": "Microsoft.Storage/storageAccounts/listKeys/action",
+            "scope": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345"
+          },
+          "claims": {
+            "aud": "https://management.core.windows.net/",
+            "iss": "https://sts.windows.net/76961126-e318-48ae-a31f-884b4af49fd1/",
+            "iat": "1781695180",
+            "nbf": "1781695180",
+            "exp": "1781699990",
+            "http://schemas.microsoft.com/claims/authnclassreference": "1",
+            "acrs": "p1",
+            "aio": "AcQAO/8cAAAAqQOdZR8UWNiZ+UsU5uBI4PbdyTUJJm10DBubUEWmma2RIwJ5n5EzHj7JmTsJXgv964Y7YIO+EHELZhECyVX7Wny90KBbxgKmdcUHjzDfucxqUeTxeFtPE2VyK07LPGIux+6yfF7vOQ4dfjHj8HuC4Ua6Z704fg/zflCITRCJ/UMyt+aCynQXqwmRwb0GNFL7/ng3jXzUplXvT+WK9rv2fSyqab3x3Vpryyc0WMjcNkFsjCRCoDFxfqCAxuOVW/Dp",
+            "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+            "appid": "c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+            "appidacr": "0",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Anns",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Muhammad",
+            "groups": "764adf92-08a6-431c-813e-3d5ea0f8461b,eb757738-d2db-459c-9fed-d36949e6910d,b5c0b52c-c32d-47f9-bafb-b0a1a8b58e2a,a3ae2213-8adf-4404-ac61-b96eb841d736,225f46e0-a67b-41ca-ba6d-4cb6d358ed49",
+            "idtyp": "user",
+            "ipaddr": "203.128.27.61",
+            "name": "Anns",
+            "http://schemas.microsoft.com/identity/claims/objectidentifier": "c239af0e-1484-42a6-bb79-134bda4e212d",
+            "puid": "10032001F1A54EEB",
+            "rh": "1.AW4AJhGWdhjjrkijH4hLSvSf0UZIf3kAutdPukPawfj2MBMAAHtuAA.",
+            "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+            "sid": "005e066a-1455-33de-7632-d756cc5e92a9",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "p15nHLxZx0ErNCwK372eyZOk8yNu2OsjMMlt2G3kkbI",
+            "http://schemas.microsoft.com/identity/claims/tenantid": "76961126-e318-48ae-a31f-884b4af49fd1",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "anns@cytexio.onmicrosoft.com",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "anns@cytexio.onmicrosoft.com",
+            "uti": "4jwoa7ZE1USixXpXO3sDAA",
+            "ver": "1.0",
+            "wids": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b,3f04f91a-4ad7-4bd3-bcfa-49882ea1a88a",
+            "xms_act_fct": "5 3",
+            "xms_ftd": "e8RX-pg-KopXpfbmc5b_Hk5ftOeJmbuYPUU2_-ydAFUBdXNub3J0aC1kc21z",
+            "xms_idrel": "1 12",
+            "xms_sub_fct": "3 16",
+            "xms_tcdt": "1599014540"
+          },
+          "caller": "anns@cytexio.onmicrosoft.com",
+          "description": "",
+          "id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345/events/7991402d-9f0d-4b11-bd88-d7e169fd075b/ticks/639172936513673276",
+          "event_data_id": "7991402d-9f0d-4b11-bd88-d7e169fd075b",
+          "correlation_id": "f4248d78-5f7a-44a4-8393-def0a0c4bebf",
+          "event_name": {
+            "value": "BeginRequest",
+            "localized_value": "Begin request"
+          },
+          "category": {
+            "value": "Administrative",
+            "localized_value": "Administrative"
+          },
+          "http_request": {
+            "client_request_id": "ba7ba168-c0d9-4103-8be4-ddb19a704029",
+            "client_ip_address": "203.128.27.61",
+            "method": "POST",
+            "uri": "https://management.azure.com/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345/listKeys?api-version=2025-08-01"
+          },
+          "level": "Informational",
+          "resource_group_name": "logs-test-rg",
+          "resource_provider_name": {
+            "value": "Microsoft.Storage",
+            "localized_value": "Microsoft.Storage"
+          },
+          "resource_id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345",
+          "resource_type": {
+            "value": "Microsoft.Storage/storageAccounts",
+            "localized_value": "Microsoft.Storage/storageAccounts"
+          },
+          "operation_id": "e238a0cf-fdaf-4d39-bf1e-40658009e25a",
+          "operation_name": {
+            "value": "Microsoft.Storage/storageAccounts/listKeys/action",
+            "localized_value": "List Storage Account Keys"
+          },
+          "properties": {
+            "eventCategory": "Administrative",
+            "entity": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345",
+            "message": "Microsoft.Storage/storageAccounts/listKeys/action",
+            "hierarchy": "76961126-e318-48ae-a31f-884b4af49fd1/578f7d16-b299-4b9f-8f47-fa0bc5427842"
+          },
+          "status": {
+            "value": "Started",
+            "localized_value": "Started"
+          },
+          "sub_status": {
+            "value": "",
+            "localized_value": ""
+          },
+          "event_timestamp": "2026-06-17T11:47:31.367327Z",
+          "submission_timestamp": "2026-06-17T11:48:54.000Z",
+          "subscription_id": "578f7d16-b299-4b9f-8f47-fa0bc5427842",
+          "tenant_id": "76961126-e318-48ae-a31f-884b4af49fd1"
+        },
+        {
+          "authorization": {
+            "action": "Microsoft.Storage/storageAccounts/fileservices/write",
+            "scope": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345/fileservices/default"
+          },
+          "claims": {
+            "aud": "https://management.core.windows.net/",
+            "iss": "https://sts.windows.net/76961126-e318-48ae-a31f-884b4af49fd1/",
+            "iat": "1781695180",
+            "nbf": "1781695180",
+            "exp": "1781699990",
+            "http://schemas.microsoft.com/claims/authnclassreference": "1",
+            "acrs": "p1",
+            "aio": "AcQAO/8cAAAAqQOdZR8UWNiZ+UsU5uBI4PbdyTUJJm10DBubUEWmma2RIwJ5n5EzHj7JmTsJXgv964Y7YIO+EHELZhECyVX7Wny90KBbxgKmdcUHjzDfucxqUeTxeFtPE2VyK07LPGIux+6yfF7vOQ4dfjHj8HuC4Ua6Z704fg/zflCITRCJ/UMyt+aCynQXqwmRwb0GNFL7/ng3jXzUplXvT+WK9rv2fSyqab3x3Vpryyc0WMjcNkFsjCRCoDFxfqCAxuOVW/Dp",
+            "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+            "appid": "c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+            "appidacr": "0",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Anns",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Muhammad",
+            "groups": "764adf92-08a6-431c-813e-3d5ea0f8461b,eb757738-d2db-459c-9fed-d36949e6910d,b5c0b52c-c32d-47f9-bafb-b0a1a8b58e2a,a3ae2213-8adf-4404-ac61-b96eb841d736,225f46e0-a67b-41ca-ba6d-4cb6d358ed49",
+            "idtyp": "user",
+            "ipaddr": "203.128.27.61",
+            "name": "Anns",
+            "http://schemas.microsoft.com/identity/claims/objectidentifier": "c239af0e-1484-42a6-bb79-134bda4e212d",
+            "puid": "10032001F1A54EEB",
+            "rh": "1.AW4AJhGWdhjjrkijH4hLSvSf0UZIf3kAutdPukPawfj2MBMAAHtuAA.",
+            "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+            "sid": "005e066a-1455-33de-7632-d756cc5e92a9",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "p15nHLxZx0ErNCwK372eyZOk8yNu2OsjMMlt2G3kkbI",
+            "http://schemas.microsoft.com/identity/claims/tenantid": "76961126-e318-48ae-a31f-884b4af49fd1",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "anns@cytexio.onmicrosoft.com",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "anns@cytexio.onmicrosoft.com",
+            "uti": "4jwoa7ZE1USixXpXO3sDAA",
+            "ver": "1.0",
+            "wids": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b,3f04f91a-4ad7-4bd3-bcfa-49882ea1a88a",
+            "xms_act_fct": "5 3",
+            "xms_ftd": "e8RX-pg-KopXpfbmc5b_Hk5ftOeJmbuYPUU2_-ydAFUBdXNub3J0aC1kc21z",
+            "xms_idrel": "1 12",
+            "xms_sub_fct": "3 16",
+            "xms_tcdt": "1599014540"
+          },
+          "caller": "anns@cytexio.onmicrosoft.com",
+          "description": "",
+          "id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345/fileservices/default/events/97283308-3caf-4508-b37e-b9fbf829a234/ticks/639172935892870611",
+          "event_data_id": "97283308-3caf-4508-b37e-b9fbf829a234",
+          "correlation_id": "2338557e-25ad-456f-a49e-831b484fee1e",
+          "event_name": {
+            "value": "EndRequest",
+            "localized_value": "End request"
+          },
+          "category": {
+            "value": "Administrative",
+            "localized_value": "Administrative"
+          },
+          "http_request": {
+            "client_request_id": "3c12d302-cb07-4738-8d4c-6dc11f9a1e4c",
+            "client_ip_address": "203.128.27.61",
+            "method": "PUT",
+            "uri": "https://management.azure.com/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345/fileservices/default?api-version=2025-08-01"
+          },
+          "level": "Informational",
+          "resource_group_name": "logs-test-rg",
+          "resource_provider_name": {
+            "value": "Microsoft.Storage",
+            "localized_value": "Microsoft.Storage"
+          },
+          "resource_id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345/fileservices/default",
+          "resource_type": {
+            "value": "Microsoft.Storage/storageAccounts/fileservices",
+            "localized_value": "Microsoft.Storage/storageAccounts/fileservices"
+          },
+          "operation_id": "dfb081de-d251-4458-932e-474dd433c2e8",
+          "operation_name": {
+            "value": "Microsoft.Storage/storageAccounts/fileservices/write",
+            "localized_value": "Put File Service Properties"
+          },
+          "properties": {
+            "statusCode": "OK",
+            "serviceRequestId": null,
+            "eventCategory": "Administrative",
+            "entity": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345/fileservices/default",
+            "message": "Microsoft.Storage/storageAccounts/fileservices/write",
+            "hierarchy": "76961126-e318-48ae-a31f-884b4af49fd1/578f7d16-b299-4b9f-8f47-fa0bc5427842"
+          },
+          "status": {
+            "value": "Succeeded",
+            "localized_value": "Succeeded"
+          },
+          "sub_status": {
+            "value": "OK",
+            "localized_value": "OK (HTTP Status Code: 200)"
+          },
+          "event_timestamp": "2026-06-17T11:46:29.287061Z",
+          "submission_timestamp": "2026-06-17T11:49:49.000Z",
+          "subscription_id": "578f7d16-b299-4b9f-8f47-fa0bc5427842",
+          "tenant_id": "76961126-e318-48ae-a31f-884b4af49fd1"
+        },
+        {
+          "authorization": {
+            "action": "Microsoft.Storage/storageAccounts/fileservices/write",
+            "scope": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345/fileservices/default"
+          },
+          "claims": {
+            "aud": "https://management.core.windows.net/",
+            "iss": "https://sts.windows.net/76961126-e318-48ae-a31f-884b4af49fd1/",
+            "iat": "1781695180",
+            "nbf": "1781695180",
+            "exp": "1781699990",
+            "http://schemas.microsoft.com/claims/authnclassreference": "1",
+            "acrs": "p1",
+            "aio": "AcQAO/8cAAAAqQOdZR8UWNiZ+UsU5uBI4PbdyTUJJm10DBubUEWmma2RIwJ5n5EzHj7JmTsJXgv964Y7YIO+EHELZhECyVX7Wny90KBbxgKmdcUHjzDfucxqUeTxeFtPE2VyK07LPGIux+6yfF7vOQ4dfjHj8HuC4Ua6Z704fg/zflCITRCJ/UMyt+aCynQXqwmRwb0GNFL7/ng3jXzUplXvT+WK9rv2fSyqab3x3Vpryyc0WMjcNkFsjCRCoDFxfqCAxuOVW/Dp",
+            "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+            "appid": "c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+            "appidacr": "0",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Anns",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Muhammad",
+            "groups": "764adf92-08a6-431c-813e-3d5ea0f8461b,eb757738-d2db-459c-9fed-d36949e6910d,b5c0b52c-c32d-47f9-bafb-b0a1a8b58e2a,a3ae2213-8adf-4404-ac61-b96eb841d736,225f46e0-a67b-41ca-ba6d-4cb6d358ed49",
+            "idtyp": "user",
+            "ipaddr": "203.128.27.61",
+            "name": "Anns",
+            "http://schemas.microsoft.com/identity/claims/objectidentifier": "c239af0e-1484-42a6-bb79-134bda4e212d",
+            "puid": "10032001F1A54EEB",
+            "rh": "1.AW4AJhGWdhjjrkijH4hLSvSf0UZIf3kAutdPukPawfj2MBMAAHtuAA.",
+            "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+            "sid": "005e066a-1455-33de-7632-d756cc5e92a9",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "p15nHLxZx0ErNCwK372eyZOk8yNu2OsjMMlt2G3kkbI",
+            "http://schemas.microsoft.com/identity/claims/tenantid": "76961126-e318-48ae-a31f-884b4af49fd1",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "anns@cytexio.onmicrosoft.com",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "anns@cytexio.onmicrosoft.com",
+            "uti": "4jwoa7ZE1USixXpXO3sDAA",
+            "ver": "1.0",
+            "wids": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b,3f04f91a-4ad7-4bd3-bcfa-49882ea1a88a",
+            "xms_act_fct": "5 3",
+            "xms_ftd": "e8RX-pg-KopXpfbmc5b_Hk5ftOeJmbuYPUU2_-ydAFUBdXNub3J0aC1kc21z",
+            "xms_idrel": "1 12",
+            "xms_sub_fct": "3 16",
+            "xms_tcdt": "1599014540"
+          },
+          "caller": "anns@cytexio.onmicrosoft.com",
+          "description": "",
+          "id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345/fileservices/default/events/8acf33d0-e226-4c39-8a95-ba7079fa1bd7/ticks/639172935886308151",
+          "event_data_id": "8acf33d0-e226-4c39-8a95-ba7079fa1bd7",
+          "correlation_id": "2338557e-25ad-456f-a49e-831b484fee1e",
+          "event_name": {
+            "value": "BeginRequest",
+            "localized_value": "Begin request"
+          },
+          "category": {
+            "value": "Administrative",
+            "localized_value": "Administrative"
+          },
+          "http_request": {
+            "client_request_id": "3c12d302-cb07-4738-8d4c-6dc11f9a1e4c",
+            "client_ip_address": "203.128.27.61",
+            "method": "PUT",
+            "uri": "https://management.azure.com/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345/fileservices/default?api-version=2025-08-01"
+          },
+          "level": "Informational",
+          "resource_group_name": "logs-test-rg",
+          "resource_provider_name": {
+            "value": "Microsoft.Storage",
+            "localized_value": "Microsoft.Storage"
+          },
+          "resource_id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345/fileservices/default",
+          "resource_type": {
+            "value": "Microsoft.Storage/storageAccounts/fileservices",
+            "localized_value": "Microsoft.Storage/storageAccounts/fileservices"
+          },
+          "operation_id": "dfb081de-d251-4458-932e-474dd433c2e8",
+          "operation_name": {
+            "value": "Microsoft.Storage/storageAccounts/fileservices/write",
+            "localized_value": "Put File Service Properties"
+          },
+          "properties": {
+            "eventCategory": "Administrative",
+            "entity": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345/fileservices/default",
+            "message": "Microsoft.Storage/storageAccounts/fileservices/write",
+            "hierarchy": "76961126-e318-48ae-a31f-884b4af49fd1/578f7d16-b299-4b9f-8f47-fa0bc5427842"
+          },
+          "status": {
+            "value": "Started",
+            "localized_value": "Started"
+          },
+          "sub_status": {
+            "value": "",
+            "localized_value": ""
+          },
+          "event_timestamp": "2026-06-17T11:46:28.630815Z",
+          "submission_timestamp": "2026-06-17T11:49:49.000Z",
+          "subscription_id": "578f7d16-b299-4b9f-8f47-fa0bc5427842",
+          "tenant_id": "76961126-e318-48ae-a31f-884b4af49fd1"
+        },
+        {
+          "authorization": {
+            "action": "Microsoft.Storage/storageAccounts/blobServices/write",
+            "scope": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345/blobServices/default"
+          },
+          "claims": {
+            "aud": "https://management.core.windows.net/",
+            "iss": "https://sts.windows.net/76961126-e318-48ae-a31f-884b4af49fd1/",
+            "iat": "1781695180",
+            "nbf": "1781695180",
+            "exp": "1781699990",
+            "http://schemas.microsoft.com/claims/authnclassreference": "1",
+            "acrs": "p1",
+            "aio": "AcQAO/8cAAAAqQOdZR8UWNiZ+UsU5uBI4PbdyTUJJm10DBubUEWmma2RIwJ5n5EzHj7JmTsJXgv964Y7YIO+EHELZhECyVX7Wny90KBbxgKmdcUHjzDfucxqUeTxeFtPE2VyK07LPGIux+6yfF7vOQ4dfjHj8HuC4Ua6Z704fg/zflCITRCJ/UMyt+aCynQXqwmRwb0GNFL7/ng3jXzUplXvT+WK9rv2fSyqab3x3Vpryyc0WMjcNkFsjCRCoDFxfqCAxuOVW/Dp",
+            "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+            "appid": "c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+            "appidacr": "0",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Anns",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Muhammad",
+            "groups": "764adf92-08a6-431c-813e-3d5ea0f8461b,eb757738-d2db-459c-9fed-d36949e6910d,b5c0b52c-c32d-47f9-bafb-b0a1a8b58e2a,a3ae2213-8adf-4404-ac61-b96eb841d736,225f46e0-a67b-41ca-ba6d-4cb6d358ed49",
+            "idtyp": "user",
+            "ipaddr": "203.128.27.61",
+            "name": "Anns",
+            "http://schemas.microsoft.com/identity/claims/objectidentifier": "c239af0e-1484-42a6-bb79-134bda4e212d",
+            "puid": "10032001F1A54EEB",
+            "rh": "1.AW4AJhGWdhjjrkijH4hLSvSf0UZIf3kAutdPukPawfj2MBMAAHtuAA.",
+            "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+            "sid": "005e066a-1455-33de-7632-d756cc5e92a9",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "p15nHLxZx0ErNCwK372eyZOk8yNu2OsjMMlt2G3kkbI",
+            "http://schemas.microsoft.com/identity/claims/tenantid": "76961126-e318-48ae-a31f-884b4af49fd1",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "anns@cytexio.onmicrosoft.com",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "anns@cytexio.onmicrosoft.com",
+            "uti": "4jwoa7ZE1USixXpXO3sDAA",
+            "ver": "1.0",
+            "wids": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b,3f04f91a-4ad7-4bd3-bcfa-49882ea1a88a",
+            "xms_act_fct": "5 3",
+            "xms_ftd": "e8RX-pg-KopXpfbmc5b_Hk5ftOeJmbuYPUU2_-ydAFUBdXNub3J0aC1kc21z",
+            "xms_idrel": "1 12",
+            "xms_sub_fct": "3 16",
+            "xms_tcdt": "1599014540"
+          },
+          "caller": "anns@cytexio.onmicrosoft.com",
+          "description": "",
+          "id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345/blobServices/default/events/554f9993-b195-40ac-a0e2-c5e3dcfc1b7e/ticks/639172935885214438",
+          "event_data_id": "554f9993-b195-40ac-a0e2-c5e3dcfc1b7e",
+          "correlation_id": "2338557e-25ad-456f-a49e-831b484fee1e",
+          "event_name": {
+            "value": "EndRequest",
+            "localized_value": "End request"
+          },
+          "category": {
+            "value": "Administrative",
+            "localized_value": "Administrative"
+          },
+          "http_request": {
+            "client_request_id": "51c20227-4de7-4f8e-8a7c-6a11b131414b",
+            "client_ip_address": "203.128.27.61",
+            "method": "PUT",
+            "uri": "https://management.azure.com/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345/blobServices/default?api-version=2025-08-01"
+          },
+          "level": "Informational",
+          "resource_group_name": "logs-test-rg",
+          "resource_provider_name": {
+            "value": "Microsoft.Storage",
+            "localized_value": "Microsoft.Storage"
+          },
+          "resource_id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345/blobServices/default",
+          "resource_type": {
+            "value": "Microsoft.Storage/storageAccounts/blobServices",
+            "localized_value": "Microsoft.Storage/storageAccounts/blobServices"
+          },
+          "operation_id": "19680107-55d0-4d23-8bf4-596976e414b8",
+          "operation_name": {
+            "value": "Microsoft.Storage/storageAccounts/blobServices/write",
+            "localized_value": "Put blob service properties"
+          },
+          "properties": {
+            "statusCode": "OK",
+            "serviceRequestId": null,
+            "eventCategory": "Administrative",
+            "entity": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345/blobServices/default",
+            "message": "Microsoft.Storage/storageAccounts/blobServices/write",
+            "hierarchy": "76961126-e318-48ae-a31f-884b4af49fd1/578f7d16-b299-4b9f-8f47-fa0bc5427842"
+          },
+          "status": {
+            "value": "Succeeded",
+            "localized_value": "Succeeded"
+          },
+          "sub_status": {
+            "value": "OK",
+            "localized_value": "OK (HTTP Status Code: 200)"
+          },
+          "event_timestamp": "2026-06-17T11:46:28.521443Z",
+          "submission_timestamp": "2026-06-17T11:49:49.000Z",
+          "subscription_id": "578f7d16-b299-4b9f-8f47-fa0bc5427842",
+          "tenant_id": "76961126-e318-48ae-a31f-884b4af49fd1"
+        },
+        {
+          "authorization": {
+            "action": "Microsoft.Storage/storageAccounts/blobServices/write",
+            "scope": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345/blobServices/default"
+          },
+          "claims": {
+            "aud": "https://management.core.windows.net/",
+            "iss": "https://sts.windows.net/76961126-e318-48ae-a31f-884b4af49fd1/",
+            "iat": "1781695180",
+            "nbf": "1781695180",
+            "exp": "1781699990",
+            "http://schemas.microsoft.com/claims/authnclassreference": "1",
+            "acrs": "p1",
+            "aio": "AcQAO/8cAAAAqQOdZR8UWNiZ+UsU5uBI4PbdyTUJJm10DBubUEWmma2RIwJ5n5EzHj7JmTsJXgv964Y7YIO+EHELZhECyVX7Wny90KBbxgKmdcUHjzDfucxqUeTxeFtPE2VyK07LPGIux+6yfF7vOQ4dfjHj8HuC4Ua6Z704fg/zflCITRCJ/UMyt+aCynQXqwmRwb0GNFL7/ng3jXzUplXvT+WK9rv2fSyqab3x3Vpryyc0WMjcNkFsjCRCoDFxfqCAxuOVW/Dp",
+            "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+            "appid": "c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+            "appidacr": "0",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Anns",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Muhammad",
+            "groups": "764adf92-08a6-431c-813e-3d5ea0f8461b,eb757738-d2db-459c-9fed-d36949e6910d,b5c0b52c-c32d-47f9-bafb-b0a1a8b58e2a,a3ae2213-8adf-4404-ac61-b96eb841d736,225f46e0-a67b-41ca-ba6d-4cb6d358ed49",
+            "idtyp": "user",
+            "ipaddr": "203.128.27.61",
+            "name": "Anns",
+            "http://schemas.microsoft.com/identity/claims/objectidentifier": "c239af0e-1484-42a6-bb79-134bda4e212d",
+            "puid": "10032001F1A54EEB",
+            "rh": "1.AW4AJhGWdhjjrkijH4hLSvSf0UZIf3kAutdPukPawfj2MBMAAHtuAA.",
+            "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+            "sid": "005e066a-1455-33de-7632-d756cc5e92a9",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "p15nHLxZx0ErNCwK372eyZOk8yNu2OsjMMlt2G3kkbI",
+            "http://schemas.microsoft.com/identity/claims/tenantid": "76961126-e318-48ae-a31f-884b4af49fd1",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "anns@cytexio.onmicrosoft.com",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "anns@cytexio.onmicrosoft.com",
+            "uti": "4jwoa7ZE1USixXpXO3sDAA",
+            "ver": "1.0",
+            "wids": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b,3f04f91a-4ad7-4bd3-bcfa-49882ea1a88a",
+            "xms_act_fct": "5 3",
+            "xms_ftd": "e8RX-pg-KopXpfbmc5b_Hk5ftOeJmbuYPUU2_-ydAFUBdXNub3J0aC1kc21z",
+            "xms_idrel": "1 12",
+            "xms_sub_fct": "3 16",
+            "xms_tcdt": "1599014540"
+          },
+          "caller": "anns@cytexio.onmicrosoft.com",
+          "description": "",
+          "id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345/blobServices/default/events/c2506b09-a35d-4330-a76b-e3b20ece0b63/ticks/639172935878651940",
+          "event_data_id": "c2506b09-a35d-4330-a76b-e3b20ece0b63",
+          "correlation_id": "2338557e-25ad-456f-a49e-831b484fee1e",
+          "event_name": {
+            "value": "BeginRequest",
+            "localized_value": "Begin request"
+          },
+          "category": {
+            "value": "Administrative",
+            "localized_value": "Administrative"
+          },
+          "http_request": {
+            "client_request_id": "51c20227-4de7-4f8e-8a7c-6a11b131414b",
+            "client_ip_address": "203.128.27.61",
+            "method": "PUT",
+            "uri": "https://management.azure.com/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345/blobServices/default?api-version=2025-08-01"
+          },
+          "level": "Informational",
+          "resource_group_name": "logs-test-rg",
+          "resource_provider_name": {
+            "value": "Microsoft.Storage",
+            "localized_value": "Microsoft.Storage"
+          },
+          "resource_id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345/blobServices/default",
+          "resource_type": {
+            "value": "Microsoft.Storage/storageAccounts/blobServices",
+            "localized_value": "Microsoft.Storage/storageAccounts/blobServices"
+          },
+          "operation_id": "19680107-55d0-4d23-8bf4-596976e414b8",
+          "operation_name": {
+            "value": "Microsoft.Storage/storageAccounts/blobServices/write",
+            "localized_value": "Put blob service properties"
+          },
+          "properties": {
+            "requestbody": "{\"properties\":{\"deleteRetentionPolicy\":{\"enabled\":true,\"days\":7},\"containerDeleteRetentionPolicy\":{\"enabled\":true,\"days\":7}}}",
+            "eventCategory": "Administrative",
+            "entity": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345/blobServices/default",
+            "message": "Microsoft.Storage/storageAccounts/blobServices/write",
+            "hierarchy": "76961126-e318-48ae-a31f-884b4af49fd1/578f7d16-b299-4b9f-8f47-fa0bc5427842"
+          },
+          "status": {
+            "value": "Started",
+            "localized_value": "Started"
+          },
+          "sub_status": {
+            "value": "",
+            "localized_value": ""
+          },
+          "event_timestamp": "2026-06-17T11:46:27.865194Z",
+          "submission_timestamp": "2026-06-17T11:49:49.000Z",
+          "subscription_id": "578f7d16-b299-4b9f-8f47-fa0bc5427842",
+          "tenant_id": "76961126-e318-48ae-a31f-884b4af49fd1"
+        },
+        {
+          "authorization": {
+            "action": "Microsoft.Storage/storageAccounts/write",
+            "scope": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345"
+          },
+          "claims": {
+            "aud": "https://management.core.windows.net/",
+            "iss": "https://sts.windows.net/76961126-e318-48ae-a31f-884b4af49fd1/",
+            "iat": "1781695180",
+            "nbf": "1781695180",
+            "exp": "1781699990",
+            "http://schemas.microsoft.com/claims/authnclassreference": "1",
+            "acrs": "p1",
+            "aio": "AcQAO/8cAAAAqQOdZR8UWNiZ+UsU5uBI4PbdyTUJJm10DBubUEWmma2RIwJ5n5EzHj7JmTsJXgv964Y7YIO+EHELZhECyVX7Wny90KBbxgKmdcUHjzDfucxqUeTxeFtPE2VyK07LPGIux+6yfF7vOQ4dfjHj8HuC4Ua6Z704fg/zflCITRCJ/UMyt+aCynQXqwmRwb0GNFL7/ng3jXzUplXvT+WK9rv2fSyqab3x3Vpryyc0WMjcNkFsjCRCoDFxfqCAxuOVW/Dp",
+            "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+            "appid": "c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+            "appidacr": "0",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Anns",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Muhammad",
+            "groups": "764adf92-08a6-431c-813e-3d5ea0f8461b,eb757738-d2db-459c-9fed-d36949e6910d,b5c0b52c-c32d-47f9-bafb-b0a1a8b58e2a,a3ae2213-8adf-4404-ac61-b96eb841d736,225f46e0-a67b-41ca-ba6d-4cb6d358ed49",
+            "idtyp": "user",
+            "ipaddr": "203.128.27.61",
+            "name": "Anns",
+            "http://schemas.microsoft.com/identity/claims/objectidentifier": "c239af0e-1484-42a6-bb79-134bda4e212d",
+            "puid": "10032001F1A54EEB",
+            "rh": "1.AW4AJhGWdhjjrkijH4hLSvSf0UZIf3kAutdPukPawfj2MBMAAHtuAA.",
+            "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+            "sid": "005e066a-1455-33de-7632-d756cc5e92a9",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "p15nHLxZx0ErNCwK372eyZOk8yNu2OsjMMlt2G3kkbI",
+            "http://schemas.microsoft.com/identity/claims/tenantid": "76961126-e318-48ae-a31f-884b4af49fd1",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "anns@cytexio.onmicrosoft.com",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "anns@cytexio.onmicrosoft.com",
+            "uti": "4jwoa7ZE1USixXpXO3sDAA",
+            "ver": "1.0",
+            "wids": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b,3f04f91a-4ad7-4bd3-bcfa-49882ea1a88a",
+            "xms_act_fct": "5 3",
+            "xms_ftd": "e8RX-pg-KopXpfbmc5b_Hk5ftOeJmbuYPUU2_-ydAFUBdXNub3J0aC1kc21z",
+            "xms_idrel": "1 12",
+            "xms_sub_fct": "3 16",
+            "xms_tcdt": "1599014540"
+          },
+          "caller": "anns@cytexio.onmicrosoft.com",
+          "description": "",
+          "id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345/events/2d2a762c-37ea-4988-a9cb-2d97c76504a8/ticks/639172935874725262",
+          "event_data_id": "2d2a762c-37ea-4988-a9cb-2d97c76504a8",
+          "correlation_id": "2338557e-25ad-456f-a49e-831b484fee1e",
+          "event_name": {
+            "value": "EndRequest",
+            "localized_value": "End request"
+          },
+          "category": {
+            "value": "Administrative",
+            "localized_value": "Administrative"
+          },
+          "level": "Informational",
+          "resource_group_name": "logs-test-rg",
+          "resource_provider_name": {
+            "value": "Microsoft.Storage",
+            "localized_value": "Microsoft.Storage"
+          },
+          "resource_id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345",
+          "resource_type": {
+            "value": "Microsoft.Storage/storageAccounts",
+            "localized_value": "Microsoft.Storage/storageAccounts"
+          },
+          "operation_id": "60c310f1-6d95-4a35-a2b4-0d6df05b2884",
+          "operation_name": {
+            "value": "Microsoft.Storage/storageAccounts/write",
+            "localized_value": "Create/Update Storage Account"
+          },
+          "properties": {
+            "eventCategory": "Administrative",
+            "entity": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345",
+            "message": "Microsoft.Storage/storageAccounts/write",
+            "hierarchy": "76961126-e318-48ae-a31f-884b4af49fd1/578f7d16-b299-4b9f-8f47-fa0bc5427842"
+          },
+          "status": {
+            "value": "Succeeded",
+            "localized_value": "Succeeded"
+          },
+          "sub_status": {
+            "value": "",
+            "localized_value": ""
+          },
+          "event_timestamp": "2026-06-17T11:46:27.472526Z",
+          "submission_timestamp": "2026-06-17T11:48:24.000Z",
+          "subscription_id": "578f7d16-b299-4b9f-8f47-fa0bc5427842",
+          "tenant_id": "76961126-e318-48ae-a31f-884b4af49fd1"
+        },
+        {
+          "authorization": {
+            "action": "Microsoft.Storage/storageAccounts/write",
+            "scope": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345"
+          },
+          "claims": {
+            "aud": "https://management.core.windows.net/",
+            "iss": "https://sts.windows.net/76961126-e318-48ae-a31f-884b4af49fd1/",
+            "iat": "1781695180",
+            "nbf": "1781695180",
+            "exp": "1781699990",
+            "http://schemas.microsoft.com/claims/authnclassreference": "1",
+            "acrs": "p1",
+            "aio": "AcQAO/8cAAAAqQOdZR8UWNiZ+UsU5uBI4PbdyTUJJm10DBubUEWmma2RIwJ5n5EzHj7JmTsJXgv964Y7YIO+EHELZhECyVX7Wny90KBbxgKmdcUHjzDfucxqUeTxeFtPE2VyK07LPGIux+6yfF7vOQ4dfjHj8HuC4Ua6Z704fg/zflCITRCJ/UMyt+aCynQXqwmRwb0GNFL7/ng3jXzUplXvT+WK9rv2fSyqab3x3Vpryyc0WMjcNkFsjCRCoDFxfqCAxuOVW/Dp",
+            "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+            "appid": "c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+            "appidacr": "0",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Anns",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Muhammad",
+            "groups": "764adf92-08a6-431c-813e-3d5ea0f8461b,eb757738-d2db-459c-9fed-d36949e6910d,b5c0b52c-c32d-47f9-bafb-b0a1a8b58e2a,a3ae2213-8adf-4404-ac61-b96eb841d736,225f46e0-a67b-41ca-ba6d-4cb6d358ed49",
+            "idtyp": "user",
+            "ipaddr": "203.128.27.61",
+            "name": "Anns",
+            "http://schemas.microsoft.com/identity/claims/objectidentifier": "c239af0e-1484-42a6-bb79-134bda4e212d",
+            "puid": "10032001F1A54EEB",
+            "rh": "1.AW4AJhGWdhjjrkijH4hLSvSf0UZIf3kAutdPukPawfj2MBMAAHtuAA.",
+            "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+            "sid": "005e066a-1455-33de-7632-d756cc5e92a9",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "p15nHLxZx0ErNCwK372eyZOk8yNu2OsjMMlt2G3kkbI",
+            "http://schemas.microsoft.com/identity/claims/tenantid": "76961126-e318-48ae-a31f-884b4af49fd1",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "anns@cytexio.onmicrosoft.com",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "anns@cytexio.onmicrosoft.com",
+            "uti": "4jwoa7ZE1USixXpXO3sDAA",
+            "ver": "1.0",
+            "wids": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b,3f04f91a-4ad7-4bd3-bcfa-49882ea1a88a",
+            "xms_act_fct": "5 3",
+            "xms_ftd": "e8RX-pg-KopXpfbmc5b_Hk5ftOeJmbuYPUU2_-ydAFUBdXNub3J0aC1kc21z",
+            "xms_idrel": "1 12",
+            "xms_sub_fct": "3 16",
+            "xms_tcdt": "1599014540"
+          },
+          "caller": "anns@cytexio.onmicrosoft.com",
+          "description": "",
+          "id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345/events/f1f7cca0-bb84-4244-9cc6-9cfacfcfdbc5/ticks/639172935702657326",
+          "event_data_id": "f1f7cca0-bb84-4244-9cc6-9cfacfcfdbc5",
+          "correlation_id": "2338557e-25ad-456f-a49e-831b484fee1e",
+          "event_name": {
+            "value": "EndRequest",
+            "localized_value": "End request"
+          },
+          "category": {
+            "value": "Administrative",
+            "localized_value": "Administrative"
+          },
+          "http_request": {
+            "client_request_id": "e3d1c2d7-75ce-4791-a362-3c793b27b0e4",
+            "client_ip_address": "203.128.27.61",
+            "method": "PUT",
+            "uri": "https://management.azure.com/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345?api-version=2025-08-01"
+          },
+          "level": "Informational",
+          "resource_group_name": "logs-test-rg",
+          "resource_provider_name": {
+            "value": "Microsoft.Storage",
+            "localized_value": "Microsoft.Storage"
+          },
+          "resource_id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345",
+          "resource_type": {
+            "value": "Microsoft.Storage/storageAccounts",
+            "localized_value": "Microsoft.Storage/storageAccounts"
+          },
+          "operation_id": "081b6e18-7dc7-4629-a2c2-bf2b18382403",
+          "operation_name": {
+            "value": "Microsoft.Storage/storageAccounts/write",
+            "localized_value": "Create/Update Storage Account"
+          },
+          "properties": {
+            "statusCode": "Accepted",
+            "serviceRequestId": null,
+            "eventCategory": "Administrative",
+            "entity": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345",
+            "message": "Microsoft.Storage/storageAccounts/write",
+            "hierarchy": "76961126-e318-48ae-a31f-884b4af49fd1/578f7d16-b299-4b9f-8f47-fa0bc5427842"
+          },
+          "status": {
+            "value": "Accepted",
+            "localized_value": "Accepted"
+          },
+          "sub_status": {
+            "value": "Accepted",
+            "localized_value": "Accepted (HTTP Status Code: 202)"
+          },
+          "event_timestamp": "2026-06-17T11:46:10.265732Z",
+          "submission_timestamp": "2026-06-17T11:49:40.000Z",
+          "subscription_id": "578f7d16-b299-4b9f-8f47-fa0bc5427842",
+          "tenant_id": "76961126-e318-48ae-a31f-884b4af49fd1"
+        },
+        {
+          "authorization": {
+            "action": "Microsoft.Storage/storageAccounts/write",
+            "scope": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345"
+          },
+          "claims": {
+            "aud": "https://management.core.windows.net/",
+            "iss": "https://sts.windows.net/76961126-e318-48ae-a31f-884b4af49fd1/",
+            "iat": "1781695180",
+            "nbf": "1781695180",
+            "exp": "1781699990",
+            "http://schemas.microsoft.com/claims/authnclassreference": "1",
+            "acrs": "p1",
+            "aio": "AcQAO/8cAAAAqQOdZR8UWNiZ+UsU5uBI4PbdyTUJJm10DBubUEWmma2RIwJ5n5EzHj7JmTsJXgv964Y7YIO+EHELZhECyVX7Wny90KBbxgKmdcUHjzDfucxqUeTxeFtPE2VyK07LPGIux+6yfF7vOQ4dfjHj8HuC4Ua6Z704fg/zflCITRCJ/UMyt+aCynQXqwmRwb0GNFL7/ng3jXzUplXvT+WK9rv2fSyqab3x3Vpryyc0WMjcNkFsjCRCoDFxfqCAxuOVW/Dp",
+            "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+            "appid": "c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+            "appidacr": "0",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Anns",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Muhammad",
+            "groups": "764adf92-08a6-431c-813e-3d5ea0f8461b,eb757738-d2db-459c-9fed-d36949e6910d,b5c0b52c-c32d-47f9-bafb-b0a1a8b58e2a,a3ae2213-8adf-4404-ac61-b96eb841d736,225f46e0-a67b-41ca-ba6d-4cb6d358ed49",
+            "idtyp": "user",
+            "ipaddr": "203.128.27.61",
+            "name": "Anns",
+            "http://schemas.microsoft.com/identity/claims/objectidentifier": "c239af0e-1484-42a6-bb79-134bda4e212d",
+            "puid": "10032001F1A54EEB",
+            "rh": "1.AW4AJhGWdhjjrkijH4hLSvSf0UZIf3kAutdPukPawfj2MBMAAHtuAA.",
+            "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+            "sid": "005e066a-1455-33de-7632-d756cc5e92a9",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "p15nHLxZx0ErNCwK372eyZOk8yNu2OsjMMlt2G3kkbI",
+            "http://schemas.microsoft.com/identity/claims/tenantid": "76961126-e318-48ae-a31f-884b4af49fd1",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "anns@cytexio.onmicrosoft.com",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "anns@cytexio.onmicrosoft.com",
+            "uti": "4jwoa7ZE1USixXpXO3sDAA",
+            "ver": "1.0",
+            "wids": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b,3f04f91a-4ad7-4bd3-bcfa-49882ea1a88a",
+            "xms_act_fct": "5 3",
+            "xms_ftd": "e8RX-pg-KopXpfbmc5b_Hk5ftOeJmbuYPUU2_-ydAFUBdXNub3J0aC1kc21z",
+            "xms_idrel": "1 12",
+            "xms_sub_fct": "3 16",
+            "xms_tcdt": "1599014540"
+          },
+          "caller": "anns@cytexio.onmicrosoft.com",
+          "description": "",
+          "id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345/events/d207f4bb-a921-4e35-9696-c6bfbc9116cf/ticks/639172935679845239",
+          "event_data_id": "d207f4bb-a921-4e35-9696-c6bfbc9116cf",
+          "correlation_id": "2338557e-25ad-456f-a49e-831b484fee1e",
+          "event_name": {
+            "value": "BeginRequest",
+            "localized_value": "Begin request"
+          },
+          "category": {
+            "value": "Administrative",
+            "localized_value": "Administrative"
+          },
+          "http_request": {
+            "client_request_id": "e3d1c2d7-75ce-4791-a362-3c793b27b0e4",
+            "client_ip_address": "203.128.27.61",
+            "method": "PUT",
+            "uri": "https://management.azure.com/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345?api-version=2025-08-01"
+          },
+          "level": "Informational",
+          "resource_group_name": "logs-test-rg",
+          "resource_provider_name": {
+            "value": "Microsoft.Storage",
+            "localized_value": "Microsoft.Storage"
+          },
+          "resource_id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345",
+          "resource_type": {
+            "value": "Microsoft.Storage/storageAccounts",
+            "localized_value": "Microsoft.Storage/storageAccounts"
+          },
+          "operation_id": "081b6e18-7dc7-4629-a2c2-bf2b18382403",
+          "operation_name": {
+            "value": "Microsoft.Storage/storageAccounts/write",
+            "localized_value": "Create/Update Storage Account"
+          },
+          "properties": {
+            "requestbody": "{\"sku\":{\"name\":\"Standard_LRS\"},\"kind\":\"StorageV2\",\"location\":\"eastus\",\"tags\":\"******\",\"properties\":{\"minimumTlsVersion\":\"TLS1_2\",\"supportsHttpsTrafficOnly\":true,\"allowBlobPublicAccess\":false,\"allowSharedKeyAccess\":true,\"defaultToOAuthAuthentication\":false,\"accessTier\":\"Hot\",\"publicNetworkAccess\":\"Enabled\",\"allowCrossTenantReplication\":false,\"networkAcls\":{\"bypass\":\"AzureServices\",\"defaultAction\":\"Allow\",\"ipRules\":[],\"ipv6Rules\":[]},\"dualStackEndpointPreference\":{\"publishIpv6Endpoint\":false},\"dnsEndpointType\":\"Standard\",\"encryption\":{\"keySource\":\"Microsoft.Storage\",\"services\":{\"blob\":{\"enabled\":true},\"file\":{\"enabled\":true},\"table\":{\"enabled\":true},\"queue\":{\"enabled\":true}},\"requireInfrastructureEncryption\":false}}}",
+            "eventCategory": "Administrative",
+            "entity": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.Storage/storageAccounts/azuredblogstest12345",
+            "message": "Microsoft.Storage/storageAccounts/write",
+            "hierarchy": "76961126-e318-48ae-a31f-884b4af49fd1/578f7d16-b299-4b9f-8f47-fa0bc5427842"
+          },
+          "status": {
+            "value": "Started",
+            "localized_value": "Started"
+          },
+          "sub_status": {
+            "value": "",
+            "localized_value": ""
+          },
+          "event_timestamp": "2026-06-17T11:46:07.984523Z",
+          "submission_timestamp": "2026-06-17T11:49:40.000Z",
+          "subscription_id": "578f7d16-b299-4b9f-8f47-fa0bc5427842",
+          "tenant_id": "76961126-e318-48ae-a31f-884b4af49fd1"
+        }
+      ],
+      "storage_diagnostic_logs": {
+        "d0d4e10f-0e11-455d-bd02-86ba33431d44": {
+          "StorageBlobLogs": [],
+          "StorageFileLogs": [],
+          "StorageQueueLogs": [],
+          "StorageTableLogs": []
+        }
+      },
+      "error": null
+    }
+  ]
+}

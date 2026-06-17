@@ -1,0 +1,19 @@
+{
+  "collectionTime": "2026-06-17T09:05:12.493941+00:00",
+  "workspaceId": "d0d4e10f-0e11-455d-bd02-86ba33431d44",
+  "message": "If Connection_Test and Workspace_Time return data but Table_Counts is empty, the workspace is accessible but currently has no ingested logs.",
+  "results": {
+    "Connection_Test": [
+      {
+        "Message": "Connected to Log Analytics Workspace"
+      }
+    ],
+    "Workspace_Time": [
+      {
+        "CurrentTime": "2026-06-17 09:02:20.082853+00:00"
+      }
+    ],
+    "Table_Counts": [],
+    "AzureDiagnostics_Sample": []
+  }
+}

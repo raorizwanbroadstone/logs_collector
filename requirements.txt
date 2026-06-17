@@ -1,0 +1,5 @@
+azure-identity>=1.15.0
+azure-mgmt-monitor>=6.0.0
+azure-mgmt-resource>=23.0.0
+azure-monitor-query>=1.2.0
+schedule>=1.2.0

@@ -1,0 +1,16 @@
+{
+  "collectionTime": "2026-06-18T07:27:43.379011+00:00",
+  "aml_sdk_available": false,
+  "summary": {
+    "subscriptions_processed": 1,
+    "workspaces_processed": 0,
+    "errors": 0
+  },
+  "workspaces": [
+    {
+      "subscription_id": "578f7d16-b299-4b9f-8f47-fa0bc5427842",
+      "subscription_name": "Azure subscription 1",
+      "status": "no_aml_workspaces_found"
+    }
+  ]
+}

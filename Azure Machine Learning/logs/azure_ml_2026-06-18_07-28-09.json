@@ -1,0 +1,614 @@
+{
+  "collectionTime": "2026-06-18T07:28:59.209119+00:00",
+  "aml_sdk_available": false,
+  "summary": {
+    "subscriptions_processed": 1,
+    "workspaces_processed": 1,
+    "errors": 0
+  },
+  "workspaces": [
+    {
+      "subscription_id": "578f7d16-b299-4b9f-8f47-fa0bc5427842",
+      "workspace_resource_id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourceGroups/logs-test-rg/providers/Microsoft.MachineLearningServices/workspaces/aibom-demo",
+      "workspace_name": "aibom-demo",
+      "resource_group": "logs-test-rg",
+      "location": "eastus",
+      "diagnostic_settings": {
+        "error": "'MonitorManagementClient' object has no attribute 'diagnostic_settings'"
+      },
+      "activity_logs": [
+        {
+          "authorization": {
+            "action": "microsoft.insights/diagnosticSettings/write",
+            "scope": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.MachineLearningServices/workspaces/aibom-demo/providers/microsoft.insights/diagnosticSettings/aml-logs"
+          },
+          "claims": {
+            "aud": "https://management.core.windows.net/",
+            "iss": "https://sts.windows.net/76961126-e318-48ae-a31f-884b4af49fd1/",
+            "iat": "1781766625",
+            "nbf": "1781766625",
+            "exp": "1781771503",
+            "http://schemas.microsoft.com/claims/authnclassreference": "1",
+            "acrs": "p1",
+            "aio": "AcQAO/8cAAAAueiY/l4uIulUwopIXsxAclepD78uY5TRUkoO7XxtFAu3cHGDkDQ1YylEjB8Rr0EaA0lOWYNvxztrJQ74kblIY9w/VKV9Uk0XRdhE37T/K9fYHqpmJG/+LTHC5nluWxB6AKNGkv16XfoLjJD0Qhf2H9ZQVKBkvpAfq93BRMyf1giXUFsPZnYK70w5DkdusJfs/04ZMsptiZTD7bNnezE+lTxnOwttmvBxkYKBo7gOmoE4KNXkItR8jwQblEbDGH3X",
+            "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+            "appid": "c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+            "appidacr": "0",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Anns",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Muhammad",
+            "groups": "764adf92-08a6-431c-813e-3d5ea0f8461b,eb757738-d2db-459c-9fed-d36949e6910d,b5c0b52c-c32d-47f9-bafb-b0a1a8b58e2a,a3ae2213-8adf-4404-ac61-b96eb841d736,225f46e0-a67b-41ca-ba6d-4cb6d358ed49",
+            "idtyp": "user",
+            "ipaddr": "203.128.27.61",
+            "name": "Anns",
+            "http://schemas.microsoft.com/identity/claims/objectidentifier": "c239af0e-1484-42a6-bb79-134bda4e212d",
+            "puid": "10032001F1A54EEB",
+            "rh": "1.AW4AJhGWdhjjrkijH4hLSvSf0UZIf3kAutdPukPawfj2MBMAAHtuAA.",
+            "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+            "sid": "005e066a-1455-33de-7632-d756cc5e92a9",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "p15nHLxZx0ErNCwK372eyZOk8yNu2OsjMMlt2G3kkbI",
+            "http://schemas.microsoft.com/identity/claims/tenantid": "76961126-e318-48ae-a31f-884b4af49fd1",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "anns@cytexio.onmicrosoft.com",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "anns@cytexio.onmicrosoft.com",
+            "uti": "LXnG6_sUG0WnrDItkl8qAA",
+            "ver": "1.0",
+            "wids": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b,3f04f91a-4ad7-4bd3-bcfa-49882ea1a88a",
+            "xms_act_fct": "3 5",
+            "xms_ftd": "cZaSxudR3Q4N_hWEIc1qMMzq77DsGk2mgE-6hI5jrbUBdXNub3J0aC1kc21z",
+            "xms_idrel": "1 30",
+            "xms_sub_fct": "3 16",
+            "xms_tcdt": "1599014540"
+          },
+          "caller": "anns@cytexio.onmicrosoft.com",
+          "description": "",
+          "id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.MachineLearningServices/workspaces/aibom-demo/providers/microsoft.insights/diagnosticSettings/aml-logs/events/19ac65ed-4cf1-455f-8edc-e93bc197cd34/ticks/639173640568241761",
+          "event_data_id": "19ac65ed-4cf1-455f-8edc-e93bc197cd34",
+          "correlation_id": "6f4856e7-1682-4791-8d1b-c078cda945eb",
+          "event_name": {
+            "value": "EndRequest",
+            "localized_value": "End request"
+          },
+          "category": {
+            "value": "Administrative",
+            "localized_value": "Administrative"
+          },
+          "http_request": {
+            "client_request_id": "c4c9154e-6827-4770-9c0f-a6430e19000f",
+            "client_ip_address": "203.128.27.61",
+            "method": "PUT",
+            "uri": "https://management.azure.com/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.MachineLearningServices/workspaces/aibom-demo/providers/microsoft.insights/diagnosticSettings/aml-logs?api-version=2021-05-01-preview"
+          },
+          "level": "Informational",
+          "resource_group_name": "logs-test-rg",
+          "resource_provider_name": {
+            "value": "microsoft.insights",
+            "localized_value": "Microsoft Insights"
+          },
+          "resource_id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.MachineLearningServices/workspaces/aibom-demo/providers/microsoft.insights/diagnosticSettings/aml-logs",
+          "resource_type": {
+            "value": "microsoft.insights/diagnosticSettings",
+            "localized_value": "microsoft.insights/diagnosticSettings"
+          },
+          "operation_id": "6f4856e7-1682-4791-8d1b-c078cda945eb",
+          "operation_name": {
+            "value": "microsoft.insights/diagnosticSettings/write",
+            "localized_value": "Create or update resource diagnostic setting"
+          },
+          "properties": {
+            "statusCode": "OK",
+            "serviceRequestId": null,
+            "eventCategory": "Administrative",
+            "entity": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.MachineLearningServices/workspaces/aibom-demo/providers/microsoft.insights/diagnosticSettings/aml-logs",
+            "message": "microsoft.insights/diagnosticSettings/write",
+            "hierarchy": "76961126-e318-48ae-a31f-884b4af49fd1/578f7d16-b299-4b9f-8f47-fa0bc5427842"
+          },
+          "status": {
+            "value": "Succeeded",
+            "localized_value": "Succeeded"
+          },
+          "sub_status": {
+            "value": "OK",
+            "localized_value": "OK (HTTP Status Code: 200)"
+          },
+          "event_timestamp": "2026-06-18T07:20:56.824176Z",
+          "submission_timestamp": "2026-06-18T07:21:43.000Z",
+          "subscription_id": "578f7d16-b299-4b9f-8f47-fa0bc5427842",
+          "tenant_id": "76961126-e318-48ae-a31f-884b4af49fd1"
+        },
+        {
+          "authorization": {
+            "action": "microsoft.insights/diagnosticSettings/write",
+            "scope": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.MachineLearningServices/workspaces/aibom-demo/providers/microsoft.insights/diagnosticSettings/aml-logs"
+          },
+          "claims": {
+            "aud": "https://management.core.windows.net/",
+            "iss": "https://sts.windows.net/76961126-e318-48ae-a31f-884b4af49fd1/",
+            "iat": "1781766625",
+            "nbf": "1781766625",
+            "exp": "1781771503",
+            "http://schemas.microsoft.com/claims/authnclassreference": "1",
+            "acrs": "p1",
+            "aio": "AcQAO/8cAAAAueiY/l4uIulUwopIXsxAclepD78uY5TRUkoO7XxtFAu3cHGDkDQ1YylEjB8Rr0EaA0lOWYNvxztrJQ74kblIY9w/VKV9Uk0XRdhE37T/K9fYHqpmJG/+LTHC5nluWxB6AKNGkv16XfoLjJD0Qhf2H9ZQVKBkvpAfq93BRMyf1giXUFsPZnYK70w5DkdusJfs/04ZMsptiZTD7bNnezE+lTxnOwttmvBxkYKBo7gOmoE4KNXkItR8jwQblEbDGH3X",
+            "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+            "appid": "c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+            "appidacr": "0",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Anns",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Muhammad",
+            "groups": "764adf92-08a6-431c-813e-3d5ea0f8461b,eb757738-d2db-459c-9fed-d36949e6910d,b5c0b52c-c32d-47f9-bafb-b0a1a8b58e2a,a3ae2213-8adf-4404-ac61-b96eb841d736,225f46e0-a67b-41ca-ba6d-4cb6d358ed49",
+            "idtyp": "user",
+            "ipaddr": "203.128.27.61",
+            "name": "Anns",
+            "http://schemas.microsoft.com/identity/claims/objectidentifier": "c239af0e-1484-42a6-bb79-134bda4e212d",
+            "puid": "10032001F1A54EEB",
+            "rh": "1.AW4AJhGWdhjjrkijH4hLSvSf0UZIf3kAutdPukPawfj2MBMAAHtuAA.",
+            "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+            "sid": "005e066a-1455-33de-7632-d756cc5e92a9",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "p15nHLxZx0ErNCwK372eyZOk8yNu2OsjMMlt2G3kkbI",
+            "http://schemas.microsoft.com/identity/claims/tenantid": "76961126-e318-48ae-a31f-884b4af49fd1",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "anns@cytexio.onmicrosoft.com",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "anns@cytexio.onmicrosoft.com",
+            "uti": "LXnG6_sUG0WnrDItkl8qAA",
+            "ver": "1.0",
+            "wids": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b,3f04f91a-4ad7-4bd3-bcfa-49882ea1a88a",
+            "xms_act_fct": "3 5",
+            "xms_ftd": "cZaSxudR3Q4N_hWEIc1qMMzq77DsGk2mgE-6hI5jrbUBdXNub3J0aC1kc21z",
+            "xms_idrel": "1 30",
+            "xms_sub_fct": "3 16",
+            "xms_tcdt": "1599014540"
+          },
+          "caller": "anns@cytexio.onmicrosoft.com",
+          "description": "",
+          "id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.MachineLearningServices/workspaces/aibom-demo/providers/microsoft.insights/diagnosticSettings/aml-logs/events/97939f39-fb56-4b13-8e96-cefb9e32fe7e/ticks/639173640554335688",
+          "event_data_id": "97939f39-fb56-4b13-8e96-cefb9e32fe7e",
+          "correlation_id": "6f4856e7-1682-4791-8d1b-c078cda945eb",
+          "event_name": {
+            "value": "BeginRequest",
+            "localized_value": "Begin request"
+          },
+          "category": {
+            "value": "Administrative",
+            "localized_value": "Administrative"
+          },
+          "http_request": {
+            "client_request_id": "c4c9154e-6827-4770-9c0f-a6430e19000f",
+            "client_ip_address": "203.128.27.61",
+            "method": "PUT",
+            "uri": "https://management.azure.com/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.MachineLearningServices/workspaces/aibom-demo/providers/microsoft.insights/diagnosticSettings/aml-logs?api-version=2021-05-01-preview"
+          },
+          "level": "Informational",
+          "resource_group_name": "logs-test-rg",
+          "resource_provider_name": {
+            "value": "microsoft.insights",
+            "localized_value": "Microsoft Insights"
+          },
+          "resource_id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.MachineLearningServices/workspaces/aibom-demo/providers/microsoft.insights/diagnosticSettings/aml-logs",
+          "resource_type": {
+            "value": "microsoft.insights/diagnosticSettings",
+            "localized_value": "microsoft.insights/diagnosticSettings"
+          },
+          "operation_id": "6f4856e7-1682-4791-8d1b-c078cda945eb",
+          "operation_name": {
+            "value": "microsoft.insights/diagnosticSettings/write",
+            "localized_value": "Create or update resource diagnostic setting"
+          },
+          "properties": {
+            "requestbody": "{\"id\":\"/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.MachineLearningServices/workspaces/aibom-demo/providers/microsoft.insights/diagnosticSettings/aml-logs\",\"name\":\"aml-logs\",\"properties\":{\"logs\":[{\"category\":null,\"categoryGroup\":\"allLogs\",\"enabled\":true,\"retentionPolicy\":{\"days\":0,\"enabled\":false}},{\"category\":null,\"categoryGroup\":\"audit\",\"enabled\":true,\"retentionPolicy\":{\"days\":0,\"enabled\":false}}],\"metrics\":[{\"enabled\":false,\"retentionPolicy\":{\"days\":0,\"enabled\":false},\"category\":\"AllMetrics\"}],\"workspaceId\":\"/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourceGroups/rg-logs/providers/Microsoft.OperationalInsights/workspaces/law-ai-logs-001\",\"logAnalyticsDestinationType\":null}}",
+            "eventCategory": "Administrative",
+            "entity": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.MachineLearningServices/workspaces/aibom-demo/providers/microsoft.insights/diagnosticSettings/aml-logs",
+            "message": "microsoft.insights/diagnosticSettings/write",
+            "hierarchy": "76961126-e318-48ae-a31f-884b4af49fd1/578f7d16-b299-4b9f-8f47-fa0bc5427842"
+          },
+          "status": {
+            "value": "Started",
+            "localized_value": "Started"
+          },
+          "sub_status": {
+            "value": "",
+            "localized_value": ""
+          },
+          "event_timestamp": "2026-06-18T07:20:55.433568Z",
+          "submission_timestamp": "2026-06-18T07:21:43.000Z",
+          "subscription_id": "578f7d16-b299-4b9f-8f47-fa0bc5427842",
+          "tenant_id": "76961126-e318-48ae-a31f-884b4af49fd1"
+        },
+        {
+          "authorization": {
+            "action": "Microsoft.MachineLearningServices/workspaces/write",
+            "scope": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.MachineLearningServices/workspaces/aibom-demo"
+          },
+          "claims": {
+            "aud": "https://management.core.windows.net/",
+            "iss": "https://sts.windows.net/76961126-e318-48ae-a31f-884b4af49fd1/",
+            "iat": "1781766625",
+            "nbf": "1781766625",
+            "exp": "1781781489",
+            "http://schemas.microsoft.com/claims/authnclassreference": "1",
+            "acrs": "p1",
+            "aio": "AcQAO/8cAAAAueiY/l4uIulUwopIXsxAclepD78uY5TRUkoO7XxtFAu3cHGDkDQ1YylEjB8Rr0EaA0lOWYNvxztrJQ74kblIY9w/VKV9Uk0XRdhE37T/K9fYHqpmJG/+LTHC5nluWxB6AKNGkv16XfoLjJD0Qhf2H9ZQVKBkvpAfq93BRMyf1giXUFsPZnYK70w5DkdusJfs/04ZMsptiZTD7bNnezE+lTxnOwttmvBxkYKBo7gOmoE4KNXkItR8jwQblEbDGH3X",
+            "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+            "appid": "c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+            "appidacr": "0",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Anns",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Muhammad",
+            "groups": "764adf92-08a6-431c-813e-3d5ea0f8461b,eb757738-d2db-459c-9fed-d36949e6910d,b5c0b52c-c32d-47f9-bafb-b0a1a8b58e2a,a3ae2213-8adf-4404-ac61-b96eb841d736,225f46e0-a67b-41ca-ba6d-4cb6d358ed49",
+            "idtyp": "user",
+            "ipaddr": "203.128.27.61",
+            "name": "Anns",
+            "http://schemas.microsoft.com/identity/claims/objectidentifier": "c239af0e-1484-42a6-bb79-134bda4e212d",
+            "puid": "10032001F1A54EEB",
+            "rh": "1.AW4AJhGWdhjjrkijH4hLSvSf0UZIf3kAutdPukPawfj2MBMAAHtuAA.",
+            "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+            "sid": "005e066a-1455-33de-7632-d756cc5e92a9",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "p15nHLxZx0ErNCwK372eyZOk8yNu2OsjMMlt2G3kkbI",
+            "http://schemas.microsoft.com/identity/claims/tenantid": "76961126-e318-48ae-a31f-884b4af49fd1",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "anns@cytexio.onmicrosoft.com",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "anns@cytexio.onmicrosoft.com",
+            "uti": "LXnG6_sUG0WnrDItkl8qAA",
+            "ver": "1.0",
+            "wids": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b,3f04f91a-4ad7-4bd3-bcfa-49882ea1a88a",
+            "xms_act_fct": "3 5",
+            "xms_ftd": "cZaSxudR3Q4N_hWEIc1qMMzq77DsGk2mgE-6hI5jrbUBdXNub3J0aC1kc21z",
+            "xms_idrel": "1 30",
+            "xms_sub_fct": "3 16",
+            "xms_tcdt": "1599014540",
+            "correlationid": "4fcaeb28-1d66-4648-95a5-e0b2592c1316"
+          },
+          "caller": "anns@cytexio.onmicrosoft.com",
+          "description": "",
+          "id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.MachineLearningServices/workspaces/aibom-demo/events/a6ce88e1-0e77-4dfe-8be3-f471653be579/ticks/639173639209389348",
+          "event_data_id": "a6ce88e1-0e77-4dfe-8be3-f471653be579",
+          "correlation_id": "4fcaeb28-1d66-4648-95a5-e0b2592c1316",
+          "event_name": {
+            "value": "EndRequest",
+            "localized_value": "End request"
+          },
+          "category": {
+            "value": "Administrative",
+            "localized_value": "Administrative"
+          },
+          "level": "Informational",
+          "resource_group_name": "logs-test-rg",
+          "resource_provider_name": {
+            "value": "Microsoft.MachineLearningServices",
+            "localized_value": "Microsoft.MachineLearningServices"
+          },
+          "resource_id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.MachineLearningServices/workspaces/aibom-demo",
+          "resource_type": {
+            "value": "Microsoft.MachineLearningServices/workspaces",
+            "localized_value": "Microsoft.MachineLearningServices/workspaces"
+          },
+          "operation_id": "a71b469c-0e66-4bf7-aaf1-1d8e94953910",
+          "operation_name": {
+            "value": "Microsoft.MachineLearningServices/workspaces/write",
+            "localized_value": "Creates or updates a Machine Learning Services Workspace(s)"
+          },
+          "properties": {
+            "eventCategory": "Administrative",
+            "entity": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.MachineLearningServices/workspaces/aibom-demo",
+            "message": "Microsoft.MachineLearningServices/workspaces/write",
+            "hierarchy": "76961126-e318-48ae-a31f-884b4af49fd1/578f7d16-b299-4b9f-8f47-fa0bc5427842"
+          },
+          "status": {
+            "value": "Succeeded",
+            "localized_value": "Succeeded"
+          },
+          "sub_status": {
+            "value": "",
+            "localized_value": ""
+          },
+          "event_timestamp": "2026-06-18T07:18:40.938934Z",
+          "submission_timestamp": "2026-06-18T07:21:30.000Z",
+          "subscription_id": "578f7d16-b299-4b9f-8f47-fa0bc5427842",
+          "tenant_id": "76961126-e318-48ae-a31f-884b4af49fd1"
+        },
+        {
+          "authorization": {
+            "action": "Microsoft.MachineLearningServices/workspaces/write",
+            "scope": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.MachineLearningServices/workspaces/aibom-demo"
+          },
+          "claims": {
+            "aud": "https://management.core.windows.net/",
+            "iss": "https://sts.windows.net/76961126-e318-48ae-a31f-884b4af49fd1/",
+            "iat": "1781766625",
+            "nbf": "1781766625",
+            "exp": "1781781489",
+            "http://schemas.microsoft.com/claims/authnclassreference": "1",
+            "acrs": "p1",
+            "aio": "AcQAO/8cAAAAueiY/l4uIulUwopIXsxAclepD78uY5TRUkoO7XxtFAu3cHGDkDQ1YylEjB8Rr0EaA0lOWYNvxztrJQ74kblIY9w/VKV9Uk0XRdhE37T/K9fYHqpmJG/+LTHC5nluWxB6AKNGkv16XfoLjJD0Qhf2H9ZQVKBkvpAfq93BRMyf1giXUFsPZnYK70w5DkdusJfs/04ZMsptiZTD7bNnezE+lTxnOwttmvBxkYKBo7gOmoE4KNXkItR8jwQblEbDGH3X",
+            "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+            "appid": "c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+            "appidacr": "0",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Anns",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Muhammad",
+            "groups": "764adf92-08a6-431c-813e-3d5ea0f8461b,eb757738-d2db-459c-9fed-d36949e6910d,b5c0b52c-c32d-47f9-bafb-b0a1a8b58e2a,a3ae2213-8adf-4404-ac61-b96eb841d736,225f46e0-a67b-41ca-ba6d-4cb6d358ed49",
+            "idtyp": "user",
+            "ipaddr": "203.128.27.61",
+            "name": "Anns",
+            "http://schemas.microsoft.com/identity/claims/objectidentifier": "c239af0e-1484-42a6-bb79-134bda4e212d",
+            "puid": "10032001F1A54EEB",
+            "rh": "1.AW4AJhGWdhjjrkijH4hLSvSf0UZIf3kAutdPukPawfj2MBMAAHtuAA.",
+            "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+            "sid": "005e066a-1455-33de-7632-d756cc5e92a9",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "p15nHLxZx0ErNCwK372eyZOk8yNu2OsjMMlt2G3kkbI",
+            "http://schemas.microsoft.com/identity/claims/tenantid": "76961126-e318-48ae-a31f-884b4af49fd1",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "anns@cytexio.onmicrosoft.com",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "anns@cytexio.onmicrosoft.com",
+            "uti": "LXnG6_sUG0WnrDItkl8qAA",
+            "ver": "1.0",
+            "wids": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b,3f04f91a-4ad7-4bd3-bcfa-49882ea1a88a",
+            "xms_act_fct": "3 5",
+            "xms_ftd": "cZaSxudR3Q4N_hWEIc1qMMzq77DsGk2mgE-6hI5jrbUBdXNub3J0aC1kc21z",
+            "xms_idrel": "1 30",
+            "xms_sub_fct": "3 16",
+            "xms_tcdt": "1599014540",
+            "correlationid": "4fcaeb28-1d66-4648-95a5-e0b2592c1316"
+          },
+          "caller": "anns@cytexio.onmicrosoft.com",
+          "description": "",
+          "id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.MachineLearningServices/workspaces/aibom-demo/events/997e8e7b-e5a4-425a-a2b9-c766c86ff713/ticks/639173639053475294",
+          "event_data_id": "997e8e7b-e5a4-425a-a2b9-c766c86ff713",
+          "correlation_id": "4fcaeb28-1d66-4648-95a5-e0b2592c1316",
+          "event_name": {
+            "value": "EndRequest",
+            "localized_value": "End request"
+          },
+          "category": {
+            "value": "Administrative",
+            "localized_value": "Administrative"
+          },
+          "level": "Informational",
+          "resource_group_name": "logs-test-rg",
+          "resource_provider_name": {
+            "value": "Microsoft.MachineLearningServices",
+            "localized_value": "Microsoft.MachineLearningServices"
+          },
+          "resource_id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.MachineLearningServices/workspaces/aibom-demo",
+          "resource_type": {
+            "value": "Microsoft.MachineLearningServices/workspaces",
+            "localized_value": "Microsoft.MachineLearningServices/workspaces"
+          },
+          "operation_id": "8c5e5c23-c900-49b0-bdbe-4e3ed3054e6d",
+          "operation_name": {
+            "value": "Microsoft.MachineLearningServices/workspaces/read",
+            "localized_value": "Gets the Machine Learning Services Workspace(s)"
+          },
+          "properties": {
+            "eventCategory": "Administrative",
+            "entity": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.MachineLearningServices/workspaces/aibom-demo",
+            "message": "Microsoft.MachineLearningServices/workspaces/read",
+            "hierarchy": "76961126-e318-48ae-a31f-884b4af49fd1/578f7d16-b299-4b9f-8f47-fa0bc5427842"
+          },
+          "status": {
+            "value": "Running",
+            "localized_value": "Running"
+          },
+          "sub_status": {
+            "value": "",
+            "localized_value": ""
+          },
+          "event_timestamp": "2026-06-18T07:18:25.347529Z",
+          "submission_timestamp": "2026-06-18T07:20:29.000Z",
+          "subscription_id": "578f7d16-b299-4b9f-8f47-fa0bc5427842",
+          "tenant_id": "76961126-e318-48ae-a31f-884b4af49fd1"
+        },
+        {
+          "authorization": {
+            "action": "Microsoft.MachineLearningServices/workspaces/write",
+            "scope": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.MachineLearningServices/workspaces/aibom-demo"
+          },
+          "claims": {
+            "aud": "https://management.core.windows.net/",
+            "iss": "https://sts.windows.net/76961126-e318-48ae-a31f-884b4af49fd1/",
+            "iat": "1781766625",
+            "nbf": "1781766625",
+            "exp": "1781781489",
+            "http://schemas.microsoft.com/claims/authnclassreference": "1",
+            "acrs": "p1",
+            "aio": "AcQAO/8cAAAAueiY/l4uIulUwopIXsxAclepD78uY5TRUkoO7XxtFAu3cHGDkDQ1YylEjB8Rr0EaA0lOWYNvxztrJQ74kblIY9w/VKV9Uk0XRdhE37T/K9fYHqpmJG/+LTHC5nluWxB6AKNGkv16XfoLjJD0Qhf2H9ZQVKBkvpAfq93BRMyf1giXUFsPZnYK70w5DkdusJfs/04ZMsptiZTD7bNnezE+lTxnOwttmvBxkYKBo7gOmoE4KNXkItR8jwQblEbDGH3X",
+            "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+            "appid": "c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+            "appidacr": "0",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Anns",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Muhammad",
+            "groups": "764adf92-08a6-431c-813e-3d5ea0f8461b,eb757738-d2db-459c-9fed-d36949e6910d,b5c0b52c-c32d-47f9-bafb-b0a1a8b58e2a,a3ae2213-8adf-4404-ac61-b96eb841d736,225f46e0-a67b-41ca-ba6d-4cb6d358ed49",
+            "idtyp": "user",
+            "ipaddr": "203.128.27.61",
+            "name": "Anns",
+            "http://schemas.microsoft.com/identity/claims/objectidentifier": "c239af0e-1484-42a6-bb79-134bda4e212d",
+            "puid": "10032001F1A54EEB",
+            "rh": "1.AW4AJhGWdhjjrkijH4hLSvSf0UZIf3kAutdPukPawfj2MBMAAHtuAA.",
+            "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+            "sid": "005e066a-1455-33de-7632-d756cc5e92a9",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "p15nHLxZx0ErNCwK372eyZOk8yNu2OsjMMlt2G3kkbI",
+            "http://schemas.microsoft.com/identity/claims/tenantid": "76961126-e318-48ae-a31f-884b4af49fd1",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "anns@cytexio.onmicrosoft.com",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "anns@cytexio.onmicrosoft.com",
+            "uti": "LXnG6_sUG0WnrDItkl8qAA",
+            "ver": "1.0",
+            "wids": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b,3f04f91a-4ad7-4bd3-bcfa-49882ea1a88a",
+            "xms_act_fct": "3 5",
+            "xms_ftd": "cZaSxudR3Q4N_hWEIc1qMMzq77DsGk2mgE-6hI5jrbUBdXNub3J0aC1kc21z",
+            "xms_idrel": "1 30",
+            "xms_sub_fct": "3 16",
+            "xms_tcdt": "1599014540",
+            "correlationid": "4fcaeb28-1d66-4648-95a5-e0b2592c1316"
+          },
+          "caller": "anns@cytexio.onmicrosoft.com",
+          "description": "",
+          "id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.MachineLearningServices/workspaces/aibom-demo/events/fdda2f52-10b6-43a7-ab8a-16486e622b14/ticks/639173638901250753",
+          "event_data_id": "fdda2f52-10b6-43a7-ab8a-16486e622b14",
+          "correlation_id": "4fcaeb28-1d66-4648-95a5-e0b2592c1316",
+          "event_name": {
+            "value": "EndRequest",
+            "localized_value": "End request"
+          },
+          "category": {
+            "value": "Administrative",
+            "localized_value": "Administrative"
+          },
+          "http_request": {
+            "client_request_id": "6e8a8613-de95-4ae1-8f3c-a37bce66f517",
+            "client_ip_address": "203.128.27.61",
+            "method": "PUT",
+            "uri": "https://management.azure.com/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.MachineLearningServices/workspaces/aibom-demo?api-version=2024-10-01-preview"
+          },
+          "level": "Informational",
+          "resource_group_name": "logs-test-rg",
+          "resource_provider_name": {
+            "value": "Microsoft.MachineLearningServices",
+            "localized_value": "Microsoft.MachineLearningServices"
+          },
+          "resource_id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.MachineLearningServices/workspaces/aibom-demo",
+          "resource_type": {
+            "value": "Microsoft.MachineLearningServices/workspaces",
+            "localized_value": "Microsoft.MachineLearningServices/workspaces"
+          },
+          "operation_id": "1a286b75-794d-4e81-8176-ac4a75e0e504",
+          "operation_name": {
+            "value": "Microsoft.MachineLearningServices/workspaces/write",
+            "localized_value": "Creates or updates a Machine Learning Services Workspace(s)"
+          },
+          "properties": {
+            "statusCode": "Accepted",
+            "serviceRequestId": null,
+            "eventCategory": "Administrative",
+            "entity": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.MachineLearningServices/workspaces/aibom-demo",
+            "message": "Microsoft.MachineLearningServices/workspaces/write",
+            "hierarchy": "76961126-e318-48ae-a31f-884b4af49fd1/578f7d16-b299-4b9f-8f47-fa0bc5427842"
+          },
+          "status": {
+            "value": "Accepted",
+            "localized_value": "Accepted"
+          },
+          "sub_status": {
+            "value": "Accepted",
+            "localized_value": "Accepted (HTTP Status Code: 202)"
+          },
+          "event_timestamp": "2026-06-18T07:18:10.125075Z",
+          "submission_timestamp": "2026-06-18T07:20:49.000Z",
+          "subscription_id": "578f7d16-b299-4b9f-8f47-fa0bc5427842",
+          "tenant_id": "76961126-e318-48ae-a31f-884b4af49fd1"
+        },
+        {
+          "authorization": {
+            "action": "Microsoft.MachineLearningServices/workspaces/write",
+            "scope": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.MachineLearningServices/workspaces/aibom-demo"
+          },
+          "claims": {
+            "aud": "https://management.core.windows.net/",
+            "iss": "https://sts.windows.net/76961126-e318-48ae-a31f-884b4af49fd1/",
+            "iat": "1781766625",
+            "nbf": "1781766625",
+            "exp": "1781771503",
+            "http://schemas.microsoft.com/claims/authnclassreference": "1",
+            "acrs": "p1",
+            "aio": "AcQAO/8cAAAAueiY/l4uIulUwopIXsxAclepD78uY5TRUkoO7XxtFAu3cHGDkDQ1YylEjB8Rr0EaA0lOWYNvxztrJQ74kblIY9w/VKV9Uk0XRdhE37T/K9fYHqpmJG/+LTHC5nluWxB6AKNGkv16XfoLjJD0Qhf2H9ZQVKBkvpAfq93BRMyf1giXUFsPZnYK70w5DkdusJfs/04ZMsptiZTD7bNnezE+lTxnOwttmvBxkYKBo7gOmoE4KNXkItR8jwQblEbDGH3X",
+            "http://schemas.microsoft.com/claims/authnmethodsreferences": "pwd,mfa",
+            "appid": "c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+            "appidacr": "0",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": "Anns",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": "Muhammad",
+            "groups": "764adf92-08a6-431c-813e-3d5ea0f8461b,eb757738-d2db-459c-9fed-d36949e6910d,b5c0b52c-c32d-47f9-bafb-b0a1a8b58e2a,a3ae2213-8adf-4404-ac61-b96eb841d736,225f46e0-a67b-41ca-ba6d-4cb6d358ed49",
+            "idtyp": "user",
+            "ipaddr": "203.128.27.61",
+            "name": "Anns",
+            "http://schemas.microsoft.com/identity/claims/objectidentifier": "c239af0e-1484-42a6-bb79-134bda4e212d",
+            "puid": "10032001F1A54EEB",
+            "rh": "1.AW4AJhGWdhjjrkijH4hLSvSf0UZIf3kAutdPukPawfj2MBMAAHtuAA.",
+            "http://schemas.microsoft.com/identity/claims/scope": "user_impersonation",
+            "sid": "005e066a-1455-33de-7632-d756cc5e92a9",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": "p15nHLxZx0ErNCwK372eyZOk8yNu2OsjMMlt2G3kkbI",
+            "http://schemas.microsoft.com/identity/claims/tenantid": "76961126-e318-48ae-a31f-884b4af49fd1",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": "anns@cytexio.onmicrosoft.com",
+            "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "anns@cytexio.onmicrosoft.com",
+            "uti": "LXnG6_sUG0WnrDItkl8qAA",
+            "ver": "1.0",
+            "wids": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b,3f04f91a-4ad7-4bd3-bcfa-49882ea1a88a",
+            "xms_act_fct": "3 5",
+            "xms_ftd": "cZaSxudR3Q4N_hWEIc1qMMzq77DsGk2mgE-6hI5jrbUBdXNub3J0aC1kc21z",
+            "xms_idrel": "1 30",
+            "xms_sub_fct": "3 16",
+            "xms_tcdt": "1599014540"
+          },
+          "caller": "anns@cytexio.onmicrosoft.com",
+          "description": "",
+          "id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.MachineLearningServices/workspaces/aibom-demo/events/0e949c81-cfec-4ad5-a993-5030f3daac24/ticks/639173638890312355",
+          "event_data_id": "0e949c81-cfec-4ad5-a993-5030f3daac24",
+          "correlation_id": "4fcaeb28-1d66-4648-95a5-e0b2592c1316",
+          "event_name": {
+            "value": "BeginRequest",
+            "localized_value": "Begin request"
+          },
+          "category": {
+            "value": "Administrative",
+            "localized_value": "Administrative"
+          },
+          "http_request": {
+            "client_request_id": "6e8a8613-de95-4ae1-8f3c-a37bce66f517",
+            "client_ip_address": "203.128.27.61",
+            "method": "PUT",
+            "uri": "https://management.azure.com/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.MachineLearningServices/workspaces/aibom-demo?api-version=2024-10-01-preview"
+          },
+          "level": "Informational",
+          "resource_group_name": "logs-test-rg",
+          "resource_provider_name": {
+            "value": "Microsoft.MachineLearningServices",
+            "localized_value": "Microsoft.MachineLearningServices"
+          },
+          "resource_id": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.MachineLearningServices/workspaces/aibom-demo",
+          "resource_type": {
+            "value": "Microsoft.MachineLearningServices/workspaces",
+            "localized_value": "Microsoft.MachineLearningServices/workspaces"
+          },
+          "operation_id": "1a286b75-794d-4e81-8176-ac4a75e0e504",
+          "operation_name": {
+            "value": "Microsoft.MachineLearningServices/workspaces/write",
+            "localized_value": "Creates or updates a Machine Learning Services Workspace(s)"
+          },
+          "properties": {
+            "eventCategory": "Administrative",
+            "entity": "/subscriptions/578f7d16-b299-4b9f-8f47-fa0bc5427842/resourcegroups/logs-test-rg/providers/Microsoft.MachineLearningServices/workspaces/aibom-demo",
+            "message": "Microsoft.MachineLearningServices/workspaces/write",
+            "hierarchy": "76961126-e318-48ae-a31f-884b4af49fd1/578f7d16-b299-4b9f-8f47-fa0bc5427842"
+          },
+          "status": {
+            "value": "Started",
+            "localized_value": "Started"
+          },
+          "sub_status": {
+            "value": "",
+            "localized_value": ""
+          },
+          "event_timestamp": "2026-06-18T07:18:09.031235Z",
+          "submission_timestamp": "2026-06-18T07:20:49.000Z",
+          "subscription_id": "578f7d16-b299-4b9f-8f47-fa0bc5427842",
+          "tenant_id": "76961126-e318-48ae-a31f-884b4af49fd1"
+        }
+      ],
+      "aml_log_tables": {
+        "d0d4e10f-0e11-455d-bd02-86ba33431d44": {
+          "AmlComputeJobEvents": {
+            "error": "(BadArgumentError) The request had some invalid properties\nCode: BadArgumentError\nMessage: The request had some invalid properties\nInner error: {\n    \"code\": \"SemanticError\",\n    \"message\": \"A semantic error occurred.\",\n    \"innererror\": {\n        \"code\": \"SEM0100\",\n        \"message\": \"'where' operator: Failed to resolve table or column expression named 'AmlComputeJobEvents'\"\n    }\n}"
+          },
+          "AmlComputeClusterEvents": {
+            "error": "(BadArgumentError) The request had some invalid properties\nCode: BadArgumentError\nMessage: The request had some invalid properties\nInner error: {\n    \"code\": \"SemanticError\",\n    \"message\": \"A semantic error occurred.\",\n    \"innererror\": {\n        \"code\": \"SEM0100\",\n        \"message\": \"'where' operator: Failed to resolve table or column expression named 'AmlComputeClusterEvents'\"\n    }\n}"
+          },
+          "AmlComputeInstanceEvents": {
+            "error": "(BadArgumentError) The request had some invalid properties\nCode: BadArgumentError\nMessage: The request had some invalid properties\nInner error: {\n    \"code\": \"SemanticError\",\n    \"message\": \"A semantic error occurred.\",\n    \"innererror\": {\n        \"code\": \"SEM0100\",\n        \"message\": \"'where' operator: Failed to resolve table or column expression named 'AmlComputeInstanceEvents'\"\n    }\n}"
+          },
+          "AmlRunStatusChangedEvent": [],
+          "AmlDataSetEvent": [],
+          "AmlModelEvent": {
+            "error": "(BadArgumentError) The request had some invalid properties\nCode: BadArgumentError\nMessage: The request had some invalid properties\nInner error: {\n    \"code\": \"SemanticError\",\n    \"message\": \"A semantic error occurred.\",\n    \"innererror\": {\n        \"code\": \"SEM0100\",\n        \"message\": \"'where' operator: Failed to resolve table or column expression named 'AmlModelEvent'\"\n    }\n}"
+          },
+          "AmlDeploymentEvent": [],
+          "AmlInferencingEvent": []
+        }
+      },
+      "assets": {
+        "status": "azure-ai-ml package not installed \u2014 run: pip install azure-ai-ml"
+      },
+      "error": null,
+      "subscription_name": "Azure subscription 1"
+    }
+  ]
+}

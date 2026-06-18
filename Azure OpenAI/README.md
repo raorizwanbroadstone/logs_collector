@@ -7,7 +7,7 @@ This module connects to an **Azure Log Analytics Workspace** and runs KQL (Kusto
 ## Folder Structure
 
 ```
-Azure OpenAI and ML/
+Azure OpenAI/
 ├── fetch_azure_diagnostic_logs.py    # Main script — queries Log Analytics and writes output
 └── azure_diagnostic_logs/            # Output directory for JSON result files
     ├── workspace_test_2026-06-17_09-05-02.json

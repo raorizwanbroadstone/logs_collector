@@ -1,34 +1,22 @@
-"""
-generate_bom.py
-
-Streams every JSON file in logs/, extracts BOM-relevant entities (service
-principals, client applications, M365 workloads), deduplicates them with a
-Bloom filter backed by an exact set, and writes a CycloneDX 1.6 BOM JSON
-report to report/.
-
-Dependencies: mmh3, bitarray, ijson  (pip install mmh3 bitarray ijson)
-"""
-
 import json
 import math
 import uuid
 from datetime import datetime, timezone
 from pathlib import Path
-
 import ijson
 import mmh3
 from bitarray import bitarray
 
 SCRIPT_DIR = Path(__file__).parent
-LOGS_DIR   = SCRIPT_DIR / "logs"
+LOGS_DIR = SCRIPT_DIR / "logs"
 REPORT_DIR = SCRIPT_DIR / "report"
 
 BLOOM_CAPACITY = 500_000
-BLOOM_FPR      = 0.0001
+BLOOM_FPR = 0.0001
 
 
+# Bloom filter and deduplication layer
 
-# Bloom filter + deduplication layer
 class BloomFilter:
     """
     Probabilistic membership structure using MurmurHash3 double-hashing over a
@@ -37,24 +25,24 @@ class BloomFilter:
     """
 
     def __init__(self, capacity: int, fpr: float):
-        m = math.ceil(-(capacity * math.log(fpr)) / (math.log(2) ** 2))
-        k = max(1, round((m / capacity) * math.log(2)))
-        self._m    = m
-        self._k    = k
-        self._bits = bitarray(m)
-        self._bits.setall(0)
+        bit_array_size = math.ceil(-(capacity * math.log(fpr)) / (math.log(2) ** 2))
+        hash_count = max(1, round((bit_array_size / capacity) * math.log(2)))
+        self.bit_array_size = bit_array_size
+        self.hash_count = hash_count
+        self.bits = bitarray(bit_array_size)
+        self.bits.setall(0)
 
-    def _positions(self, key: str) -> list[int]:
-        h1 = mmh3.hash(key, seed=0, signed=False)
-        h2 = mmh3.hash(key, seed=1, signed=False)
-        return [(h1 + i * h2) % self._m for i in range(self._k)]
+    def compute_positions(self, key: str) -> list[int]:
+        primary_hash = mmh3.hash(key, seed=0, signed=False)
+        secondary_hash = mmh3.hash(key, seed=1, signed=False)
+        return [(primary_hash + i * secondary_hash) % self.bit_array_size for i in range(self.hash_count)]
 
     def add(self, key: str) -> None:
-        for p in self._positions(key):
-            self._bits[p] = 1
+        for position in self.compute_positions(key):
+            self.bits[position] = 1
 
     def might_contain(self, key: str) -> bool:
-        return all(self._bits[p] for p in self._positions(key))
+        return all(self.bits[position] for position in self.compute_positions(key))
 
 
 class DeduplicatingSet:
@@ -65,31 +53,33 @@ class DeduplicatingSet:
     """
 
     def __init__(self, capacity: int = BLOOM_CAPACITY, fpr: float = BLOOM_FPR):
-        self._bloom = BloomFilter(capacity, fpr)
-        self._seen: set[str] = set()
+        self.bloom_filter = BloomFilter(capacity, fpr)
+        self.seen_keys: set[str] = set()
 
     def add_if_new(self, key: str) -> bool:
-        """Returns True and records key if it has never been seen; False otherwise."""
-        if self._bloom.might_contain(key) and key in self._seen:
+        """Returns True and records the key if it has never been seen; False otherwise."""
+        if self.bloom_filter.might_contain(key) and key in self.seen_keys:
             return False
-        self._bloom.add(key)
-        self._seen.add(key)
+        self.bloom_filter.add(key)
+        self.seen_keys.add(key)
         return True
 
     def __len__(self) -> int:
-        return len(self._seen)
+        return len(self.seen_keys)
 
 
 
 # Log streaming
+
 def stream_events(log_file: Path):
     """Yields each top-level JSON object from a large array file using ijson."""
-    with log_file.open("rb") as fh:
-        yield from ijson.items(fh, "item")
+    with log_file.open("rb") as file_handle:
+        yield from ijson.items(file_handle, "item")
 
 
 
 # Field parsers for embedded JSON strings
+
 def parse_embedded_json_list(raw: str) -> list[str]:
     """
     ModifiedProperties stores values as JSON-encoded strings like '["Azure Managed HSM RP"]'.
@@ -125,6 +115,7 @@ def read_extended_properties(event: dict) -> tuple[str, dict]:
 
 
 # Entity extractors — each returns a typed dict or None
+
 def extract_service_principal(event: dict) -> dict | None:
     """
     Identifies AAD service principal provisioning events by checking for category
@@ -139,7 +130,7 @@ def extract_service_principal(event: dict) -> dict | None:
     if not app_id:
         return None
 
-    modified = {p["Name"]: p.get("NewValue", "") for p in event.get("ModifiedProperties", [])}
+    modified = {prop["Name"]: prop.get("NewValue", "") for prop in event.get("ModifiedProperties", [])}
     names = parse_embedded_json_list(modified.get("DisplayName", ""))
     display_name = names[0] if names else app_id
 
@@ -162,19 +153,19 @@ def extract_client_app(event: dict) -> dict | None:
     ClientAppId is used as the unique key; ClientAppName as the display name.
     Returns None for events without AppAccessContext.
     """
-    ctx = event.get("AppAccessContext")
-    if not isinstance(ctx, dict):
+    context = event.get("AppAccessContext")
+    if not isinstance(context, dict):
         return None
-    client_id = ctx.get("ClientAppId", "")
+    client_id = context.get("ClientAppId", "")
     if not client_id:
         return None
 
     return {
         "kind":          "client_app",
         "key":           client_id,
-        "name":          ctx.get("ClientAppName") or client_id,
+        "name":          context.get("ClientAppName") or client_id,
         "client_app_id": client_id,
-        "api_id":        ctx.get("APIId", ""),
+        "api_id":        context.get("APIId", ""),
         "workload":      event.get("Workload", ""),
     }
 
@@ -199,14 +190,15 @@ def extract_workload(event: dict) -> dict | None:
 
 
 # CycloneDX 1.6 serializers
-def to_cyclonedx_component(raw: dict) -> dict:
+
+def to_cyclonedx_component(entity: dict) -> dict:
     """
     Converts a raw service_principal or client_app dict to a CycloneDX 1.6
     component object (type: application). All source fields are stored as
     namespaced properties under m365:.
     """
-    bom_ref = f"{raw['kind']}-{raw['key']}"
-    props: list[dict] = []
+    bom_ref = f"{entity['kind']}-{entity['key']}"
+    properties: list[dict] = []
 
     field_map: dict[str, dict[str, str]] = {
         "service_principal": {
@@ -224,34 +216,34 @@ def to_cyclonedx_component(raw: dict) -> dict:
         },
     }
 
-    for field, cdx_name in field_map.get(raw["kind"], {}).items():
-        value = raw.get(field, "")
+    for field, cdx_name in field_map.get(entity["kind"], {}).items():
+        value = entity.get(field, "")
         if value:
-            props.append({"name": cdx_name, "value": value})
+            properties.append({"name": cdx_name, "value": value})
 
     component: dict = {
         "type":    "application",
         "bom-ref": bom_ref,
-        "name":    raw["name"],
+        "name":    entity["name"],
     }
-    if props:
-        component["properties"] = props
+    if properties:
+        component["properties"] = properties
     return component
 
 
-def to_cyclonedx_service(raw: dict) -> dict:
+def to_cyclonedx_service(entity: dict) -> dict:
     """
     Converts a raw workload dict to a CycloneDX 1.6 service object.
     authenticated is set True because all M365 workloads require OAuth2.
     """
-    svc: dict = {
-        "bom-ref":       f"workload-{raw['name']}",
-        "name":          raw["name"],
+    service_entry: dict = {
+        "bom-ref":       f"workload-{entity['name']}",
+        "name":          entity["name"],
         "authenticated": True,
     }
-    if raw.get("record_type"):
-        svc["properties"] = [{"name": "m365:RecordType", "value": raw["record_type"]}]
-    return svc
+    if entity.get("record_type"):
+        service_entry["properties"] = [{"name": "m365:RecordType", "value": entity["record_type"]}]
+    return service_entry
 
 
 def build_dependency_graph(
@@ -263,24 +255,24 @@ def build_dependency_graph(
     The root tenant node depends on every workload.
     Each component depends on the workload it was observed in.
     """
-    workload_refs = {r["name"]: f"workload-{r['name']}" for r in raw_services}
+    workload_refs = {entity["name"]: f"workload-{entity['name']}" for entity in raw_services}
 
-    deps: list[dict] = [
+    dependencies: list[dict] = [
         {
             "ref":       "root-m365-tenant",
             "dependsOn": list(workload_refs.values()),
         }
     ]
 
-    for raw in raw_components:
-        wl_ref = workload_refs.get(raw.get("workload", ""))
-        if wl_ref:
-            deps.append({
-                "ref":       f"{raw['kind']}-{raw['key']}",
-                "dependsOn": [wl_ref],
+    for entity in raw_components:
+        workload_ref = workload_refs.get(entity.get("workload", ""))
+        if workload_ref:
+            dependencies.append({
+                "ref":       f"{entity['kind']}-{entity['key']}",
+                "dependsOn": [workload_ref],
             })
 
-    return deps
+    return dependencies
 
 
 def build_cyclonedx_bom(
@@ -320,18 +312,19 @@ def build_cyclonedx_bom(
                 ],
             },
         },
-        "components":   [to_cyclonedx_component(r) for r in raw_components],
-        "services":     [to_cyclonedx_service(r) for r in raw_services],
+        "components":   [to_cyclonedx_component(entity) for entity in raw_components],
+        "services":     [to_cyclonedx_service(entity) for entity in raw_services],
         "dependencies": build_dependency_graph(raw_components, raw_services),
     }
 
 
 
 # Per-file processor
+
 def process_log_file(
     log_file: Path,
-    sp_dedup:       DeduplicatingSet,
-    client_dedup:   DeduplicatingSet,
+    service_principal_dedup: DeduplicatingSet,
+    client_app_dedup: DeduplicatingSet,
     workload_dedup: DeduplicatingSet,
 ) -> tuple[list[dict], list[dict], str]:
     """
@@ -340,30 +333,31 @@ def process_log_file(
     caught. Returns (raw_components, raw_services, first_seen_org_id).
     """
     raw_components: list[dict] = []
-    raw_services:   list[dict] = []
+    raw_services: list[dict] = []
     org_id = ""
 
     for event in stream_events(log_file):
         if not org_id:
             org_id = event.get("OrganizationId", "")
 
-        sp = extract_service_principal(event)
-        if sp and sp_dedup.add_if_new(sp["key"]):
-            raw_components.append(sp)
+        service_principal_entity = extract_service_principal(event)
+        if service_principal_entity and service_principal_dedup.add_if_new(service_principal_entity["key"]):
+            raw_components.append(service_principal_entity)
 
-        ca = extract_client_app(event)
-        if ca and client_dedup.add_if_new(ca["key"]):
-            raw_components.append(ca)
+        client_app_entity = extract_client_app(event)
+        if client_app_entity and client_app_dedup.add_if_new(client_app_entity["key"]):
+            raw_components.append(client_app_entity)
 
-        wl = extract_workload(event)
-        if wl and workload_dedup.add_if_new(wl["key"]):
-            raw_services.append(wl)
+        workload_entity = extract_workload(event)
+        if workload_entity and workload_dedup.add_if_new(workload_entity["key"]):
+            raw_services.append(workload_entity)
 
     return raw_components, raw_services, org_id
 
 
 
 # Entry point
+
 def main(target_file: Path | None = None) -> None:
     """
     Processes log files and writes a CycloneDX 1.6 BOM to report/.
@@ -378,32 +372,34 @@ def main(target_file: Path | None = None) -> None:
         print(f"No JSON files found in {LOGS_DIR}")
         return
 
-    sp_dedup       = DeduplicatingSet()
-    client_dedup   = DeduplicatingSet()
+    service_principal_dedup = DeduplicatingSet()
+    client_app_dedup = DeduplicatingSet()
     workload_dedup = DeduplicatingSet()
 
     all_components: list[dict] = []
-    all_services:   list[dict] = []
+    all_services: list[dict] = []
     org_id = ""
 
     for log_file in log_files:
         print(f"Processing {log_file.name} ...")
-        comps, svcs, fid = process_log_file(log_file, sp_dedup, client_dedup, workload_dedup)
-        all_components.extend(comps)
-        all_services.extend(svcs)
+        components, services, first_org_id = process_log_file(
+            log_file, service_principal_dedup, client_app_dedup, workload_dedup
+        )
+        all_components.extend(components)
+        all_services.extend(services)
         if not org_id:
-            org_id = fid
-        print(f"  {len(comps)} new components, {len(svcs)} new workloads")
+            org_id = first_org_id
+        print(f"  {len(components)} new components, {len(services)} new workloads")
 
-    source_files = ", ".join(f.name for f in log_files)
+    source_files = ", ".join(file.name for file in log_files)
     bom = build_cyclonedx_bom(all_components, all_services, org_id, source_files)
 
-    timestamp   = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
+    timestamp = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
     output_path = REPORT_DIR / f"bom_{timestamp}.json"
     output_path.write_text(json.dumps(bom, indent=2), encoding="utf-8")
 
-    print(f"\nReport : {output_path}")
-    print(f"Total  : {len(all_components)} components, {len(all_services)} workloads")
+    print(f"\nBOM report saved to: {output_path}")
+    print(f"Total: {len(all_components)} components, {len(all_services)} workloads")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,175 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:99b805ed-706a-4118-8d2e-dbfc1c10a638",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-06-22T19:48:53.520283+00:00",
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "name": "ms-logs-bom-generator",
+          "version": "1.0.0"
+        }
+      ]
+    },
+    "component": {
+      "type": "application",
+      "bom-ref": "root-m365-tenant",
+      "name": "Microsoft 365 Tenant",
+      "properties": [
+        {
+          "name": "m365:OrganizationId",
+          "value": "76961126-e318-48ae-a31f-884b4af49fd1"
+        },
+        {
+          "name": "m365:SourceFiles",
+          "value": "m365_audit_logs_20260622_194818.json"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "application",
+      "bom-ref": "client_app-a3883eba-fbe9-48bd-9ed3-dca3e0e84250",
+      "name": "a3883eba-fbe9-48bd-9ed3-dca3e0e84250",
+      "properties": [
+        {
+          "name": "m365:ClientAppId",
+          "value": "a3883eba-fbe9-48bd-9ed3-dca3e0e84250"
+        },
+        {
+          "name": "m365:APIId",
+          "value": "a3883eba-fbe9-48bd-9ed3-dca3e0e84250"
+        },
+        {
+          "name": "m365:Workload",
+          "value": "Exchange"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "client_app-3ec95fec-b523-40a4-add4-2fde396b9ea5",
+      "name": "o365-biz-prod",
+      "properties": [
+        {
+          "name": "m365:ClientAppId",
+          "value": "3ec95fec-b523-40a4-add4-2fde396b9ea5"
+        },
+        {
+          "name": "m365:Workload",
+          "value": "OneDrive"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "client_app-1b86c042-cac7-456e-a561-2727caa72d6b",
+      "name": "cytex-msteams-prod",
+      "properties": [
+        {
+          "name": "m365:ClientAppId",
+          "value": "1b86c042-cac7-456e-a561-2727caa72d6b"
+        },
+        {
+          "name": "m365:APIId",
+          "value": "00000003-0000-0000-c000-000000000000"
+        },
+        {
+          "name": "m365:Workload",
+          "value": "SharePoint"
+        }
+      ]
+    }
+  ],
+  "services": [
+    {
+      "bom-ref": "workload-AzureActiveDirectory",
+      "name": "AzureActiveDirectory",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "m365:RecordType",
+          "value": "15"
+        }
+      ]
+    },
+    {
+      "bom-ref": "workload-Exchange",
+      "name": "Exchange",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "m365:RecordType",
+          "value": "50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "workload-OneDrive",
+      "name": "OneDrive",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "m365:RecordType",
+          "value": "6"
+        }
+      ]
+    },
+    {
+      "bom-ref": "workload-SharePoint",
+      "name": "SharePoint",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "m365:RecordType",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "bom-ref": "workload-MicrosoftTeams",
+      "name": "MicrosoftTeams",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "m365:RecordType",
+          "value": "25"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "root-m365-tenant",
+      "dependsOn": [
+        "workload-AzureActiveDirectory",
+        "workload-Exchange",
+        "workload-OneDrive",
+        "workload-SharePoint",
+        "workload-MicrosoftTeams"
+      ]
+    },
+    {
+      "ref": "client_app-a3883eba-fbe9-48bd-9ed3-dca3e0e84250",
+      "dependsOn": [
+        "workload-Exchange"
+      ]
+    },
+    {
+      "ref": "client_app-3ec95fec-b523-40a4-add4-2fde396b9ea5",
+      "dependsOn": [
+        "workload-OneDrive"
+      ]
+    },
+    {
+      "ref": "client_app-1b86c042-cac7-456e-a561-2727caa72d6b",
+      "dependsOn": [
+        "workload-SharePoint"
+      ]
+    }
+  ]
+}

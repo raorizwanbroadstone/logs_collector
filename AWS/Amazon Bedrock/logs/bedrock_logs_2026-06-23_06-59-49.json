@@ -1,5 +1,3347 @@
 [
   {
+    "EventId": "04f2bbfd-27b8-4882-b230-86a0c42d708e",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "anthropic.claude-opus-4-6-v1"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "05989be5-d9d9-4840-a851-8589765b8f1c",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "mistral.magistral-small-2509"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "06d67586-a25c-466f-b2b3-d7a8fab1e583",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "amazon.titan-embed-image-v1"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "0b27e10f-39be-4f54-8e97-b058d7761fad",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "meta.llama3-2-1b-instruct-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "0d72c4b8-dcac-47b2-bc43-c30b727983aa",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "moonshotai.kimi-k2.5"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "0fdef88d-452a-49ed-b528-809244abd7fc",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "mistral.mistral-large-2407-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "14eec01f-3595-43e1-8e22-e9acec68015e",
+    "EventName": "ListInferenceProfiles",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {},
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "160d8faa-c3ab-426c-bb7f-4c9e6b4707bb",
+    "EventName": "ListMarketplaceModelEndpoints",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "maxResults": 100
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "17b61dc0-783e-427e-970a-bd2e783859d6",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "stability.stable-image-style-guide-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "184ed415-250d-46b9-b6c1-23283ad091d9",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "meta.llama3-70b-instruct-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "18ef3d90-25c3-459b-bd2b-57859faf01e7",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "stability.stable-image-remove-background-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "19026e67-6fff-4e3f-a208-1afb12e0d020",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "openai.gpt-oss-20b-1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "1b36d0b6-4771-41ca-a244-87dd3bf67e43",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "anthropic.claude-sonnet-4-6"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "1b9f8125-9b12-4f3d-99a3-a5adca926d32",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "nvidia.nemotron-nano-12b-v2"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "1d5b8f0e-77bc-47bc-8356-a2aeb4a5e835",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "anthropic.claude-opus-4-7"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "1f088120-cc4d-48b7-9cb8-81202ca9aa4b",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "luma.ray-v2:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "256c183b-c0ca-4ec3-8dd9-84707dba600b",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "cohere.embed-v4:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "25ef4908-5627-4867-ad9f-529d87e0d35c",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "meta.llama3-2-3b-instruct-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "26dbc42a-2641-4cfb-82a1-97f1ba772975",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "mistral.mixtral-8x7b-instruct-v0:1"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "2843ef8e-c73c-47de-98cc-a6f72dbf59d5",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "anthropic.claude-sonnet-4-5-20250929-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "2d74b201-539f-4b65-b164-8cde92811284",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "anthropic.claude-haiku-4-5-20251001-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "2e1abcf2-497f-46c0-b5f5-160af0d7a668",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "amazon.titan-embed-text-v2:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "30e2acd8-b3c9-4b2b-ab50-8b33c6ab4644",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "minimax.minimax-m2.5"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "313fc030-45c1-4977-9b95-e36d74ca4946",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "amazon.nova-pro-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "326cecff-a8e2-4fc9-9043-201edf300260",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "qwen.qwen3-235b-a22b-2507-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "35fc6b7f-21c6-4b0d-adcb-4fe7f6817220",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "qwen.qwen3-32b-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "36613ea6-1eb1-4a15-9d3a-b64eaf4a519a",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "mistral.mistral-large-2402-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "371f5468-48e7-45e4-ba07-975fef10f834",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "deepseek.r1-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "375c981c-b759-4c18-adfb-818426d5ae4c",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "mistral.devstral-2-123b"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "395e422e-1371-47a8-997a-1c1ebd9ba6a9",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "google.gemma-3-27b-it"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "3c833291-93f3-4334-8fb2-4776a5181c4b",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "stability.stable-conservative-upscale-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "3d87a98c-b9e4-4fcc-bc8d-947c39dfae04",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "qwen.qwen3-coder-480b-a35b-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "403fb1a7-50f7-44da-9aad-78d0a0b74e90",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "qwen.qwen3-next-80b-a3b"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "41b54a11-9625-4bfa-81ca-4ac8c0ecf862",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "nvidia.nemotron-super-3-120b"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "44681fff-7535-4204-95f0-553225cbbdc6",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "cohere.embed-multilingual-v3"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "45027ae6-3c37-44a5-b4da-e11b7240d66f",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "stability.stable-image-control-structure-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "45a8fcc8-9dd2-49e6-9bfe-8732f860e408",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "stability.stable-creative-upscale-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "45c539aa-7f69-4cf3-a464-03aef4bccdea",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "writer.palmyra-x5-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "492cb162-5632-43e8-a417-c3a7dcd4f74d",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "stability.sd3-5-large-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "533ba504-0c2c-41cd-8e33-31b605c6e175",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "anthropic.claude-opus-4-5-20251101-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "56b12563-b982-4478-baaf-57f5ea9d08f4",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "cohere.command-r-plus-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "5782ee2a-1cf8-45fc-8067-9a1b286f18c9",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "stability.stable-image-control-sketch-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "5ad1496a-3e59-4160-8edd-d794dca6bffe",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "amazon.nova-premier-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "5d3855a4-09d1-4db8-a882-91e6284200f2",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "deepseek.v3-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "5da38b9e-05c1-4959-851d-16432ec3ac70",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "meta.llama3-2-11b-instruct-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "6446a87d-6ffb-4c07-8e3d-d3acba627672",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "meta.llama4-scout-17b-instruct-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "64807d1e-bbd0-4516-8da4-5a3f5af8f688",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "stability.stable-image-core-v1:1"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "64d1b9fe-b81d-4645-bdb3-00d0965191c2",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "moonshot.kimi-k2-thinking"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "6b57fdfd-1e94-4241-ad27-5c1a39c25a4c",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "amazon.titan-image-generator-v2:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "7299f17c-0e8f-42e5-b384-58ff13ae5a08",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "openai.gpt-oss-120b-1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "7b2a78af-f785-4f7f-9e22-93557cf6a26d",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "zai.glm-4.7-flash"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "7c7ac9d6-7b45-4b75-b716-199b87c9c78a",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "stability.stable-fast-upscale-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "801dcf10-7668-4ec8-a096-315485fbb531",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "amazon.titan-embed-text-v1"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "8160989a-6862-4963-932c-7fc49dbd0005",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "meta.llama4-maverick-17b-instruct-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "820341b5-6269-44e8-8e11-46f62b350c7b",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "stability.stable-outpaint-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "826e5612-245f-4d6c-ad6d-36906598de18",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "meta.llama3-1-8b-instruct-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "846a828d-9d80-4462-b2b6-48467add967f",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "nvidia.nemotron-nano-3-30b"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "8739110b-56dc-49c7-b0bf-dfcf3fb8c197",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "zai.glm-4.7"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "87a86c37-6366-43de-b969-db600b7aa7aa",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "mistral.ministral-3-8b-instruct"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "8a5febef-d81b-4d4d-811c-bca8c492da64",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "twelvelabs.pegasus-1-2-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "92ca7ae4-96b7-422a-b06d-7c5ee1ea43b5",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "writer.palmyra-x4-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "98a9860d-5560-40b0-9e05-3324be2a53dd",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "amazon.nova-2-sonic-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "99684dcc-7a0d-4aaa-aea0-50e64a3edd70",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "amazon.nova-lite-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "9ea655ac-12e4-4a92-9f37-95310bcb97e5",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "amazon.nova-2-lite-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "a0e1d815-d969-4cca-8336-de668a3b492d",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "meta.llama3-1-70b-instruct-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "a1ad46da-85fc-4eb6-914e-f7803c7eacdb",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "nvidia.nemotron-nano-9b-v2"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "a3da5971-1444-4e0d-a4a9-3b7898f28c67",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "deepseek.v3.2"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "a46d902f-16bb-4f26-bcae-5e5eca865db1",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "anthropic.claude-opus-4-8"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "a5559802-ece6-4a9b-843c-8e500daee1b6",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "mistral.mistral-large-3-675b-instruct"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "a80c891b-91ad-4f0b-bf2e-b94a769c382e",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "anthropic.claude-sonnet-4-20250514-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "a87381f8-b599-44b7-a3a7-0077fc8a5020",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "mistral.mistral-7b-instruct-v0:2"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "aa0aa967-6d56-4d11-b5aa-7c53c1bf1aec",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "mistral.ministral-3-14b-instruct"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "ac3a6d53-a702-40a0-83ec-a2a28219cd5e",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "cohere.rerank-v3-5:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "af56ab28-d70e-4af2-bbdf-6b5f43c34d79",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "mistral.pixtral-large-2502-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "b2682599-bd76-4c21-b315-63b0052cd592",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "meta.llama3-2-90b-instruct-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "b3e0f054-d7a3-4329-9808-4159bc81a5c2",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "amazon.nova-micro-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "b50ac0ac-cc64-4a67-bff6-e36fed1f9c14",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "qwen.qwen3-coder-30b-a3b-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "b82f3539-3a7d-429e-a899-d954ecf2228e",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "openai.gpt-oss-safeguard-120b"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "b932268b-9ac1-4c6d-bf9c-eeb92294ed9a",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "mistral.voxtral-small-24b-2507"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "babfb704-afb3-406a-9c06-77f7ef409429",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "stability.stable-image-inpaint-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "bc36578d-2b07-4a26-9772-d985e33bc49b",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "anthropic.claude-opus-4-1-20250805-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "c383e645-6517-49c1-9d71-556512292495",
+    "EventName": "GetUseCaseForModelAccess",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {},
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "ResourceNotFoundException",
+    "errorMessage": "You have not filled out the request form. Fill out the form before getting access."
+  },
+  {
+    "EventId": "c45c6709-e20d-4f5d-b192-e7c3cdc1853f",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "cohere.embed-english-v3"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "c52c734c-9c02-4581-a867-55c57afdbb39",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "anthropic.claude-3-sonnet-20240229-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "c5462cdd-8a82-4fe1-8a82-7584e4b8b392",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "qwen.qwen3-vl-235b-a22b"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "c88402c0-f68e-4385-920d-8e7f2b3075a2",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "minimax.minimax-m2.1"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "ca0a2c21-59c6-4664-805d-3e9456fd05b4",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "stability.stable-style-transfer-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "cba7505b-23ec-466c-acc4-3d79460cc9b6",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "stability.stable-image-erase-object-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "cbb57240-c018-4376-a8a2-2e652973e180",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "zai.glm-5"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "ce9a8a1a-26ac-4d83-899f-0e5a715143d9",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "minimax.minimax-m2"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "d594a8b7-b506-4821-9381-adf3781afe01",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "stability.stable-image-search-recolor-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "d74242b2-ba77-4b2d-a447-1e05e7a78045",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "stability.stable-image-ultra-v1:1"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "d7ec0194-99fb-49fd-b6b8-4b2a89d080e2",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "meta.llama3-1-405b-instruct-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "dc05c911-fe81-47e9-8e0c-0e41dbcfcf3f",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "google.gemma-3-4b-it"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "dca077f4-5a72-47c2-a0c8-dd8a6a868b22",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "meta.llama3-3-70b-instruct-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "e0feb71e-c67a-4e51-a6ae-921ef27163db",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "stability.stable-image-search-replace-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "e39c6354-860a-420d-b762-328859432c8c",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "writer.palmyra-vision-7b"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "e4251bd1-f133-4101-8164-ce68139fa615",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "anthropic.claude-3-haiku-20240307-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "e43eb264-a3c6-4bc3-abe4-d590ef62a364",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "anthropic.claude-fable-5"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "f1a310e0-3f17-458a-b26b-e33fd87bb89c",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "google.gemma-3-12b-it"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "f1ec4503-e9f1-4bdd-88d0-8df686b9a505",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "openai.gpt-oss-safeguard-20b"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "f21877c0-e72f-41b9-bf62-50b13d7432a5",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "mistral.voxtral-mini-3b-2507"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "f272b603-5016-457b-a355-40444b5aa226",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "mistral.ministral-3-3b-instruct"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "f76c5682-4bbc-4787-9851-3390456565b4",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "amazon.rerank-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "f8797d50-5b60-4157-8a08-b84d9a76ea06",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "cohere.command-r-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "fd1be99f-10eb-4a12-9059-3e197e83c10b",
+    "EventName": "GetFoundationModelAvailability",
+    "EventTime": "2026-06-22T14:30:00+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYQQ2BSLGM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "modelId": "meta.llama3-8b-instruct-v1:0"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "4ed72a8f-089b-4ec7-a69a-99d525a9e553",
+    "EventName": "ListFoundationModels",
+    "EventTime": "2026-06-22T13:41:43+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "amazon_bedrock_logs",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYTJMSY332H",
+      "arn": "arn:aws:iam::986601184113:user/amazon_bedrock_logs",
+      "accountId": "986601184113",
+      "accessKeyId": "AKIA6LNQDLNYVYDAOY7J",
+      "userName": "amazon_bedrock_logs"
+    },
+    "requestParameters": {},
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "028ca9ea-8e1a-46aa-9800-dfae4bf54251",
+    "EventName": "ListMarketplaceModelEndpoints",
+    "EventTime": "2026-06-22T13:40:48+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNY6WK366QM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "maxResults": 100
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "0dee9614-7bc1-4067-96c9-908ea1cd7cd8",
+    "EventName": "ListMarketplaceModelEndpoints",
+    "EventTime": "2026-06-22T13:40:42+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYTHVDPB63",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "maxResults": 100
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "41bfb447-c671-4a0b-93aa-726148158280",
+    "EventName": "ListCustomModels",
+    "EventTime": "2026-06-22T13:40:42+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYTHVDPB63",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {},
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "74642904-57b7-475c-8607-f5bec23fb030",
+    "EventName": "ListProvisionedModelThroughputs",
+    "EventTime": "2026-06-22T13:40:42+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYTHVDPB63",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {},
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "885d2ee4-c05c-41d2-be86-aa01cb702e5d",
+    "EventName": "ListCustomModelDeployments",
+    "EventTime": "2026-06-22T13:40:42+05:00",
+    "EventSource": "bedrock.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYTHVDPB63",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {},
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
     "EventId": "9693444d-9887-44d1-ad67-e80b72f5aea9",
     "EventName": "ConverseStream",
     "EventTime": "2026-06-22T13:39:34+05:00",

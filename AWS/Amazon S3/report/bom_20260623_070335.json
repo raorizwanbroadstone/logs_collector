@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:0bcd3a66-2ea3-4fbb-b228-ede7ced7fe36",
+  "serialNumber": "urn:uuid:1ba94abf-52ae-4650-903d-a802ac98cc15",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-06-22T09:43:17.997317+00:00",
+    "timestamp": "2026-06-23T07:03:35.165595+00:00",
     "tools": {
       "components": [
         {
@@ -25,7 +25,7 @@
         },
         {
           "name": "aws:SourceFiles",
-          "value": "s3_logs_20260622_094254.json"
+          "value": "s3_logs_2026-06-23_07-03-12.json"
         }
       ]
     }
@@ -4463,15 +4463,15 @@
     {
       "ref": "iam_principal-arn-aws-iam--986601184113-user-agentic-access",
       "dependsOn": [
-        "s3_bucket-cytex-cur-report",
-        "s3_bucket-entjedi",
         "s3_bucket-localaimodels",
-        "s3_bucket-test-dontdelete",
         "s3_bucket-cytex-security-scan-reports",
+        "s3_bucket-entjedi",
         "s3_bucket-jediar",
         "s3_bucket-cytex",
+        "s3_bucket-cytex-cur-report",
         "s3_bucket-bstlegal",
-        "s3_bucket-bstfintech"
+        "s3_bucket-bstfintech",
+        "s3_bucket-test-dontdelete"
       ]
     }
   ]

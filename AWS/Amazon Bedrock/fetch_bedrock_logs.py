@@ -1,28 +1,20 @@
-"""
-fetch_bedrock_logs.py
-
-Connects to AWS CloudTrail via boto3, fetches the last 24 hours of events
-from three Bedrock event sources, normalises each event into a flat JSON-
-serialisable dict, writes the result to logs/, then calls generate_bom.main()
-to produce a CycloneDX 1.6 BOM report.
-
-Dependencies: boto3, python-dotenv  (pip install boto3 python-dotenv)
-AWS credentials are read from the project-root .env file.
-"""
-
-import boto3
 import json
+import os
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-import os
+
+import boto3
 from dotenv import load_dotenv
 import generate_bom
 
 load_dotenv(Path(__file__).parent.parent.parent / ".env")
 
-AWS_REGION     = os.getenv("AWS_DEFAULT_REGION",         "eu-north-1")
-AWS_KEY_ID     = os.getenv("AWS_BEDROCK_ACCESS_KEY_ID",  "")
+AWS_REGION     = os.getenv("AWS_DEFAULT_REGION", "eu-north-1")
+AWS_KEY_ID     = os.getenv("AWS_BEDROCK_ACCESS_KEY_ID", "")
 AWS_SECRET_KEY = os.getenv("AWS_BEDROCK_SECRET_ACCESS_KEY", "")
+
+LOOKBACK_HOURS = 24
+OUTPUT_DIR = Path(__file__).parent / "logs"
 
 # CloudTrail event sources that cover all Bedrock activity
 BEDROCK_EVENT_SOURCES = [
@@ -30,13 +22,6 @@ BEDROCK_EVENT_SOURCES = [
     "bedrock-agent.amazonaws.com",          # CreateAgent, CreateKnowledgeBase, etc.
     "bedrock-agent-runtime.amazonaws.com",  # InvokeAgent, Retrieve, etc.
 ]
-
-now        = datetime.now(timezone.utc)
-START_TIME = now - timedelta(hours=24)
-
-LOG_DIR = Path(__file__).parent / "logs"
-LOG_DIR.mkdir(parents=True, exist_ok=True)
-OUTPUT_FILE = LOG_DIR / f"bedrock_logs_{now.strftime('%Y%m%d_%H%M%S')}.json"
 
 
 def check_bedrock_availability() -> bool:
@@ -46,9 +31,12 @@ def check_bedrock_availability() -> bool:
     resolution failures indicate the region is unsupported.
     """
     try:
-        boto3.client("bedrock", region_name=AWS_REGION,
-                     aws_access_key_id=AWS_KEY_ID,
-                     aws_secret_access_key=AWS_SECRET_KEY).list_foundation_models()
+        boto3.client(
+            "bedrock",
+            region_name=AWS_REGION,
+            aws_access_key_id=AWS_KEY_ID,
+            aws_secret_access_key=AWS_SECRET_KEY,
+        ).list_foundation_models()
         print(f"  Bedrock is available in {AWS_REGION}")
         return True
     except Exception as exc:
@@ -61,20 +49,23 @@ def check_bedrock_availability() -> bool:
         return True
 
 
-def fetch_events_for_source(source: str) -> list[dict]:
+def fetch_events_for_source(source: str, start_time: datetime, end_time: datetime) -> list[dict]:
     """
     Pages through CloudTrail lookup_events for the given event source across
-    the 24-hour window. Free CloudTrail event history covers the last 90 days
+    the lookback window. Free CloudTrail event history covers the last 90 days
     of management events; data events (InvokeModel payloads) require a paid trail.
     """
-    client = boto3.client("cloudtrail", region_name=AWS_REGION,
-                          aws_access_key_id=AWS_KEY_ID,
-                          aws_secret_access_key=AWS_SECRET_KEY)
+    client = boto3.client(
+        "cloudtrail",
+        region_name=AWS_REGION,
+        aws_access_key_id=AWS_KEY_ID,
+        aws_secret_access_key=AWS_SECRET_KEY,
+    )
     events: list[dict] = []
     kwargs: dict = dict(
         LookupAttributes=[{"AttributeKey": "EventSource", "AttributeValue": source}],
-        StartTime=START_TIME,
-        EndTime=now,
+        StartTime=start_time,
+        EndTime=end_time,
         MaxResults=50,
     )
     page = 0
@@ -97,7 +88,7 @@ def normalize_event(raw: dict) -> dict:
     EventTime is a datetime object from boto3 — serialised to ISO-8601 string.
     CloudTrailEvent is a JSON string — parsed and merged into the top level.
     """
-    event_time = raw.get("EventTime", now)
+    event_time = raw.get("EventTime", datetime.now(timezone.utc))
     out: dict = {
         "EventId":     raw.get("EventId", ""),
         "EventName":   raw.get("EventName", ""),
@@ -121,8 +112,19 @@ def normalize_event(raw: dict) -> dict:
 
 
 def main() -> None:
+    if not all([AWS_KEY_ID, AWS_SECRET_KEY]):
+        print("Missing required environment variables: AWS_BEDROCK_ACCESS_KEY_ID, AWS_BEDROCK_SECRET_ACCESS_KEY")
+        return
+
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    timestamp  = datetime.now(timezone.utc).strftime("%Y-%m-%d_%H-%M-%S")
+    output_file = OUTPUT_DIR / f"bedrock_logs_{timestamp}.json"
+
+    end_time   = datetime.now(timezone.utc)
+    start_time = end_time - timedelta(hours=LOOKBACK_HOURS)
+
     print(f"Region : {AWS_REGION}")
-    print(f"Window : {START_TIME.strftime('%Y-%m-%dT%H:%M:%SZ')} → {now.strftime('%Y-%m-%dT%H:%M:%SZ')}\n")
+    print(f"Window : {start_time.strftime('%Y-%m-%dT%H:%M:%SZ')} → {end_time.strftime('%Y-%m-%dT%H:%M:%SZ')}\n")
 
     print("Checking Bedrock availability...")
     check_bedrock_availability()
@@ -133,20 +135,22 @@ def main() -> None:
     for source in BEDROCK_EVENT_SOURCES:
         print(f"Fetching CloudTrail events: {source}")
         try:
-            raw_events = fetch_events_for_source(source)
+            raw_events = fetch_events_for_source(source, start_time, end_time)
             normalised = [normalize_event(e) for e in raw_events]
             all_events.extend(normalised)
             print(f"  {len(normalised)} events from {source}\n")
         except Exception as exc:
             print(f"  Error fetching {source}: {exc}\n")
 
-    with OUTPUT_FILE.open("w", encoding="utf-8") as f:
-        json.dump(all_events, f, indent=2, ensure_ascii=False)
+    with output_file.open("w", encoding="utf-8") as output_file_handle:
+        json.dump(all_events, output_file_handle, indent=2, ensure_ascii=False)
 
-    print(f"Saved {len(all_events)} events → {OUTPUT_FILE}")
+    print(f"Completed.")
+    print(f"  Total events collected: {len(all_events)}")
+    print(f"  Output saved to:        {output_file}")
 
     print("\nGenerating BOM report...")
-    generate_bom.main(target_file=OUTPUT_FILE)
+    generate_bom.main(target_file=output_file)
 
 
 if __name__ == "__main__":

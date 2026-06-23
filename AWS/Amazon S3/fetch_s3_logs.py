@@ -1,54 +1,30 @@
-"""
-fetch_s3_logs.py
-
-Stage 1 of two-stage pipeline:
-  1. Fetch CloudTrail events for all S3 event sources (last 24h)
-  2. Enumerate the contents of every discovered bucket (top-level prefixes,
-     object count, storage class breakdown) via list_objects_v2
-  3. Append the inventory as synthetic events to the log file so generate_bom.py
-     can enrich each bucket service entry without needing live AWS access
-  4. Call generate_bom.main() to produce the CycloneDX 1.6 BOM
-
-Synthetic inventory events have EventSource "s3-local-enumeration" so they are
-never confused with real CloudTrail records.
-
-Dependencies: boto3, python-dotenv  (pip install boto3 python-dotenv)
-"""
-
-import boto3
 import json
+import os
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-import os
+
+import boto3
 from dotenv import load_dotenv
 import generate_bom
 
 load_dotenv(Path(__file__).parent.parent.parent / ".env")
 
 AWS_REGION     = os.getenv("AWS_DEFAULT_REGION", "eu-north-1")
-AWS_KEY_ID     = os.getenv("AWS_S3_ACCESS_KEY_ID")
-AWS_SECRET_KEY = os.getenv("AWS_S3_SECRET_ACCESS_KEY")
+AWS_KEY_ID     = os.getenv("AWS_S3_ACCESS_KEY_ID", "") 
+AWS_SECRET_KEY = os.getenv("AWS_S3_SECRET_ACCESS_KEY", "")
+
+LOOKBACK_HOURS       = 24
+BUCKET_ENUM_MAX_KEYS = 1000
+OUTPUT_DIR = Path(__file__).parent / "logs"
 
 S3_EVENT_SOURCES = [
     "s3.amazonaws.com",         # GetBucketLocation, ListBuckets, CreateBucket, PutBucketPolicy, etc.
     "s3control.amazonaws.com",  # Batch operations, access points, multi-region access points
 ]
 
-# Max objects returned per bucket during content enumeration.
-# Uses Delimiter='/' so only the first-level tree is fetched regardless of depth.
-BUCKET_ENUM_MAX_KEYS = 1000
-
-now        = datetime.now(timezone.utc)
-START_TIME = now - timedelta(hours=24)
-
-LOG_DIR = Path(__file__).parent / "logs"
-LOG_DIR.mkdir(parents=True, exist_ok=True)
-OUTPUT_FILE = LOG_DIR / f"s3_logs_{now.strftime('%Y%m%d_%H%M%S')}.json"
-
 
 def _s3_client(region: str = "us-east-1"):
-    """Returns a boto3 S3 client. Defaults to us-east-1 because ListBuckets
-    is a global operation and some bucket regions need a region-aware client."""
+    """Returns a boto3 S3 client authenticated with module-level credentials."""
     return boto3.client(
         "s3",
         region_name=region,
@@ -58,9 +34,10 @@ def _s3_client(region: str = "us-east-1"):
 
 
 def check_s3_availability() -> bool:
+    """Calls ListBuckets as a connectivity probe. Auth errors are treated as reachable."""
     try:
         _s3_client().list_buckets()
-        print(f"  S3 is reachable")
+        print("  S3 is reachable")
         return True
     except Exception as exc:
         msg = str(exc)
@@ -71,12 +48,8 @@ def check_s3_availability() -> bool:
         return True
 
 
-def fetch_events_for_source(source: str) -> list[dict]:
-    """
-    Pages through CloudTrail lookup_events for the given event source across
-    the 24-hour window. Management events are free; data events (e.g. GetObject)
-    require a configured Trail with S3 data event logging enabled.
-    """
+def fetch_events_for_source(source: str, start_time: datetime, end_time: datetime) -> list[dict]:
+    """Pages through CloudTrail lookup_events for the given source across the lookback window; handles pagination via NextToken."""
     client = boto3.client(
         "cloudtrail",
         region_name=AWS_REGION,
@@ -86,8 +59,8 @@ def fetch_events_for_source(source: str) -> list[dict]:
     events: list[dict] = []
     kwargs: dict = dict(
         LookupAttributes=[{"AttributeKey": "EventSource", "AttributeValue": source}],
-        StartTime=START_TIME,
-        EndTime=now,
+        StartTime=start_time,
+        EndTime=end_time,
         MaxResults=50,
     )
     page = 0
@@ -106,7 +79,7 @@ def fetch_events_for_source(source: str) -> list[dict]:
 
 def normalize_event(raw: dict) -> dict:
     """Flattens a CloudTrail boto3 event dict into a JSON-serialisable form."""
-    event_time = raw.get("EventTime", now)
+    event_time = raw.get("EventTime", datetime.now(timezone.utc))
     out: dict = {
         "EventId":     raw.get("EventId", ""),
         "EventName":   raw.get("EventName", ""),
@@ -140,18 +113,7 @@ def get_bucket_region(bucket_name: str) -> str:
 
 
 def enumerate_bucket_contents(bucket_name: str, region: str) -> dict:
-    """
-    Lists top-level virtual folders (prefixes delimited by '/') and any
-    direct top-level objects in the bucket. Uses MaxKeys=BUCKET_ENUM_MAX_KEYS
-    so very large buckets are capped — IsTruncated will be True in that case.
-
-    Returns a dict with:
-      prefixes          — list of first-level "folder" paths  (e.g. ["logs/", "data/"])
-      top_level_objects — list of {key, size_bytes, storage_class} for root-level files
-      total_listed      — count of items returned (prefixes + objects)
-      is_truncated      — True if the bucket has more than BUCKET_ENUM_MAX_KEYS entries
-      access_denied     — True if s3:ListObjectsV2 was denied
-    """
+    """Lists top-level prefixes and objects up to BUCKET_ENUM_MAX_KEYS; sets access_denied=True on permission errors."""
     result = {
         "prefixes":          [],
         "top_level_objects": [],
@@ -203,17 +165,13 @@ def extract_unique_buckets(events: list[dict]) -> list[str]:
     return sorted(seen)
 
 
-def build_inventory_event(bucket_name: str, region: str, inventory: dict) -> dict:
-    """
-    Wraps bucket enumeration results in a synthetic event that looks like a
-    CloudTrail event so generate_bom.py can stream it alongside real events.
-    EventSource 's3-local-enumeration' is the discriminator used by the extractor.
-    """
+def build_inventory_event(bucket_name: str, region: str, inventory: dict, event_time: datetime) -> dict:
+    """Wraps bucket enumeration results as a synthetic CloudTrail-shaped event; s3-local-enumeration source discriminates it from real events."""
     return {
         "EventId":     f"inventory-{bucket_name}",
         "EventName":   "BucketContentsInventory",
         "EventSource": "s3-local-enumeration",
-        "EventTime":   now.isoformat(),
+        "EventTime":   event_time.isoformat(),
         "Username":    "",
         "Resources":   [],
         "userIdentity":      {},
@@ -228,47 +186,62 @@ def build_inventory_event(bucket_name: str, region: str, inventory: dict) -> dic
 
 
 def main() -> None:
+    """Fetches CloudTrail S3 events, enumerates bucket contents, writes logs/, then calls generate_bom.main()."""
+    if not all([AWS_KEY_ID, AWS_SECRET_KEY]):
+        print("Missing required credentials. Set AWS_S3_ACCESS_KEY_ID / AWS_S3_SECRET_ACCESS_KEY "
+              "or AWS_BEDROCK_ACCESS_KEY_ID / AWS_BEDROCK_SECRET_ACCESS_KEY in .env")
+        return
+
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    timestamp   = datetime.now(timezone.utc).strftime("%Y-%m-%d_%H-%M-%S")
+    output_file = OUTPUT_DIR / f"s3_logs_{timestamp}.json"
+
+    end_time   = datetime.now(timezone.utc)
+    start_time = end_time - timedelta(hours=LOOKBACK_HOURS)
+
     print(f"Region : {AWS_REGION}")
-    print(f"Window : {START_TIME.strftime('%Y-%m-%dT%H:%M:%SZ')} → {now.strftime('%Y-%m-%dT%H:%M:%SZ')}\n")
+    print(f"Window : {start_time.strftime('%Y-%m-%dT%H:%M:%SZ')} -> {end_time.strftime('%Y-%m-%dT%H:%M:%SZ')}\n")
 
     print("Checking S3 availability...")
     check_s3_availability()
     print()
 
-    # ── Stage 1: CloudTrail events ──────────────────────────────────────────
+    # stage 1 — cloudtrail events
     all_events: list[dict] = []
     for source in S3_EVENT_SOURCES:
         print(f"Fetching CloudTrail events: {source}")
         try:
-            raw_events = fetch_events_for_source(source)
+            raw_events = fetch_events_for_source(source, start_time, end_time)
             normalised = [normalize_event(e) for e in raw_events]
             all_events.extend(normalised)
             print(f"  {len(normalised)} events from {source}\n")
         except Exception as exc:
             print(f"  Error fetching {source}: {exc}\n")
 
-    # ── Stage 2: Bucket content enumeration ─────────────────────────────────
+    # stage 2 — bucket content enumeration
     unique_buckets = extract_unique_buckets(all_events)
     print(f"Enumerating contents of {len(unique_buckets)} unique buckets...")
 
     for bucket_name in unique_buckets:
-        print(f"  → {bucket_name}")
+        print(f"  -> {bucket_name}")
         region    = get_bucket_region(bucket_name)
         inventory = enumerate_bucket_contents(bucket_name, region)
         if not inventory["access_denied"]:
             print(f"    {len(inventory['prefixes'])} prefixes, "
                   f"{len(inventory['top_level_objects'])} root objects"
                   + (" (truncated)" if inventory["is_truncated"] else ""))
-        all_events.append(build_inventory_event(bucket_name, region, inventory))
+        all_events.append(build_inventory_event(bucket_name, region, inventory, end_time))
 
-    # ── Write log file ───────────────────────────────────────────────────────
-    with OUTPUT_FILE.open("w", encoding="utf-8") as f:
-        json.dump(all_events, f, indent=2, ensure_ascii=False)
+    # write log file
+    with output_file.open("w", encoding="utf-8") as output_file_handle:
+        json.dump(all_events, output_file_handle, indent=2, ensure_ascii=False)
 
-    print(f"\nSaved {len(all_events)} events → {OUTPUT_FILE}")
+    print(f"\nCompleted.")
+    print(f"  Total events collected: {len(all_events)}")
+    print(f"  Output saved to:        {output_file}")
 
     print("\nGenerating BOM report...")
-    generate_bom.main(target_file=OUTPUT_FILE)
+    generate_bom.main(target_file=output_file)
 
 
 if __name__ == "__main__":

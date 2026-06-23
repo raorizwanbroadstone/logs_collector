@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:d12af90d-bfa2-49ac-a037-ce535c24457b",
+  "serialNumber": "urn:uuid:7c99c3c6-1a3b-4591-af70-2aeb9967d57a",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-06-22T08:44:39.031786+00:00",
+    "timestamp": "2026-06-23T06:59:58.336211+00:00",
     "tools": {
       "components": [
         {
@@ -25,7 +25,7 @@
         },
         {
           "name": "aws:SourceFiles",
-          "value": "bedrock_logs_20260622_084430.json"
+          "value": "bedrock_logs_2026-06-23_06-59-49.json"
         }
       ]
     }
@@ -53,69 +53,35 @@
           "value": "bedrock.amazonaws.com"
         }
       ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "iam_principal-arn-aws-iam--986601184113-user-amazon_bedrock_logs",
+      "name": "amazon_bedrock_logs",
+      "properties": [
+        {
+          "name": "aws:IAMPrincipalARN",
+          "value": "arn:aws:iam::986601184113:user/amazon_bedrock_logs"
+        },
+        {
+          "name": "aws:IdentityType",
+          "value": "IAMUser"
+        },
+        {
+          "name": "aws:AccountId",
+          "value": "986601184113"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
     }
   ],
   "services": [
     {
-      "bom-ref": "model-arn-aws-bedrock-us-west-2-986601184113-inference-profile-us.amazon.nova-micro-v1-0",
-      "name": "arn:aws:bedrock:us-west-2:986601184113:inference-profile/us.amazon.nova-micro-v1:0",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "arn:aws:bedrock:us-west-2:986601184113:inference-profile/us"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "arn:aws:bedrock:us-west-2:986601184113:inference-profile/us.amazon.nova-micro-v1:0"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-stability.stable-image-inpaint-v1-0",
-      "name": "stability.stable-image-inpaint-v1:0",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "stability"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "stability.stable-image-inpaint-v1:0"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-nvidia.nemotron-nano-12b-v2",
-      "name": "nvidia.nemotron-nano-12b-v2",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "nvidia"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "nvidia.nemotron-nano-12b-v2"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-anthropic.claude-3-haiku-20240307-v1-0",
-      "name": "anthropic.claude-3-haiku-20240307-v1:0",
+      "bom-ref": "model-anthropic.claude-opus-4-6-v1",
+      "name": "anthropic.claude-opus-4-6-v1",
       "authenticated": true,
       "properties": [
         {
@@ -124,7 +90,7 @@
         },
         {
           "name": "aws:ModelId",
-          "value": "anthropic.claude-3-haiku-20240307-v1:0"
+          "value": "anthropic.claude-opus-4-6-v1"
         },
         {
           "name": "aws:EventSource",
@@ -133,65 +99,8 @@
       ]
     },
     {
-      "bom-ref": "model-meta.llama4-scout-17b-instruct-v1-0",
-      "name": "meta.llama4-scout-17b-instruct-v1:0",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "meta"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "meta.llama4-scout-17b-instruct-v1:0"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-openai.gpt-oss-120b-1-0",
-      "name": "openai.gpt-oss-120b-1:0",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "openai"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "openai.gpt-oss-120b-1:0"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-nvidia.nemotron-super-3-120b",
-      "name": "nvidia.nemotron-super-3-120b",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "nvidia"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "nvidia.nemotron-super-3-120b"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-mistral.devstral-2-123b",
-      "name": "mistral.devstral-2-123b",
+      "bom-ref": "model-mistral.magistral-small-2509",
+      "name": "mistral.magistral-small-2509",
       "authenticated": true,
       "properties": [
         {
@@ -200,7 +109,7 @@
         },
         {
           "name": "aws:ModelId",
-          "value": "mistral.devstral-2-123b"
+          "value": "mistral.magistral-small-2509"
         },
         {
           "name": "aws:EventSource",
@@ -209,27 +118,8 @@
       ]
     },
     {
-      "bom-ref": "model-stability.stable-style-transfer-v1-0",
-      "name": "stability.stable-style-transfer-v1:0",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "stability"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "stability.stable-style-transfer-v1:0"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-amazon.titan-image-generator-v2-0",
-      "name": "amazon.titan-image-generator-v2:0",
+      "bom-ref": "model-amazon.titan-embed-image-v1",
+      "name": "amazon.titan-embed-image-v1",
       "authenticated": true,
       "properties": [
         {
@@ -238,7 +128,7 @@
         },
         {
           "name": "aws:ModelId",
-          "value": "amazon.titan-image-generator-v2:0"
+          "value": "amazon.titan-embed-image-v1"
         },
         {
           "name": "aws:EventSource",
@@ -247,141 +137,8 @@
       ]
     },
     {
-      "bom-ref": "model-minimax.minimax-m2.5",
-      "name": "minimax.minimax-m2.5",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "minimax"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "minimax.minimax-m2.5"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-amazon.titan-embed-text-v2-0",
-      "name": "amazon.titan-embed-text-v2:0",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "amazon"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "amazon.titan-embed-text-v2:0"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-cohere.embed-v4-0",
-      "name": "cohere.embed-v4:0",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "cohere"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "cohere.embed-v4:0"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-qwen.qwen3-coder-30b-a3b-v1-0",
-      "name": "qwen.qwen3-coder-30b-a3b-v1:0",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "qwen"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "qwen.qwen3-coder-30b-a3b-v1:0"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-qwen.qwen3-vl-235b-a22b",
-      "name": "qwen.qwen3-vl-235b-a22b",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "qwen"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "qwen.qwen3-vl-235b-a22b"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-stability.stable-image-core-v1-1",
-      "name": "stability.stable-image-core-v1:1",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "stability"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "stability.stable-image-core-v1:1"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-anthropic.claude-opus-4-7",
-      "name": "anthropic.claude-opus-4-7",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "anthropic"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "anthropic.claude-opus-4-7"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-meta.llama3-1-70b-instruct-v1-0",
-      "name": "meta.llama3-1-70b-instruct-v1:0",
+      "bom-ref": "model-meta.llama3-2-1b-instruct-v1-0",
+      "name": "meta.llama3-2-1b-instruct-v1:0",
       "authenticated": true,
       "properties": [
         {
@@ -390,7 +147,7 @@
         },
         {
           "name": "aws:ModelId",
-          "value": "meta.llama3-1-70b-instruct-v1:0"
+          "value": "meta.llama3-2-1b-instruct-v1:0"
         },
         {
           "name": "aws:EventSource",
@@ -399,150 +156,17 @@
       ]
     },
     {
-      "bom-ref": "model-minimax.minimax-m2.1",
-      "name": "minimax.minimax-m2.1",
+      "bom-ref": "model-moonshotai.kimi-k2.5",
+      "name": "moonshotai.kimi-k2.5",
       "authenticated": true,
       "properties": [
         {
           "name": "aws:ModelProvider",
-          "value": "minimax"
+          "value": "moonshotai"
         },
         {
           "name": "aws:ModelId",
-          "value": "minimax.minimax-m2.1"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-anthropic.claude-sonnet-4-6",
-      "name": "anthropic.claude-sonnet-4-6",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "anthropic"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "anthropic.claude-sonnet-4-6"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-stability.stable-image-search-replace-v1-0",
-      "name": "stability.stable-image-search-replace-v1:0",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "stability"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "stability.stable-image-search-replace-v1:0"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-stability.stable-image-control-sketch-v1-0",
-      "name": "stability.stable-image-control-sketch-v1:0",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "stability"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "stability.stable-image-control-sketch-v1:0"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-google.gemma-3-27b-it",
-      "name": "google.gemma-3-27b-it",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "google"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "google.gemma-3-27b-it"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-zai.glm-5",
-      "name": "zai.glm-5",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "zai"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "zai.glm-5"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-mistral.mixtral-8x7b-instruct-v0-1",
-      "name": "mistral.mixtral-8x7b-instruct-v0:1",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "mistral"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "mistral.mixtral-8x7b-instruct-v0:1"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-qwen.qwen3-32b-v1-0",
-      "name": "qwen.qwen3-32b-v1:0",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "qwen"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "qwen.qwen3-32b-v1:0"
+          "value": "moonshotai.kimi-k2.5"
         },
         {
           "name": "aws:EventSource",
@@ -570,17 +194,17 @@
       ]
     },
     {
-      "bom-ref": "model-meta.llama3-3-70b-instruct-v1-0",
-      "name": "meta.llama3-3-70b-instruct-v1:0",
+      "bom-ref": "model-stability.stable-image-style-guide-v1-0",
+      "name": "stability.stable-image-style-guide-v1:0",
       "authenticated": true,
       "properties": [
         {
           "name": "aws:ModelProvider",
-          "value": "meta"
+          "value": "stability"
         },
         {
           "name": "aws:ModelId",
-          "value": "meta.llama3-3-70b-instruct-v1:0"
+          "value": "stability.stable-image-style-guide-v1:0"
         },
         {
           "name": "aws:EventSource",
@@ -589,17 +213,188 @@
       ]
     },
     {
-      "bom-ref": "model-amazon.nova-2-sonic-v1-0",
-      "name": "amazon.nova-2-sonic-v1:0",
+      "bom-ref": "model-meta.llama3-70b-instruct-v1-0",
+      "name": "meta.llama3-70b-instruct-v1:0",
       "authenticated": true,
       "properties": [
         {
           "name": "aws:ModelProvider",
-          "value": "amazon"
+          "value": "meta"
         },
         {
           "name": "aws:ModelId",
-          "value": "amazon.nova-2-sonic-v1:0"
+          "value": "meta.llama3-70b-instruct-v1:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-stability.stable-image-remove-background-v1-0",
+      "name": "stability.stable-image-remove-background-v1:0",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "stability"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "stability.stable-image-remove-background-v1:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-openai.gpt-oss-20b-1-0",
+      "name": "openai.gpt-oss-20b-1:0",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "openai"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "openai.gpt-oss-20b-1:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-anthropic.claude-sonnet-4-6",
+      "name": "anthropic.claude-sonnet-4-6",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "anthropic"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "anthropic.claude-sonnet-4-6"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-nvidia.nemotron-nano-12b-v2",
+      "name": "nvidia.nemotron-nano-12b-v2",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "nvidia"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "nvidia.nemotron-nano-12b-v2"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-anthropic.claude-opus-4-7",
+      "name": "anthropic.claude-opus-4-7",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "anthropic"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "anthropic.claude-opus-4-7"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-luma.ray-v2-0",
+      "name": "luma.ray-v2:0",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "luma"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "luma.ray-v2:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-cohere.embed-v4-0",
+      "name": "cohere.embed-v4:0",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "cohere"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "cohere.embed-v4:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-meta.llama3-2-3b-instruct-v1-0",
+      "name": "meta.llama3-2-3b-instruct-v1:0",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "meta"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "meta.llama3-2-3b-instruct-v1:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-mistral.mixtral-8x7b-instruct-v0-1",
+      "name": "mistral.mixtral-8x7b-instruct-v0:1",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "mistral"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "mistral.mixtral-8x7b-instruct-v0:1"
         },
         {
           "name": "aws:EventSource",
@@ -646,27 +441,8 @@
       ]
     },
     {
-      "bom-ref": "model-anthropic.claude-opus-4-8",
-      "name": "anthropic.claude-opus-4-8",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "anthropic"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "anthropic.claude-opus-4-8"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-amazon.titan-embed-image-v1",
-      "name": "amazon.titan-embed-image-v1",
+      "bom-ref": "model-amazon.titan-embed-text-v2-0",
+      "name": "amazon.titan-embed-text-v2:0",
       "authenticated": true,
       "properties": [
         {
@@ -675,7 +451,7 @@
         },
         {
           "name": "aws:ModelId",
-          "value": "amazon.titan-embed-image-v1"
+          "value": "amazon.titan-embed-text-v2:0"
         },
         {
           "name": "aws:EventSource",
@@ -684,93 +460,17 @@
       ]
     },
     {
-      "bom-ref": "model-mistral.mistral-large-2402-v1-0",
-      "name": "mistral.mistral-large-2402-v1:0",
+      "bom-ref": "model-minimax.minimax-m2.5",
+      "name": "minimax.minimax-m2.5",
       "authenticated": true,
       "properties": [
         {
           "name": "aws:ModelProvider",
-          "value": "mistral"
+          "value": "minimax"
         },
         {
           "name": "aws:ModelId",
-          "value": "mistral.mistral-large-2402-v1:0"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-stability.stable-image-remove-background-v1-0",
-      "name": "stability.stable-image-remove-background-v1:0",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "stability"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "stability.stable-image-remove-background-v1:0"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-meta.llama4-maverick-17b-instruct-v1-0",
-      "name": "meta.llama4-maverick-17b-instruct-v1:0",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "meta"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "meta.llama4-maverick-17b-instruct-v1:0"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-meta.llama3-70b-instruct-v1-0",
-      "name": "meta.llama3-70b-instruct-v1:0",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "meta"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "meta.llama3-70b-instruct-v1:0"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-deepseek.v3.2",
-      "name": "deepseek.v3.2",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "deepseek"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "deepseek.v3.2"
+          "value": "minimax.minimax-m2.5"
         },
         {
           "name": "aws:EventSource",
@@ -798,8 +498,179 @@
       ]
     },
     {
-      "bom-ref": "model-nvidia.nemotron-nano-3-30b",
-      "name": "nvidia.nemotron-nano-3-30b",
+      "bom-ref": "model-qwen.qwen3-235b-a22b-2507-v1-0",
+      "name": "qwen.qwen3-235b-a22b-2507-v1:0",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "qwen"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "qwen.qwen3-235b-a22b-2507-v1:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-qwen.qwen3-32b-v1-0",
+      "name": "qwen.qwen3-32b-v1:0",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "qwen"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "qwen.qwen3-32b-v1:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-mistral.mistral-large-2402-v1-0",
+      "name": "mistral.mistral-large-2402-v1:0",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "mistral"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "mistral.mistral-large-2402-v1:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-deepseek.r1-v1-0",
+      "name": "deepseek.r1-v1:0",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "deepseek"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "deepseek.r1-v1:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-mistral.devstral-2-123b",
+      "name": "mistral.devstral-2-123b",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "mistral"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "mistral.devstral-2-123b"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-google.gemma-3-27b-it",
+      "name": "google.gemma-3-27b-it",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "google"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "google.gemma-3-27b-it"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-stability.stable-conservative-upscale-v1-0",
+      "name": "stability.stable-conservative-upscale-v1:0",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "stability"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "stability.stable-conservative-upscale-v1:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-qwen.qwen3-coder-480b-a35b-v1-0",
+      "name": "qwen.qwen3-coder-480b-a35b-v1:0",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "qwen"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "qwen.qwen3-coder-480b-a35b-v1:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-qwen.qwen3-next-80b-a3b",
+      "name": "qwen.qwen3-next-80b-a3b",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "qwen"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "qwen.qwen3-next-80b-a3b"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-nvidia.nemotron-super-3-120b",
+      "name": "nvidia.nemotron-super-3-120b",
       "authenticated": true,
       "properties": [
         {
@@ -808,7 +679,7 @@
         },
         {
           "name": "aws:ModelId",
-          "value": "nvidia.nemotron-nano-3-30b"
+          "value": "nvidia.nemotron-super-3-120b"
         },
         {
           "name": "aws:EventSource",
@@ -817,17 +688,17 @@
       ]
     },
     {
-      "bom-ref": "model-writer.palmyra-vision-7b",
-      "name": "writer.palmyra-vision-7b",
+      "bom-ref": "model-cohere.embed-multilingual-v3",
+      "name": "cohere.embed-multilingual-v3",
       "authenticated": true,
       "properties": [
         {
           "name": "aws:ModelProvider",
-          "value": "writer"
+          "value": "cohere"
         },
         {
           "name": "aws:ModelId",
-          "value": "writer.palmyra-vision-7b"
+          "value": "cohere.embed-multilingual-v3"
         },
         {
           "name": "aws:EventSource",
@@ -836,17 +707,17 @@
       ]
     },
     {
-      "bom-ref": "model-openai.gpt-oss-safeguard-20b",
-      "name": "openai.gpt-oss-safeguard-20b",
+      "bom-ref": "model-stability.stable-image-control-structure-v1-0",
+      "name": "stability.stable-image-control-structure-v1:0",
       "authenticated": true,
       "properties": [
         {
           "name": "aws:ModelProvider",
-          "value": "openai"
+          "value": "stability"
         },
         {
           "name": "aws:ModelId",
-          "value": "openai.gpt-oss-safeguard-20b"
+          "value": "stability.stable-image-control-structure-v1:0"
         },
         {
           "name": "aws:EventSource",
@@ -855,112 +726,17 @@
       ]
     },
     {
-      "bom-ref": "model-mistral.ministral-3-14b-instruct",
-      "name": "mistral.ministral-3-14b-instruct",
+      "bom-ref": "model-stability.stable-creative-upscale-v1-0",
+      "name": "stability.stable-creative-upscale-v1:0",
       "authenticated": true,
       "properties": [
         {
           "name": "aws:ModelProvider",
-          "value": "mistral"
+          "value": "stability"
         },
         {
           "name": "aws:ModelId",
-          "value": "mistral.ministral-3-14b-instruct"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-meta.llama3-2-11b-instruct-v1-0",
-      "name": "meta.llama3-2-11b-instruct-v1:0",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "meta"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "meta.llama3-2-11b-instruct-v1:0"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-meta.llama3-2-3b-instruct-v1-0",
-      "name": "meta.llama3-2-3b-instruct-v1:0",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "meta"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "meta.llama3-2-3b-instruct-v1:0"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-meta.llama3-1-405b-instruct-v1-0",
-      "name": "meta.llama3-1-405b-instruct-v1:0",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "meta"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "meta.llama3-1-405b-instruct-v1:0"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-zai.glm-4.7",
-      "name": "zai.glm-4.7",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "zai"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "zai.glm-4.7"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-mistral.pixtral-large-2502-v1-0",
-      "name": "mistral.pixtral-large-2502-v1:0",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "mistral"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "mistral.pixtral-large-2502-v1:0"
+          "value": "stability.stable-creative-upscale-v1:0"
         },
         {
           "name": "aws:EventSource",
@@ -1007,8 +783,8 @@
       ]
     },
     {
-      "bom-ref": "model-anthropic.claude-sonnet-4-20250514-v1-0",
-      "name": "anthropic.claude-sonnet-4-20250514-v1:0",
+      "bom-ref": "model-anthropic.claude-opus-4-5-20251101-v1-0",
+      "name": "anthropic.claude-opus-4-5-20251101-v1:0",
       "authenticated": true,
       "properties": [
         {
@@ -1017,767 +793,7 @@
         },
         {
           "name": "aws:ModelId",
-          "value": "anthropic.claude-sonnet-4-20250514-v1:0"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-anthropic.claude-opus-4-6-v1",
-      "name": "anthropic.claude-opus-4-6-v1",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "anthropic"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "anthropic.claude-opus-4-6-v1"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-writer.palmyra-x4-v1-0",
-      "name": "writer.palmyra-x4-v1:0",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "writer"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "writer.palmyra-x4-v1:0"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-meta.llama3-2-1b-instruct-v1-0",
-      "name": "meta.llama3-2-1b-instruct-v1:0",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "meta"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "meta.llama3-2-1b-instruct-v1:0"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-stability.stable-image-style-guide-v1-0",
-      "name": "stability.stable-image-style-guide-v1:0",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "stability"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "stability.stable-image-style-guide-v1:0"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-openai.gpt-oss-safeguard-120b",
-      "name": "openai.gpt-oss-safeguard-120b",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "openai"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "openai.gpt-oss-safeguard-120b"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-qwen.qwen3-next-80b-a3b",
-      "name": "qwen.qwen3-next-80b-a3b",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "qwen"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "qwen.qwen3-next-80b-a3b"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-mistral.voxtral-small-24b-2507",
-      "name": "mistral.voxtral-small-24b-2507",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "mistral"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "mistral.voxtral-small-24b-2507"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-zai.glm-4.7-flash",
-      "name": "zai.glm-4.7-flash",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "zai"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "zai.glm-4.7-flash"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-openai.gpt-oss-20b-1-0",
-      "name": "openai.gpt-oss-20b-1:0",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "openai"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "openai.gpt-oss-20b-1:0"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-nvidia.nemotron-nano-9b-v2",
-      "name": "nvidia.nemotron-nano-9b-v2",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "nvidia"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "nvidia.nemotron-nano-9b-v2"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-meta.llama3-8b-instruct-v1-0",
-      "name": "meta.llama3-8b-instruct-v1:0",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "meta"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "meta.llama3-8b-instruct-v1:0"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-minimax.minimax-m2",
-      "name": "minimax.minimax-m2",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "minimax"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "minimax.minimax-m2"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-meta.llama3-2-90b-instruct-v1-0",
-      "name": "meta.llama3-2-90b-instruct-v1:0",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "meta"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "meta.llama3-2-90b-instruct-v1:0"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-moonshot.kimi-k2-thinking",
-      "name": "moonshot.kimi-k2-thinking",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "moonshot"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "moonshot.kimi-k2-thinking"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-twelvelabs.pegasus-1-2-v1-0",
-      "name": "twelvelabs.pegasus-1-2-v1:0",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "twelvelabs"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "twelvelabs.pegasus-1-2-v1:0"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-stability.stable-image-search-recolor-v1-0",
-      "name": "stability.stable-image-search-recolor-v1:0",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "stability"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "stability.stable-image-search-recolor-v1:0"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-mistral.ministral-3-8b-instruct",
-      "name": "mistral.ministral-3-8b-instruct",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "mistral"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "mistral.ministral-3-8b-instruct"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-mistral.voxtral-mini-3b-2507",
-      "name": "mistral.voxtral-mini-3b-2507",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "mistral"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "mistral.voxtral-mini-3b-2507"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-google.gemma-3-4b-it",
-      "name": "google.gemma-3-4b-it",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "google"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "google.gemma-3-4b-it"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-moonshotai.kimi-k2.5",
-      "name": "moonshotai.kimi-k2.5",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "moonshotai"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "moonshotai.kimi-k2.5"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-cohere.embed-english-v3",
-      "name": "cohere.embed-english-v3",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "cohere"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "cohere.embed-english-v3"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-meta.llama3-1-8b-instruct-v1-0",
-      "name": "meta.llama3-1-8b-instruct-v1:0",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "meta"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "meta.llama3-1-8b-instruct-v1:0"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-cohere.embed-multilingual-v3",
-      "name": "cohere.embed-multilingual-v3",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "cohere"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "cohere.embed-multilingual-v3"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-qwen.qwen3-coder-480b-a35b-v1-0",
-      "name": "qwen.qwen3-coder-480b-a35b-v1:0",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "qwen"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "qwen.qwen3-coder-480b-a35b-v1:0"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-anthropic.claude-opus-4-1-20250805-v1-0",
-      "name": "anthropic.claude-opus-4-1-20250805-v1:0",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "anthropic"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "anthropic.claude-opus-4-1-20250805-v1:0"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-stability.stable-image-ultra-v1-1",
-      "name": "stability.stable-image-ultra-v1:1",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "stability"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "stability.stable-image-ultra-v1:1"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-cohere.rerank-v3-5-0",
-      "name": "cohere.rerank-v3-5:0",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "cohere"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "cohere.rerank-v3-5:0"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-amazon.titan-embed-text-v1",
-      "name": "amazon.titan-embed-text-v1",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "amazon"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "amazon.titan-embed-text-v1"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-stability.stable-outpaint-v1-0",
-      "name": "stability.stable-outpaint-v1:0",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "stability"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "stability.stable-outpaint-v1:0"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-deepseek.v3-v1-0",
-      "name": "deepseek.v3-v1:0",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "deepseek"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "deepseek.v3-v1:0"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-cohere.command-r-v1-0",
-      "name": "cohere.command-r-v1:0",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "cohere"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "cohere.command-r-v1:0"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-qwen.qwen3-235b-a22b-2507-v1-0",
-      "name": "qwen.qwen3-235b-a22b-2507-v1:0",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "qwen"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "qwen.qwen3-235b-a22b-2507-v1:0"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-amazon.nova-micro-v1-0",
-      "name": "amazon.nova-micro-v1:0",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "amazon"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "amazon.nova-micro-v1:0"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-mistral.mistral-7b-instruct-v0-2",
-      "name": "mistral.mistral-7b-instruct-v0:2",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "mistral"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "mistral.mistral-7b-instruct-v0:2"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-mistral.magistral-small-2509",
-      "name": "mistral.magistral-small-2509",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "mistral"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "mistral.magistral-small-2509"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-amazon.nova-lite-v1-0",
-      "name": "amazon.nova-lite-v1:0",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "amazon"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "amazon.nova-lite-v1:0"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-mistral.mistral-large-3-675b-instruct",
-      "name": "mistral.mistral-large-3-675b-instruct",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "mistral"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "mistral.mistral-large-3-675b-instruct"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-stability.stable-image-erase-object-v1-0",
-      "name": "stability.stable-image-erase-object-v1:0",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "stability"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "stability.stable-image-erase-object-v1:0"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-amazon.nova-premier-v1-0",
-      "name": "amazon.nova-premier-v1:0",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "amazon"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "amazon.nova-premier-v1:0"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-stability.stable-creative-upscale-v1-0",
-      "name": "stability.stable-creative-upscale-v1:0",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "stability"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "stability.stable-creative-upscale-v1:0"
+          "value": "anthropic.claude-opus-4-5-20251101-v1:0"
         },
         {
           "name": "aws:EventSource",
@@ -1805,17 +821,17 @@
       ]
     },
     {
-      "bom-ref": "model-anthropic.claude-3-sonnet-20240229-v1-0",
-      "name": "anthropic.claude-3-sonnet-20240229-v1:0",
+      "bom-ref": "model-stability.stable-image-control-sketch-v1-0",
+      "name": "stability.stable-image-control-sketch-v1:0",
       "authenticated": true,
       "properties": [
         {
           "name": "aws:ModelProvider",
-          "value": "anthropic"
+          "value": "stability"
         },
         {
           "name": "aws:ModelId",
-          "value": "anthropic.claude-3-sonnet-20240229-v1:0"
+          "value": "stability.stable-image-control-sketch-v1:0"
         },
         {
           "name": "aws:EventSource",
@@ -1824,8 +840,27 @@
       ]
     },
     {
-      "bom-ref": "model-deepseek.r1-v1-0",
-      "name": "deepseek.r1-v1:0",
+      "bom-ref": "model-amazon.nova-premier-v1-0",
+      "name": "amazon.nova-premier-v1:0",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "amazon"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "amazon.nova-premier-v1:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-deepseek.v3-v1-0",
+      "name": "deepseek.v3-v1:0",
       "authenticated": true,
       "properties": [
         {
@@ -1834,7 +869,7 @@
         },
         {
           "name": "aws:ModelId",
-          "value": "deepseek.r1-v1:0"
+          "value": "deepseek.v3-v1:0"
         },
         {
           "name": "aws:EventSource",
@@ -1843,17 +878,131 @@
       ]
     },
     {
-      "bom-ref": "model-anthropic.claude-opus-4-5-20251101-v1-0",
-      "name": "anthropic.claude-opus-4-5-20251101-v1:0",
+      "bom-ref": "model-meta.llama3-2-11b-instruct-v1-0",
+      "name": "meta.llama3-2-11b-instruct-v1:0",
       "authenticated": true,
       "properties": [
         {
           "name": "aws:ModelProvider",
-          "value": "anthropic"
+          "value": "meta"
         },
         {
           "name": "aws:ModelId",
-          "value": "anthropic.claude-opus-4-5-20251101-v1:0"
+          "value": "meta.llama3-2-11b-instruct-v1:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-meta.llama4-scout-17b-instruct-v1-0",
+      "name": "meta.llama4-scout-17b-instruct-v1:0",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "meta"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "meta.llama4-scout-17b-instruct-v1:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-stability.stable-image-core-v1-1",
+      "name": "stability.stable-image-core-v1:1",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "stability"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "stability.stable-image-core-v1:1"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-moonshot.kimi-k2-thinking",
+      "name": "moonshot.kimi-k2-thinking",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "moonshot"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "moonshot.kimi-k2-thinking"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-amazon.titan-image-generator-v2-0",
+      "name": "amazon.titan-image-generator-v2:0",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "amazon"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "amazon.titan-image-generator-v2:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-openai.gpt-oss-120b-1-0",
+      "name": "openai.gpt-oss-120b-1:0",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "openai"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "openai.gpt-oss-120b-1:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-zai.glm-4.7-flash",
+      "name": "zai.glm-4.7-flash",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "zai"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "zai.glm-4.7-flash"
         },
         {
           "name": "aws:EventSource",
@@ -1881,46 +1030,8 @@
       ]
     },
     {
-      "bom-ref": "model-stability.stable-conservative-upscale-v1-0",
-      "name": "stability.stable-conservative-upscale-v1:0",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "stability"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "stability.stable-conservative-upscale-v1:0"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-stability.stable-image-control-structure-v1-0",
-      "name": "stability.stable-image-control-structure-v1:0",
-      "authenticated": true,
-      "properties": [
-        {
-          "name": "aws:ModelProvider",
-          "value": "stability"
-        },
-        {
-          "name": "aws:ModelId",
-          "value": "stability.stable-image-control-structure-v1:0"
-        },
-        {
-          "name": "aws:EventSource",
-          "value": "bedrock.amazonaws.com"
-        }
-      ]
-    },
-    {
-      "bom-ref": "model-amazon.rerank-v1-0",
-      "name": "amazon.rerank-v1:0",
+      "bom-ref": "model-amazon.titan-embed-text-v1",
+      "name": "amazon.titan-embed-text-v1",
       "authenticated": true,
       "properties": [
         {
@@ -1929,7 +1040,7 @@
         },
         {
           "name": "aws:ModelId",
-          "value": "amazon.rerank-v1:0"
+          "value": "amazon.titan-embed-text-v1"
         },
         {
           "name": "aws:EventSource",
@@ -1938,17 +1049,17 @@
       ]
     },
     {
-      "bom-ref": "model-google.gemma-3-12b-it",
-      "name": "google.gemma-3-12b-it",
+      "bom-ref": "model-meta.llama4-maverick-17b-instruct-v1-0",
+      "name": "meta.llama4-maverick-17b-instruct-v1:0",
       "authenticated": true,
       "properties": [
         {
           "name": "aws:ModelProvider",
-          "value": "google"
+          "value": "meta"
         },
         {
           "name": "aws:ModelId",
-          "value": "google.gemma-3-12b-it"
+          "value": "meta.llama4-maverick-17b-instruct-v1:0"
         },
         {
           "name": "aws:EventSource",
@@ -1957,17 +1068,169 @@
       ]
     },
     {
-      "bom-ref": "model-luma.ray-v2-0",
-      "name": "luma.ray-v2:0",
+      "bom-ref": "model-stability.stable-outpaint-v1-0",
+      "name": "stability.stable-outpaint-v1:0",
       "authenticated": true,
       "properties": [
         {
           "name": "aws:ModelProvider",
-          "value": "luma"
+          "value": "stability"
         },
         {
           "name": "aws:ModelId",
-          "value": "luma.ray-v2:0"
+          "value": "stability.stable-outpaint-v1:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-meta.llama3-1-8b-instruct-v1-0",
+      "name": "meta.llama3-1-8b-instruct-v1:0",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "meta"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "meta.llama3-1-8b-instruct-v1:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-nvidia.nemotron-nano-3-30b",
+      "name": "nvidia.nemotron-nano-3-30b",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "nvidia"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "nvidia.nemotron-nano-3-30b"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-zai.glm-4.7",
+      "name": "zai.glm-4.7",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "zai"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "zai.glm-4.7"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-mistral.ministral-3-8b-instruct",
+      "name": "mistral.ministral-3-8b-instruct",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "mistral"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "mistral.ministral-3-8b-instruct"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-twelvelabs.pegasus-1-2-v1-0",
+      "name": "twelvelabs.pegasus-1-2-v1:0",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "twelvelabs"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "twelvelabs.pegasus-1-2-v1:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-writer.palmyra-x4-v1-0",
+      "name": "writer.palmyra-x4-v1:0",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "writer"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "writer.palmyra-x4-v1:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-amazon.nova-2-sonic-v1-0",
+      "name": "amazon.nova-2-sonic-v1:0",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "amazon"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "amazon.nova-2-sonic-v1:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-amazon.nova-lite-v1-0",
+      "name": "amazon.nova-lite-v1:0",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "amazon"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "amazon.nova-lite-v1:0"
         },
         {
           "name": "aws:EventSource",
@@ -1995,8 +1258,84 @@
       ]
     },
     {
-      "bom-ref": "model-mistral.ministral-3-3b-instruct",
-      "name": "mistral.ministral-3-3b-instruct",
+      "bom-ref": "model-meta.llama3-1-70b-instruct-v1-0",
+      "name": "meta.llama3-1-70b-instruct-v1:0",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "meta"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "meta.llama3-1-70b-instruct-v1:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-nvidia.nemotron-nano-9b-v2",
+      "name": "nvidia.nemotron-nano-9b-v2",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "nvidia"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "nvidia.nemotron-nano-9b-v2"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-deepseek.v3.2",
+      "name": "deepseek.v3.2",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "deepseek"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "deepseek.v3.2"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-anthropic.claude-opus-4-8",
+      "name": "anthropic.claude-opus-4-8",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "anthropic"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "anthropic.claude-opus-4-8"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-mistral.mistral-large-3-675b-instruct",
+      "name": "mistral.mistral-large-3-675b-instruct",
       "authenticated": true,
       "properties": [
         {
@@ -2005,7 +1344,539 @@
         },
         {
           "name": "aws:ModelId",
-          "value": "mistral.ministral-3-3b-instruct"
+          "value": "mistral.mistral-large-3-675b-instruct"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-anthropic.claude-sonnet-4-20250514-v1-0",
+      "name": "anthropic.claude-sonnet-4-20250514-v1:0",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "anthropic"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "anthropic.claude-sonnet-4-20250514-v1:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-mistral.mistral-7b-instruct-v0-2",
+      "name": "mistral.mistral-7b-instruct-v0:2",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "mistral"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "mistral.mistral-7b-instruct-v0:2"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-mistral.ministral-3-14b-instruct",
+      "name": "mistral.ministral-3-14b-instruct",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "mistral"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "mistral.ministral-3-14b-instruct"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-cohere.rerank-v3-5-0",
+      "name": "cohere.rerank-v3-5:0",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "cohere"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "cohere.rerank-v3-5:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-mistral.pixtral-large-2502-v1-0",
+      "name": "mistral.pixtral-large-2502-v1:0",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "mistral"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "mistral.pixtral-large-2502-v1:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-meta.llama3-2-90b-instruct-v1-0",
+      "name": "meta.llama3-2-90b-instruct-v1:0",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "meta"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "meta.llama3-2-90b-instruct-v1:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-amazon.nova-micro-v1-0",
+      "name": "amazon.nova-micro-v1:0",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "amazon"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "amazon.nova-micro-v1:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-qwen.qwen3-coder-30b-a3b-v1-0",
+      "name": "qwen.qwen3-coder-30b-a3b-v1:0",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "qwen"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "qwen.qwen3-coder-30b-a3b-v1:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-openai.gpt-oss-safeguard-120b",
+      "name": "openai.gpt-oss-safeguard-120b",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "openai"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "openai.gpt-oss-safeguard-120b"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-mistral.voxtral-small-24b-2507",
+      "name": "mistral.voxtral-small-24b-2507",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "mistral"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "mistral.voxtral-small-24b-2507"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-stability.stable-image-inpaint-v1-0",
+      "name": "stability.stable-image-inpaint-v1:0",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "stability"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "stability.stable-image-inpaint-v1:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-anthropic.claude-opus-4-1-20250805-v1-0",
+      "name": "anthropic.claude-opus-4-1-20250805-v1:0",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "anthropic"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "anthropic.claude-opus-4-1-20250805-v1:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-cohere.embed-english-v3",
+      "name": "cohere.embed-english-v3",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "cohere"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "cohere.embed-english-v3"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-anthropic.claude-3-sonnet-20240229-v1-0",
+      "name": "anthropic.claude-3-sonnet-20240229-v1:0",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "anthropic"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "anthropic.claude-3-sonnet-20240229-v1:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-qwen.qwen3-vl-235b-a22b",
+      "name": "qwen.qwen3-vl-235b-a22b",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "qwen"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "qwen.qwen3-vl-235b-a22b"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-minimax.minimax-m2.1",
+      "name": "minimax.minimax-m2.1",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "minimax"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "minimax.minimax-m2.1"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-stability.stable-style-transfer-v1-0",
+      "name": "stability.stable-style-transfer-v1:0",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "stability"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "stability.stable-style-transfer-v1:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-stability.stable-image-erase-object-v1-0",
+      "name": "stability.stable-image-erase-object-v1:0",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "stability"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "stability.stable-image-erase-object-v1:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-zai.glm-5",
+      "name": "zai.glm-5",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "zai"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "zai.glm-5"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-minimax.minimax-m2",
+      "name": "minimax.minimax-m2",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "minimax"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "minimax.minimax-m2"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-stability.stable-image-search-recolor-v1-0",
+      "name": "stability.stable-image-search-recolor-v1:0",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "stability"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "stability.stable-image-search-recolor-v1:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-stability.stable-image-ultra-v1-1",
+      "name": "stability.stable-image-ultra-v1:1",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "stability"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "stability.stable-image-ultra-v1:1"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-meta.llama3-1-405b-instruct-v1-0",
+      "name": "meta.llama3-1-405b-instruct-v1:0",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "meta"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "meta.llama3-1-405b-instruct-v1:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-google.gemma-3-4b-it",
+      "name": "google.gemma-3-4b-it",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "google"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "google.gemma-3-4b-it"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-meta.llama3-3-70b-instruct-v1-0",
+      "name": "meta.llama3-3-70b-instruct-v1:0",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "meta"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "meta.llama3-3-70b-instruct-v1:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-stability.stable-image-search-replace-v1-0",
+      "name": "stability.stable-image-search-replace-v1:0",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "stability"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "stability.stable-image-search-replace-v1:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-writer.palmyra-vision-7b",
+      "name": "writer.palmyra-vision-7b",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "writer"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "writer.palmyra-vision-7b"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-anthropic.claude-3-haiku-20240307-v1-0",
+      "name": "anthropic.claude-3-haiku-20240307-v1:0",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "anthropic"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "anthropic.claude-3-haiku-20240307-v1:0"
         },
         {
           "name": "aws:EventSource",
@@ -2031,120 +1902,278 @@
           "value": "bedrock.amazonaws.com"
         }
       ]
+    },
+    {
+      "bom-ref": "model-google.gemma-3-12b-it",
+      "name": "google.gemma-3-12b-it",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "google"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "google.gemma-3-12b-it"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-openai.gpt-oss-safeguard-20b",
+      "name": "openai.gpt-oss-safeguard-20b",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "openai"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "openai.gpt-oss-safeguard-20b"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-mistral.voxtral-mini-3b-2507",
+      "name": "mistral.voxtral-mini-3b-2507",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "mistral"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "mistral.voxtral-mini-3b-2507"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-mistral.ministral-3-3b-instruct",
+      "name": "mistral.ministral-3-3b-instruct",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "mistral"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "mistral.ministral-3-3b-instruct"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-amazon.rerank-v1-0",
+      "name": "amazon.rerank-v1:0",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "amazon"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "amazon.rerank-v1:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-cohere.command-r-v1-0",
+      "name": "cohere.command-r-v1:0",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "cohere"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "cohere.command-r-v1:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-meta.llama3-8b-instruct-v1-0",
+      "name": "meta.llama3-8b-instruct-v1:0",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "meta"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "meta.llama3-8b-instruct-v1:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "bom-ref": "model-arn-aws-bedrock-us-west-2-986601184113-inference-profile-us.amazon.nova-micro-v1-0",
+      "name": "arn:aws:bedrock:us-west-2:986601184113:inference-profile/us.amazon.nova-micro-v1:0",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:ModelProvider",
+          "value": "arn:aws:bedrock:us-west-2:986601184113:inference-profile/us"
+        },
+        {
+          "name": "aws:ModelId",
+          "value": "arn:aws:bedrock:us-west-2:986601184113:inference-profile/us.amazon.nova-micro-v1:0"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "bedrock.amazonaws.com"
+        }
+      ]
     }
   ],
   "dependencies": [
     {
       "ref": "root-aws-account",
       "dependsOn": [
-        "model-arn-aws-bedrock-us-west-2-986601184113-inference-profile-us.amazon.nova-micro-v1-0",
-        "model-stability.stable-image-inpaint-v1-0",
-        "model-nvidia.nemotron-nano-12b-v2",
-        "model-anthropic.claude-3-haiku-20240307-v1-0",
-        "model-meta.llama4-scout-17b-instruct-v1-0",
-        "model-openai.gpt-oss-120b-1-0",
-        "model-nvidia.nemotron-super-3-120b",
-        "model-mistral.devstral-2-123b",
-        "model-stability.stable-style-transfer-v1-0",
-        "model-amazon.titan-image-generator-v2-0",
-        "model-minimax.minimax-m2.5",
-        "model-amazon.titan-embed-text-v2-0",
-        "model-cohere.embed-v4-0",
-        "model-qwen.qwen3-coder-30b-a3b-v1-0",
-        "model-qwen.qwen3-vl-235b-a22b",
-        "model-stability.stable-image-core-v1-1",
-        "model-anthropic.claude-opus-4-7",
-        "model-meta.llama3-1-70b-instruct-v1-0",
-        "model-minimax.minimax-m2.1",
-        "model-anthropic.claude-sonnet-4-6",
-        "model-stability.stable-image-search-replace-v1-0",
-        "model-stability.stable-image-control-sketch-v1-0",
-        "model-google.gemma-3-27b-it",
-        "model-zai.glm-5",
-        "model-mistral.mixtral-8x7b-instruct-v0-1",
-        "model-qwen.qwen3-32b-v1-0",
+        "model-anthropic.claude-opus-4-6-v1",
+        "model-mistral.magistral-small-2509",
+        "model-amazon.titan-embed-image-v1",
+        "model-meta.llama3-2-1b-instruct-v1-0",
+        "model-moonshotai.kimi-k2.5",
         "model-mistral.mistral-large-2407-v1-0",
-        "model-meta.llama3-3-70b-instruct-v1-0",
-        "model-amazon.nova-2-sonic-v1-0",
+        "model-stability.stable-image-style-guide-v1-0",
+        "model-meta.llama3-70b-instruct-v1-0",
+        "model-stability.stable-image-remove-background-v1-0",
+        "model-openai.gpt-oss-20b-1-0",
+        "model-anthropic.claude-sonnet-4-6",
+        "model-nvidia.nemotron-nano-12b-v2",
+        "model-anthropic.claude-opus-4-7",
+        "model-luma.ray-v2-0",
+        "model-cohere.embed-v4-0",
+        "model-meta.llama3-2-3b-instruct-v1-0",
+        "model-mistral.mixtral-8x7b-instruct-v0-1",
         "model-anthropic.claude-sonnet-4-5-20250929-v1-0",
         "model-anthropic.claude-haiku-4-5-20251001-v1-0",
-        "model-anthropic.claude-opus-4-8",
-        "model-amazon.titan-embed-image-v1",
-        "model-mistral.mistral-large-2402-v1-0",
-        "model-stability.stable-image-remove-background-v1-0",
-        "model-meta.llama4-maverick-17b-instruct-v1-0",
-        "model-meta.llama3-70b-instruct-v1-0",
-        "model-deepseek.v3.2",
+        "model-amazon.titan-embed-text-v2-0",
+        "model-minimax.minimax-m2.5",
         "model-amazon.nova-pro-v1-0",
-        "model-nvidia.nemotron-nano-3-30b",
-        "model-writer.palmyra-vision-7b",
-        "model-openai.gpt-oss-safeguard-20b",
-        "model-mistral.ministral-3-14b-instruct",
-        "model-meta.llama3-2-11b-instruct-v1-0",
-        "model-meta.llama3-2-3b-instruct-v1-0",
-        "model-meta.llama3-1-405b-instruct-v1-0",
-        "model-zai.glm-4.7",
-        "model-mistral.pixtral-large-2502-v1-0",
+        "model-qwen.qwen3-235b-a22b-2507-v1-0",
+        "model-qwen.qwen3-32b-v1-0",
+        "model-mistral.mistral-large-2402-v1-0",
+        "model-deepseek.r1-v1-0",
+        "model-mistral.devstral-2-123b",
+        "model-google.gemma-3-27b-it",
+        "model-stability.stable-conservative-upscale-v1-0",
+        "model-qwen.qwen3-coder-480b-a35b-v1-0",
+        "model-qwen.qwen3-next-80b-a3b",
+        "model-nvidia.nemotron-super-3-120b",
+        "model-cohere.embed-multilingual-v3",
+        "model-stability.stable-image-control-structure-v1-0",
+        "model-stability.stable-creative-upscale-v1-0",
         "model-writer.palmyra-x5-v1-0",
         "model-stability.sd3-5-large-v1-0",
-        "model-anthropic.claude-sonnet-4-20250514-v1-0",
-        "model-anthropic.claude-opus-4-6-v1",
-        "model-writer.palmyra-x4-v1-0",
-        "model-meta.llama3-2-1b-instruct-v1-0",
-        "model-stability.stable-image-style-guide-v1-0",
-        "model-openai.gpt-oss-safeguard-120b",
-        "model-qwen.qwen3-next-80b-a3b",
-        "model-mistral.voxtral-small-24b-2507",
-        "model-zai.glm-4.7-flash",
-        "model-openai.gpt-oss-20b-1-0",
-        "model-nvidia.nemotron-nano-9b-v2",
-        "model-meta.llama3-8b-instruct-v1-0",
-        "model-minimax.minimax-m2",
-        "model-meta.llama3-2-90b-instruct-v1-0",
-        "model-moonshot.kimi-k2-thinking",
-        "model-twelvelabs.pegasus-1-2-v1-0",
-        "model-stability.stable-image-search-recolor-v1-0",
-        "model-mistral.ministral-3-8b-instruct",
-        "model-mistral.voxtral-mini-3b-2507",
-        "model-google.gemma-3-4b-it",
-        "model-moonshotai.kimi-k2.5",
-        "model-cohere.embed-english-v3",
-        "model-meta.llama3-1-8b-instruct-v1-0",
-        "model-cohere.embed-multilingual-v3",
-        "model-qwen.qwen3-coder-480b-a35b-v1-0",
-        "model-anthropic.claude-opus-4-1-20250805-v1-0",
-        "model-stability.stable-image-ultra-v1-1",
-        "model-cohere.rerank-v3-5-0",
-        "model-amazon.titan-embed-text-v1",
-        "model-stability.stable-outpaint-v1-0",
-        "model-deepseek.v3-v1-0",
-        "model-cohere.command-r-v1-0",
-        "model-qwen.qwen3-235b-a22b-2507-v1-0",
-        "model-amazon.nova-micro-v1-0",
-        "model-mistral.mistral-7b-instruct-v0-2",
-        "model-mistral.magistral-small-2509",
-        "model-amazon.nova-lite-v1-0",
-        "model-mistral.mistral-large-3-675b-instruct",
-        "model-stability.stable-image-erase-object-v1-0",
-        "model-amazon.nova-premier-v1-0",
-        "model-stability.stable-creative-upscale-v1-0",
-        "model-cohere.command-r-plus-v1-0",
-        "model-anthropic.claude-3-sonnet-20240229-v1-0",
-        "model-deepseek.r1-v1-0",
         "model-anthropic.claude-opus-4-5-20251101-v1-0",
+        "model-cohere.command-r-plus-v1-0",
+        "model-stability.stable-image-control-sketch-v1-0",
+        "model-amazon.nova-premier-v1-0",
+        "model-deepseek.v3-v1-0",
+        "model-meta.llama3-2-11b-instruct-v1-0",
+        "model-meta.llama4-scout-17b-instruct-v1-0",
+        "model-stability.stable-image-core-v1-1",
+        "model-moonshot.kimi-k2-thinking",
+        "model-amazon.titan-image-generator-v2-0",
+        "model-openai.gpt-oss-120b-1-0",
+        "model-zai.glm-4.7-flash",
         "model-stability.stable-fast-upscale-v1-0",
-        "model-stability.stable-conservative-upscale-v1-0",
-        "model-stability.stable-image-control-structure-v1-0",
-        "model-amazon.rerank-v1-0",
-        "model-google.gemma-3-12b-it",
-        "model-luma.ray-v2-0",
+        "model-amazon.titan-embed-text-v1",
+        "model-meta.llama4-maverick-17b-instruct-v1-0",
+        "model-stability.stable-outpaint-v1-0",
+        "model-meta.llama3-1-8b-instruct-v1-0",
+        "model-nvidia.nemotron-nano-3-30b",
+        "model-zai.glm-4.7",
+        "model-mistral.ministral-3-8b-instruct",
+        "model-twelvelabs.pegasus-1-2-v1-0",
+        "model-writer.palmyra-x4-v1-0",
+        "model-amazon.nova-2-sonic-v1-0",
+        "model-amazon.nova-lite-v1-0",
         "model-amazon.nova-2-lite-v1-0",
+        "model-meta.llama3-1-70b-instruct-v1-0",
+        "model-nvidia.nemotron-nano-9b-v2",
+        "model-deepseek.v3.2",
+        "model-anthropic.claude-opus-4-8",
+        "model-mistral.mistral-large-3-675b-instruct",
+        "model-anthropic.claude-sonnet-4-20250514-v1-0",
+        "model-mistral.mistral-7b-instruct-v0-2",
+        "model-mistral.ministral-3-14b-instruct",
+        "model-cohere.rerank-v3-5-0",
+        "model-mistral.pixtral-large-2502-v1-0",
+        "model-meta.llama3-2-90b-instruct-v1-0",
+        "model-amazon.nova-micro-v1-0",
+        "model-qwen.qwen3-coder-30b-a3b-v1-0",
+        "model-openai.gpt-oss-safeguard-120b",
+        "model-mistral.voxtral-small-24b-2507",
+        "model-stability.stable-image-inpaint-v1-0",
+        "model-anthropic.claude-opus-4-1-20250805-v1-0",
+        "model-cohere.embed-english-v3",
+        "model-anthropic.claude-3-sonnet-20240229-v1-0",
+        "model-qwen.qwen3-vl-235b-a22b",
+        "model-minimax.minimax-m2.1",
+        "model-stability.stable-style-transfer-v1-0",
+        "model-stability.stable-image-erase-object-v1-0",
+        "model-zai.glm-5",
+        "model-minimax.minimax-m2",
+        "model-stability.stable-image-search-recolor-v1-0",
+        "model-stability.stable-image-ultra-v1-1",
+        "model-meta.llama3-1-405b-instruct-v1-0",
+        "model-google.gemma-3-4b-it",
+        "model-meta.llama3-3-70b-instruct-v1-0",
+        "model-stability.stable-image-search-replace-v1-0",
+        "model-writer.palmyra-vision-7b",
+        "model-anthropic.claude-3-haiku-20240307-v1-0",
+        "model-anthropic.claude-fable-5",
+        "model-google.gemma-3-12b-it",
+        "model-openai.gpt-oss-safeguard-20b",
+        "model-mistral.voxtral-mini-3b-2507",
         "model-mistral.ministral-3-3b-instruct",
-        "model-anthropic.claude-fable-5"
+        "model-amazon.rerank-v1-0",
+        "model-cohere.command-r-v1-0",
+        "model-meta.llama3-8b-instruct-v1-0",
+        "model-arn-aws-bedrock-us-west-2-986601184113-inference-profile-us.amazon.nova-micro-v1-0"
       ]
     },
     {
       "ref": "iam_principal-arn-aws-iam--986601184113-user-agentic-access",
+      "dependsOn": [
+        "model-anthropic.claude-opus-4-6-v1"
+      ]
+    },
+    {
+      "ref": "iam_principal-arn-aws-iam--986601184113-user-amazon_bedrock_logs",
       "dependsOn": [
         "root-aws-account"
       ]

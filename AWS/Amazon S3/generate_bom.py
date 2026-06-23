@@ -1,14 +1,3 @@
-"""
-generate_bom.py
-
-Streams every JSON file in logs/, extracts BOM-relevant S3 entities
-(S3 buckets as services, IAM principals as components), deduplicates them
-with a Bloom filter backed by an exact set, tracks every bucket each principal
-accessed, and writes a CycloneDX 1.6 BOM JSON report to report/.
-
-Dependencies: mmh3, bitarray, ijson  (pip install mmh3 bitarray ijson)
-"""
-
 import json
 import math
 import uuid
@@ -27,7 +16,11 @@ BLOOM_CAPACITY = 500_000
 BLOOM_FPR      = 0.0001
 
 
+# Bloom filter and deduplication layer
+
 class BloomFilter:
+    """Probabilistic bit-array with MurmurHash3 double-hashing. No false negatives; callers handle false positives."""
+
     def __init__(self, capacity: int, fpr: float):
         m = math.ceil(-(capacity * math.log(fpr)) / (math.log(2) ** 2))
         k = max(1, round((m / capacity) * math.log(2)))
@@ -50,11 +43,14 @@ class BloomFilter:
 
 
 class DeduplicatingSet:
+    """Bloom filter plus exact backing set — fast miss path with zero-duplicate guarantee."""
+
     def __init__(self, capacity: int = BLOOM_CAPACITY, fpr: float = BLOOM_FPR):
         self._bloom = BloomFilter(capacity, fpr)
         self._seen: set[str] = set()
 
     def add_if_new(self, key: str) -> bool:
+        """Returns True and records key if it has never been seen; False otherwise."""
         if self._bloom.might_contain(key) and key in self._seen:
             return False
         self._bloom.add(key)
@@ -65,12 +61,18 @@ class DeduplicatingSet:
         return len(self._seen)
 
 
+# Log streaming
+
 def stream_events(log_file: Path):
+    """Yields each top-level JSON object from a large array file using ijson."""
     with log_file.open("rb") as fh:
         yield from ijson.items(fh, "item")
 
 
+# Entity extractors — each returns a typed dict or None
+
 def extract_bucket_inventory(event: dict) -> dict | None:
+    """Returns the inventory payload for synthetic BucketContentsInventory events; None for real CloudTrail events."""
     if event.get("EventSource") != "s3-local-enumeration":
         return None
     bucket_name = (event.get("requestParameters") or {}).get("bucketName", "")
@@ -88,6 +90,7 @@ def extract_bucket_inventory(event: dict) -> dict | None:
 
 
 def extract_s3_bucket(event: dict) -> dict | None:
+    """Extracts bucket name from requestParameters (three casing variants) or the Resources array; None for inventory events."""
     if event.get("EventSource") == "s3-local-enumeration":
         return None
     params = event.get("requestParameters") or {}
@@ -121,6 +124,7 @@ def extract_s3_bucket(event: dict) -> dict | None:
 
 
 def extract_iam_principal(event: dict) -> dict | None:
+    """Extracts the caller from userIdentity. AssumedRole collapses to role ARN; returns None when no key is resolvable."""
     identity = event.get("userIdentity") or {}
     if not isinstance(identity, dict):
         return None
@@ -158,12 +162,16 @@ def extract_iam_principal(event: dict) -> dict | None:
     }
 
 
+# CycloneDX 1.6 serialisers
+
 def _make_bom_ref(kind: str, key: str) -> str:
+    """Sanitises key characters that may confuse BOM parsers."""
     safe = key.replace(":", "-").replace("/", "-").replace(".", "-")
     return f"{kind}-{safe}"
 
 
 def to_cyclonedx_service(raw: dict, inventory: dict | None = None) -> dict:
+    """Converts an S3 bucket to a CycloneDX 1.6 service entry; appends inventory properties when available."""
     svc: dict = {
         "bom-ref":       _make_bom_ref("s3_bucket", raw["key"]),
         "name":          raw["name"],
@@ -192,6 +200,7 @@ def to_cyclonedx_service(raw: dict, inventory: dict | None = None) -> dict:
 
 
 def to_cyclonedx_component(raw: dict) -> dict:
+    """Converts an IAM principal to a CycloneDX 1.6 component with aws:-namespaced properties."""
     props = [
         {"name": "aws:IAMPrincipalARN", "value": raw.get("arn", "")},
         {"name": "aws:IdentityType",    "value": raw.get("identity_type", "")},
@@ -207,10 +216,11 @@ def to_cyclonedx_component(raw: dict) -> dict:
 
 
 def build_dependency_graph(
-    raw_components:     list[dict],
-    raw_services:       list[dict],
-    principal_buckets:  dict[str, set[str]],
+    raw_components:    list[dict],
+    raw_services:      list[dict],
+    principal_buckets: dict[str, set[str]],
 ) -> list[dict]:
+    """Root account depends on all buckets; each principal depends on its accessed buckets (or root if none)."""
     bucket_ref_map = {r["key"]: _make_bom_ref("s3_bucket", r["key"]) for r in raw_services}
 
     deps: list[dict] = [
@@ -241,6 +251,7 @@ def build_cyclonedx_bom(
     principal_buckets: dict[str, set[str]],
     bucket_inventory:  dict[str, dict],
 ) -> dict:
+    """Assembles the CycloneDX 1.6 BOM: root=AWS account, services=S3 buckets (with inventory), components=IAM principals."""
     return {
         "bomFormat":    "CycloneDX",
         "specVersion":  "1.6",
@@ -273,6 +284,8 @@ def build_cyclonedx_bom(
     }
 
 
+# Per-file processor
+
 def process_log_file(
     log_file:          Path,
     bucket_dedup:      DeduplicatingSet,
@@ -280,6 +293,7 @@ def process_log_file(
     principal_buckets: dict[str, set[str]],
     bucket_inventory:  dict[str, dict],
 ) -> tuple[list[dict], list[dict], str]:
+    """Streams one log file; returns (new_components, new_services, account_id). principal_buckets updated even for deduplicated principals."""
     raw_components: list[dict] = []
     raw_services:   list[dict] = []
     account_id = ""
@@ -307,7 +321,10 @@ def process_log_file(
     return raw_components, raw_services, account_id
 
 
+# Entry point
+
 def main(target_file: Path | None = None) -> None:
+    """Processes target_file or all logs/*.json files and writes a CycloneDX 1.6 BOM to report/."""
     REPORT_DIR.mkdir(parents=True, exist_ok=True)
 
     log_files = [target_file] if target_file else sorted(LOGS_DIR.glob("*.json"))
@@ -342,11 +359,11 @@ def main(target_file: Path | None = None) -> None:
     )
 
     timestamp   = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
-    output_path = REPORT_DIR / f"s3_bom_{timestamp}.json"
+    output_path = REPORT_DIR / f"bom_{timestamp}.json"
     output_path.write_text(json.dumps(bom, indent=2), encoding="utf-8")
 
-    print(f"\nReport : {output_path}")
-    print(f"Total  : {len(all_components)} principals, {len(all_services)} buckets")
+    print(f"\nBOM report saved to: {output_path}")
+    print(f"Total: {len(all_components)} principals, {len(all_services)} buckets")
 
 
 if __name__ == "__main__":

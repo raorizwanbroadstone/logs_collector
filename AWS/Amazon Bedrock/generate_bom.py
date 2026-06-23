@@ -1,13 +1,3 @@
-"""
-generate_bom.py
-
-Streams every JSON file in logs/, extracts BOM-relevant entities (foundation
-models, IAM principals, Bedrock agents), deduplicates them with a Bloom filter
-backed by an exact set, and writes a CycloneDX 1.6 BOM JSON report to report/.
-
-Dependencies: mmh3, bitarray, ijson  (pip install mmh3 bitarray ijson)
-"""
-
 import json
 import math
 import uuid
@@ -26,16 +16,10 @@ BLOOM_CAPACITY = 500_000
 BLOOM_FPR      = 0.0001
 
 
-# ---------------------------------------------------------------------------
-# Bloom filter + deduplication layer
-# ---------------------------------------------------------------------------
+# Bloom filter and deduplication layer
 
 class BloomFilter:
-    """
-    Probabilistic membership structure using MurmurHash3 double-hashing over a
-    bitarray. Sized at init for a given capacity and false positive rate.
-    Guarantees no false negatives; callers must resolve false positives externally.
-    """
+    """Probabilistic bit-array with MurmurHash3 double-hashing. No false negatives; callers handle false positives."""
 
     def __init__(self, capacity: int, fpr: float):
         m = math.ceil(-(capacity * math.log(fpr)) / (math.log(2) ** 2))
@@ -59,11 +43,7 @@ class BloomFilter:
 
 
 class DeduplicatingSet:
-    """
-    Combines BloomFilter (fast definite-miss path) with an exact backing set to
-    guarantee zero duplicate insertions regardless of false positive rate.
-    The Bloom filter avoids a hash-set lookup for every key the set has never seen.
-    """
+    """Bloom filter plus exact backing set — fast miss path with zero-duplicate guarantee."""
 
     def __init__(self, capacity: int = BLOOM_CAPACITY, fpr: float = BLOOM_FPR):
         self._bloom = BloomFilter(capacity, fpr)
@@ -81,9 +61,7 @@ class DeduplicatingSet:
         return len(self._seen)
 
 
-# ---------------------------------------------------------------------------
 # Log streaming
-# ---------------------------------------------------------------------------
 
 def stream_events(log_file: Path):
     """Yields each top-level JSON object from a large array file using ijson."""
@@ -91,17 +69,10 @@ def stream_events(log_file: Path):
         yield from ijson.items(fh, "item")
 
 
-# ---------------------------------------------------------------------------
 # Entity extractors — each returns a typed dict or None
-# ---------------------------------------------------------------------------
 
 def extract_foundation_model(event: dict) -> dict | None:
-    """
-    Extracts the foundation model ID from InvokeModel, Converse, or any
-    Bedrock API call that includes modelId in requestParameters.
-    The model provider is derived from the first segment of the model ID
-    (e.g. 'anthropic' from 'anthropic.claude-3-sonnet-20240229-v1:0').
-    """
+    """Extracts modelId/modelArn from requestParameters; derives provider from the first dot-delimited segment."""
     params = event.get("requestParameters") or {}
     if not isinstance(params, dict):
         return None
@@ -121,12 +92,7 @@ def extract_foundation_model(event: dict) -> dict | None:
 
 
 def extract_iam_principal(event: dict) -> dict | None:
-    """
-    Extracts the calling IAM identity from the userIdentity block.
-    For AssumedRole, the role ARN (from sessionIssuer) is used as the dedup key
-    so that all sessions from the same role collapse to one BOM component.
-    Also captures which model was used in this event for dependency linking.
-    """
+    """Extracts the caller from userIdentity. AssumedRole collapses to role ARN; also captures observed model for dependency linking."""
     identity = event.get("userIdentity") or {}
     if not isinstance(identity, dict):
         return None
@@ -157,23 +123,19 @@ def extract_iam_principal(event: dict) -> dict | None:
     observed_model = params.get("modelId", "") or params.get("modelArn", "")
 
     return {
-        "kind":            "iam_principal",
-        "key":             key,
-        "name":            name,
-        "arn":             session_arn,
-        "identity_type":   identity_type,
-        "account_id":      account_id,
-        "observed_model":  observed_model,
-        "event_source":    event.get("EventSource", ""),
+        "kind":           "iam_principal",
+        "key":            key,
+        "name":           name,
+        "arn":            session_arn,
+        "identity_type":  identity_type,
+        "account_id":     account_id,
+        "observed_model": observed_model,
+        "event_source":   event.get("EventSource", ""),
     }
 
 
 def extract_bedrock_agent(event: dict) -> dict | None:
-    """
-    Extracts Bedrock Agent details from bedrock-agent or bedrock-agent-runtime
-    events. agentId in requestParameters is the unique dedup key.
-    Returns None for events from other sources or without an agentId.
-    """
+    """Extracts agentId from bedrock-agent* events; returns None for other sources or missing agentId."""
     if "bedrock-agent" not in (event.get("EventSource") or ""):
         return None
     params = event.get("requestParameters") or {}
@@ -194,9 +156,7 @@ def extract_bedrock_agent(event: dict) -> dict | None:
     }
 
 
-# ---------------------------------------------------------------------------
 # CycloneDX 1.6 serialisers
-# ---------------------------------------------------------------------------
 
 def _make_bom_ref(kind: str, key: str) -> str:
     """Sanitises key characters that may confuse BOM parsers."""
@@ -205,11 +165,7 @@ def _make_bom_ref(kind: str, key: str) -> str:
 
 
 def to_cyclonedx_component(raw: dict) -> dict:
-    """
-    Converts an IAM principal or Bedrock agent dict to a CycloneDX 1.6
-    component (type: application). All source fields are stored as
-    aws:-namespaced properties.
-    """
+    """Converts an IAM principal or Bedrock agent to a CycloneDX 1.6 component with aws:-namespaced properties."""
     field_map: dict[str, dict[str, str]] = {
         "iam_principal": {
             "arn":           "aws:IAMPrincipalARN",
@@ -240,10 +196,7 @@ def to_cyclonedx_component(raw: dict) -> dict:
 
 
 def to_cyclonedx_service(raw: dict) -> dict:
-    """
-    Converts a foundation model dict to a CycloneDX 1.6 service entry.
-    authenticated is True because all Bedrock API calls require AWS SigV4.
-    """
+    """Converts a foundation model to a CycloneDX 1.6 service entry (authenticated=True, SigV4 required)."""
     svc: dict = {
         "bom-ref":       _make_bom_ref("model", raw["model_id"]),
         "name":          raw["name"],
@@ -262,13 +215,7 @@ def build_dependency_graph(
     raw_components: list[dict],
     raw_services:   list[dict],
 ) -> list[dict]:
-    """
-    Builds the CycloneDX dependencies section.
-    Root AWS account depends on every foundation model observed.
-    Each IAM principal depends on the specific model it was seen calling
-    (or the root account when no model was captured in that event).
-    Bedrock agents depend on the root account (model binding is internal to agent config).
-    """
+    """Root account depends on all models; each IAM principal depends on its observed model (or root if none); agents depend on root."""
     model_ref_map = {r["model_id"]: _make_bom_ref("model", r["model_id"]) for r in raw_services}
 
     deps: list[dict] = [
@@ -299,11 +246,7 @@ def build_cyclonedx_bom(
     account_id:     str,
     source_files:   str,
 ) -> dict:
-    """
-    Assembles the complete CycloneDX 1.6 BOM document from extracted data.
-    Root component represents the AWS account; services are foundation models;
-    components are IAM principals and Bedrock agents.
-    """
+    """Assembles the CycloneDX 1.6 BOM: root=AWS account, services=foundation models, components=IAM principals and agents."""
     return {
         "bomFormat":    "CycloneDX",
         "specVersion":  "1.6",
@@ -336,9 +279,7 @@ def build_cyclonedx_bom(
     }
 
 
-# ---------------------------------------------------------------------------
 # Per-file processor
-# ---------------------------------------------------------------------------
 
 def process_log_file(
     log_file:        Path,
@@ -346,11 +287,7 @@ def process_log_file(
     principal_dedup: DeduplicatingSet,
     agent_dedup:     DeduplicatingSet,
 ) -> tuple[list[dict], list[dict], str]:
-    """
-    Streams one log file and returns newly seen components and services.
-    The three dedup sets are shared across files so cross-file duplicates are
-    caught. Returns (raw_components, raw_services, first_seen_account_id).
-    """
+    """Streams one log file; returns (new_components, new_services, account_id). Dedup sets are shared across files."""
     raw_components: list[dict] = []
     raw_services:   list[dict] = []
     account_id = ""
@@ -374,17 +311,10 @@ def process_log_file(
     return raw_components, raw_services, account_id
 
 
-# ---------------------------------------------------------------------------
 # Entry point
-# ---------------------------------------------------------------------------
 
 def main(target_file: Path | None = None) -> None:
-    """
-    Processes log files and writes a CycloneDX 1.6 BOM to report/.
-    When target_file is given, only that file is processed — used when called
-    directly from fetch_bedrock_logs.py to scope the BOM to the freshly fetched
-    log. When called standalone (no argument), all JSON files in logs/ are processed.
-    """
+    """Processes target_file or all logs/*.json files and writes a CycloneDX 1.6 BOM to report/."""
     REPORT_DIR.mkdir(parents=True, exist_ok=True)
 
     log_files = [target_file] if target_file else sorted(LOGS_DIR.glob("*.json"))
@@ -418,8 +348,8 @@ def main(target_file: Path | None = None) -> None:
     output_path = REPORT_DIR / f"bom_{timestamp}.json"
     output_path.write_text(json.dumps(bom, indent=2), encoding="utf-8")
 
-    print(f"\nReport : {output_path}")
-    print(f"Total  : {len(all_components)} components, {len(all_services)} models")
+    print(f"\nBOM report saved to: {output_path}")
+    print(f"Total: {len(all_components)} components, {len(all_services)} models")
 
 
 if __name__ == "__main__":

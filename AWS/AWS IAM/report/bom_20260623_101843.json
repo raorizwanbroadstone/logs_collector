@@ -1,0 +1,2499 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:38774858-4675-48ca-bc18-90d3bdcfb91d",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-06-23T10:18:43.664439+00:00",
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "name": "aws-iam-bom-generator",
+          "version": "1.0.0"
+        }
+      ]
+    },
+    "component": {
+      "type": "application",
+      "bom-ref": "root-aws-account",
+      "name": "AWS Account",
+      "properties": [
+        {
+          "name": "aws:AccountId",
+          "value": "986601184113"
+        },
+        {
+          "name": "aws:SourceFiles",
+          "value": "iam_logs_2026-06-23_10-15-10.json"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "application",
+      "bom-ref": "iam_principal-arn-aws-iam--986601184113-user-agentic-access",
+      "name": "agentic-access",
+      "properties": [
+        {
+          "name": "aws:IAMPrincipalARN",
+          "value": "arn:aws:iam::986601184113:user/agentic-access"
+        },
+        {
+          "name": "aws:IdentityType",
+          "value": "IAMUser"
+        },
+        {
+          "name": "aws:AccountId",
+          "value": "986601184113"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "iam_principal-arn-aws-iam--986601184113-role-aws-service-role-resource-explorer-2-amazonaws-com-AWSServiceRoleForResourceExplorer",
+      "name": "AWSServiceRoleForResourceExplorer",
+      "properties": [
+        {
+          "name": "aws:IAMPrincipalARN",
+          "value": "arn:aws:sts::986601184113:assumed-role/AWSServiceRoleForResourceExplorer/resource-explorer-2"
+        },
+        {
+          "name": "aws:IdentityType",
+          "value": "AssumedRole"
+        },
+        {
+          "name": "aws:AccountId",
+          "value": "986601184113"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "iam_principal-arn-aws-iam--986601184113-role-service-role-AmazonSageMakerAdminIAMExecutionRole",
+      "name": "AmazonSageMakerAdminIAMExecutionRole",
+      "properties": [
+        {
+          "name": "aws:IAMPrincipalARN",
+          "value": "arn:aws:sts::986601184113:assumed-role/AmazonSageMakerAdminIAMExecutionRole/AmazonDataZone-ba45fe617f"
+        },
+        {
+          "name": "aws:IdentityType",
+          "value": "AssumedRole"
+        },
+        {
+          "name": "aws:AccountId",
+          "value": "986601184113"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "iam_principal-arn-aws-iam--986601184113-user-cytexaudit",
+      "name": "cytexaudit",
+      "properties": [
+        {
+          "name": "aws:IAMPrincipalARN",
+          "value": "arn:aws:iam::986601184113:user/cytexaudit"
+        },
+        {
+          "name": "aws:IdentityType",
+          "value": "IAMUser"
+        },
+        {
+          "name": "aws:AccountId",
+          "value": "986601184113"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "iam_principal-arn-aws-iam--986601184113-user-codecommit-user-demo",
+      "name": "codecommit-user-demo",
+      "properties": [
+        {
+          "name": "aws:IAMPrincipalARN",
+          "value": "arn:aws:iam::986601184113:user/codecommit-user-demo"
+        },
+        {
+          "name": "aws:IdentityType",
+          "value": "IAMUser"
+        },
+        {
+          "name": "aws:AccountId",
+          "value": "986601184113"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        }
+      ]
+    }
+  ],
+  "services": [
+    {
+      "bom-ref": "iam_resource-Role-CloudWatch-CrossAccountSharingRole",
+      "name": "CloudWatch-CrossAccountSharingRole",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "Role"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "CloudWatch-CrossAccountSharingRole"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-User-amazon_cloudtrail_logs",
+      "name": "amazon_cloudtrail_logs",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "User"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "amazon_cloudtrail_logs"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:user/amazon_cloudtrail_logs"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2026-06-23T08:46:58+00:00"
+        },
+        {
+          "name": "aws:UserId",
+          "value": "AIDA6LNQDLNYQ5F75BFWX"
+        },
+        {
+          "name": "aws:MFAEnabled",
+          "value": "false"
+        },
+        {
+          "name": "aws:MFADeviceCount",
+          "value": "0"
+        },
+        {
+          "name": "aws:ActiveAccessKeyCount",
+          "value": "1"
+        },
+        {
+          "name": "aws:InactiveAccessKeyCount",
+          "value": "0"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "1"
+        },
+        {
+          "name": "aws:GroupMembershipCount",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-Group-codecommit-user-TEST",
+      "name": "codecommit-user-TEST",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "Group"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "codecommit-user-TEST"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:group/codecommit-user-TEST"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2026-06-19T10:34:23+00:00"
+        },
+        {
+          "name": "aws:GroupId",
+          "value": "AGPA6LNQDLNYVHFLG4ZJB"
+        },
+        {
+          "name": "aws:MemberCount",
+          "value": "1"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-Group-agentic",
+      "name": "agentic",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "Group"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "agentic"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:group/agentic"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2025-09-25T19:32:07+00:00"
+        },
+        {
+          "name": "aws:GroupId",
+          "value": "AGPA6LNQDLNY632C3XRTF"
+        },
+        {
+          "name": "aws:MemberCount",
+          "value": "1"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-Group-Group_S3",
+      "name": "Group_S3",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "Group"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "Group_S3"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:group/Group_S3"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2021-10-21T13:24:02+00:00"
+        },
+        {
+          "name": "aws:GroupId",
+          "value": "AGPA6LNQDLNY4B5JMFEHW"
+        },
+        {
+          "name": "aws:MemberCount",
+          "value": "1"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-Group-prytex",
+      "name": "prytex",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "Group"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "prytex"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:group/prytex"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2020-08-25T14:37:11+00:00"
+        },
+        {
+          "name": "aws:GroupId",
+          "value": "AGPA6LNQDLNY7BWKLZ7DX"
+        },
+        {
+          "name": "aws:MemberCount",
+          "value": "1"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-Group-developers",
+      "name": "developers",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "Group"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "developers"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:group/developers"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2018-11-19T16:16:48+00:00"
+        },
+        {
+          "name": "aws:GroupId",
+          "value": "AGPAJLIA7B5T2M54G6RMS"
+        },
+        {
+          "name": "aws:MemberCount",
+          "value": "4"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-Group-insights_read_all",
+      "name": "insights_read_all",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "Group"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "insights_read_all"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:group/insights_read_all"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2025-08-22T11:51:21+00:00"
+        },
+        {
+          "name": "aws:GroupId",
+          "value": "AGPA6LNQDLNYYHKFJPVJA"
+        },
+        {
+          "name": "aws:MemberCount",
+          "value": "1"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-Group-ar_dev",
+      "name": "ar_dev",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "Group"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "ar_dev"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:group/ar_dev"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2018-11-19T16:20:30+00:00"
+        },
+        {
+          "name": "aws:GroupId",
+          "value": "AGPAI6L7LWZINCXCEARN6"
+        },
+        {
+          "name": "aws:MemberCount",
+          "value": "2"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "7"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-User-amazon_lambda_logs",
+      "name": "amazon_lambda_logs",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "User"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "amazon_lambda_logs"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:user/amazon_lambda_logs"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2026-06-23T08:25:03+00:00"
+        },
+        {
+          "name": "aws:UserId",
+          "value": "AIDA6LNQDLNYZMDR56B67"
+        },
+        {
+          "name": "aws:MFAEnabled",
+          "value": "false"
+        },
+        {
+          "name": "aws:MFADeviceCount",
+          "value": "0"
+        },
+        {
+          "name": "aws:ActiveAccessKeyCount",
+          "value": "1"
+        },
+        {
+          "name": "aws:InactiveAccessKeyCount",
+          "value": "0"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "2"
+        },
+        {
+          "name": "aws:GroupMembershipCount",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-User-agentic-access",
+      "name": "agentic-access",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "User"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "agentic-access"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:user/agentic-access"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2025-09-25T19:32:25+00:00"
+        },
+        {
+          "name": "aws:UserId",
+          "value": "AIDA6LNQDLNYQWKABZEKD"
+        },
+        {
+          "name": "aws:PasswordLastUsed",
+          "value": "2026-06-23T07:22:03+00:00"
+        },
+        {
+          "name": "aws:MFAEnabled",
+          "value": "false"
+        },
+        {
+          "name": "aws:MFADeviceCount",
+          "value": "0"
+        },
+        {
+          "name": "aws:ActiveAccessKeyCount",
+          "value": "1"
+        },
+        {
+          "name": "aws:InactiveAccessKeyCount",
+          "value": "0"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "1"
+        },
+        {
+          "name": "aws:GroupMembershipCount",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-User-cytex",
+      "name": "cytex",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "User"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "cytex"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:user/cytex"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2020-10-28T15:55:41+00:00"
+        },
+        {
+          "name": "aws:UserId",
+          "value": "AIDA6LNQDLNYXJ6UXHMZV"
+        },
+        {
+          "name": "aws:MFAEnabled",
+          "value": "false"
+        },
+        {
+          "name": "aws:MFADeviceCount",
+          "value": "0"
+        },
+        {
+          "name": "aws:ActiveAccessKeyCount",
+          "value": "1"
+        },
+        {
+          "name": "aws:InactiveAccessKeyCount",
+          "value": "0"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "1"
+        },
+        {
+          "name": "aws:GroupMembershipCount",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-User-s3_user_test",
+      "name": "s3_user_test",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "User"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "s3_user_test"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:user/s3_user_test"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2024-10-30T20:16:01+00:00"
+        },
+        {
+          "name": "aws:UserId",
+          "value": "AIDA6LNQDLNYRBVGTXCWC"
+        },
+        {
+          "name": "aws:MFAEnabled",
+          "value": "false"
+        },
+        {
+          "name": "aws:MFADeviceCount",
+          "value": "0"
+        },
+        {
+          "name": "aws:ActiveAccessKeyCount",
+          "value": "1"
+        },
+        {
+          "name": "aws:InactiveAccessKeyCount",
+          "value": "0"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "2"
+        },
+        {
+          "name": "aws:GroupMembershipCount",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-User-amazon_bedrock_logs",
+      "name": "amazon_bedrock_logs",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "User"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "amazon_bedrock_logs"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:user/amazon_bedrock_logs"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2026-06-22T08:15:40+00:00"
+        },
+        {
+          "name": "aws:UserId",
+          "value": "AIDA6LNQDLNYTJMSY332H"
+        },
+        {
+          "name": "aws:MFAEnabled",
+          "value": "false"
+        },
+        {
+          "name": "aws:MFADeviceCount",
+          "value": "0"
+        },
+        {
+          "name": "aws:ActiveAccessKeyCount",
+          "value": "1"
+        },
+        {
+          "name": "aws:InactiveAccessKeyCount",
+          "value": "0"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "2"
+        },
+        {
+          "name": "aws:GroupMembershipCount",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-User-cytexaudit",
+      "name": "cytexaudit",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "User"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "cytexaudit"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:user/cytexaudit"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2021-05-24T03:35:55+00:00"
+        },
+        {
+          "name": "aws:UserId",
+          "value": "AIDA6LNQDLNY5SCTKDICZ"
+        },
+        {
+          "name": "aws:MFAEnabled",
+          "value": "false"
+        },
+        {
+          "name": "aws:MFADeviceCount",
+          "value": "0"
+        },
+        {
+          "name": "aws:ActiveAccessKeyCount",
+          "value": "1"
+        },
+        {
+          "name": "aws:InactiveAccessKeyCount",
+          "value": "1"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "1"
+        },
+        {
+          "name": "aws:GroupMembershipCount",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-User-cytex-cur",
+      "name": "cytex-cur",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "User"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "cytex-cur"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:user/cytex-cur"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2025-08-05T14:04:30+00:00"
+        },
+        {
+          "name": "aws:UserId",
+          "value": "AIDA6LNQDLNYRVKS4LETW"
+        },
+        {
+          "name": "aws:MFAEnabled",
+          "value": "false"
+        },
+        {
+          "name": "aws:MFADeviceCount",
+          "value": "0"
+        },
+        {
+          "name": "aws:ActiveAccessKeyCount",
+          "value": "0"
+        },
+        {
+          "name": "aws:InactiveAccessKeyCount",
+          "value": "0"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "0"
+        },
+        {
+          "name": "aws:GroupMembershipCount",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-User-jediar",
+      "name": "jediar",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "User"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "jediar"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:user/jediar"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2019-05-02T12:30:01+00:00"
+        },
+        {
+          "name": "aws:UserId",
+          "value": "AIDA6LNQDLNY7DAO3764D"
+        },
+        {
+          "name": "aws:PasswordLastUsed",
+          "value": "2026-05-25T14:51:59+00:00"
+        },
+        {
+          "name": "aws:MFAEnabled",
+          "value": "false"
+        },
+        {
+          "name": "aws:MFADeviceCount",
+          "value": "0"
+        },
+        {
+          "name": "aws:ActiveAccessKeyCount",
+          "value": "1"
+        },
+        {
+          "name": "aws:InactiveAccessKeyCount",
+          "value": "0"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "1"
+        },
+        {
+          "name": "aws:GroupMembershipCount",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-User-amazon_s3_logs",
+      "name": "amazon_s3_logs",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "User"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "amazon_s3_logs"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:user/amazon_s3_logs"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2026-06-22T09:31:47+00:00"
+        },
+        {
+          "name": "aws:UserId",
+          "value": "AIDA6LNQDLNYUCGG33LLB"
+        },
+        {
+          "name": "aws:MFAEnabled",
+          "value": "false"
+        },
+        {
+          "name": "aws:MFADeviceCount",
+          "value": "0"
+        },
+        {
+          "name": "aws:ActiveAccessKeyCount",
+          "value": "1"
+        },
+        {
+          "name": "aws:InactiveAccessKeyCount",
+          "value": "0"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "2"
+        },
+        {
+          "name": "aws:GroupMembershipCount",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-User-s3readonly",
+      "name": "s3readonly",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "User"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "s3readonly"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:user/s3readonly"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2020-10-07T03:31:27+00:00"
+        },
+        {
+          "name": "aws:UserId",
+          "value": "AIDA6LNQDLNYZQR6TMNTV"
+        },
+        {
+          "name": "aws:MFAEnabled",
+          "value": "false"
+        },
+        {
+          "name": "aws:MFADeviceCount",
+          "value": "0"
+        },
+        {
+          "name": "aws:ActiveAccessKeyCount",
+          "value": "2"
+        },
+        {
+          "name": "aws:InactiveAccessKeyCount",
+          "value": "0"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "1"
+        },
+        {
+          "name": "aws:GroupMembershipCount",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-User-codecommit-user-demo",
+      "name": "codecommit-user-demo",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "User"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "codecommit-user-demo"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:user/codecommit-user-demo"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2026-06-19T10:34:41+00:00"
+        },
+        {
+          "name": "aws:UserId",
+          "value": "AIDA6LNQDLNY5MATAMP7L"
+        },
+        {
+          "name": "aws:MFAEnabled",
+          "value": "false"
+        },
+        {
+          "name": "aws:MFADeviceCount",
+          "value": "0"
+        },
+        {
+          "name": "aws:ActiveAccessKeyCount",
+          "value": "1"
+        },
+        {
+          "name": "aws:InactiveAccessKeyCount",
+          "value": "0"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "4"
+        },
+        {
+          "name": "aws:GroupMembershipCount",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-User-amazon_sagemaker_logs",
+      "name": "amazon_sagemaker_logs",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "User"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "amazon_sagemaker_logs"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:user/amazon_sagemaker_logs"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2026-06-23T07:29:47+00:00"
+        },
+        {
+          "name": "aws:UserId",
+          "value": "AIDA6LNQDLNY3TBRIWI5K"
+        },
+        {
+          "name": "aws:MFAEnabled",
+          "value": "false"
+        },
+        {
+          "name": "aws:MFADeviceCount",
+          "value": "0"
+        },
+        {
+          "name": "aws:ActiveAccessKeyCount",
+          "value": "1"
+        },
+        {
+          "name": "aws:InactiveAccessKeyCount",
+          "value": "0"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "2"
+        },
+        {
+          "name": "aws:GroupMembershipCount",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-User-testcytex",
+      "name": "testcytex",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "User"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "testcytex"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:user/testcytex"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2021-10-21T13:25:40+00:00"
+        },
+        {
+          "name": "aws:UserId",
+          "value": "AIDA6LNQDLNYZOTEGNY5B"
+        },
+        {
+          "name": "aws:PasswordLastUsed",
+          "value": "2021-11-29T13:55:56+00:00"
+        },
+        {
+          "name": "aws:MFAEnabled",
+          "value": "false"
+        },
+        {
+          "name": "aws:MFADeviceCount",
+          "value": "0"
+        },
+        {
+          "name": "aws:ActiveAccessKeyCount",
+          "value": "0"
+        },
+        {
+          "name": "aws:InactiveAccessKeyCount",
+          "value": "0"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "0"
+        },
+        {
+          "name": "aws:GroupMembershipCount",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-User-taimur",
+      "name": "taimur",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "User"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "taimur"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:user/taimur"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2021-06-16T00:08:43+00:00"
+        },
+        {
+          "name": "aws:UserId",
+          "value": "AIDA6LNQDLNYX3F7MMMBD"
+        },
+        {
+          "name": "aws:PasswordLastUsed",
+          "value": "2021-06-17T15:29:37+00:00"
+        },
+        {
+          "name": "aws:MFAEnabled",
+          "value": "false"
+        },
+        {
+          "name": "aws:MFADeviceCount",
+          "value": "0"
+        },
+        {
+          "name": "aws:ActiveAccessKeyCount",
+          "value": "1"
+        },
+        {
+          "name": "aws:InactiveAccessKeyCount",
+          "value": "0"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "1"
+        },
+        {
+          "name": "aws:GroupMembershipCount",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-Role-lambda-bom-demo-role-w1wm5nr5",
+      "name": "lambda-bom-demo-role-w1wm5nr5",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "Role"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "lambda-bom-demo-role-w1wm5nr5"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:role/service-role/lambda-bom-demo-role-w1wm5nr5"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2026-06-23T08:30:08+00:00"
+        },
+        {
+          "name": "aws:RoleId",
+          "value": "AROA6LNQDLNYWYEG4KOB3"
+        },
+        {
+          "name": "aws:MaxSessionDuration",
+          "value": "3600s"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-Policy-AWSLambdaBasicExecutionRole-1c888903-94e8-47f8-87f3-f3f5035a1f3d",
+      "name": "AWSLambdaBasicExecutionRole-1c888903-94e8-47f8-87f3-f3f5035a1f3d",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "Policy"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "AWSLambdaBasicExecutionRole-1c888903-94e8-47f8-87f3-f3f5035a1f3d"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:AttachmentCount",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-Role-AmazonSageMakerAdminIAMExecutionRole",
+      "name": "AmazonSageMakerAdminIAMExecutionRole",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "Role"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "AmazonSageMakerAdminIAMExecutionRole"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:role/service-role/AmazonSageMakerAdminIAMExecutionRole"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2026-06-23T07:32:33+00:00"
+        },
+        {
+          "name": "aws:RoleId",
+          "value": "AROA6LNQDLNY6G7U7OA45"
+        },
+        {
+          "name": "aws:MaxSessionDuration",
+          "value": "3600s"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-Role-AWSServiceRoleForAmazonAthena",
+      "name": "AWSServiceRoleForAmazonAthena",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "Role"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "AWSServiceRoleForAmazonAthena"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:role/aws-service-role/ops.athena.amazonaws.com/AWSServiceRoleForAmazonAthena"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2026-06-23T07:37:24+00:00"
+        },
+        {
+          "name": "aws:RoleId",
+          "value": "AROA6LNQDLNYSTFX6TXOB"
+        },
+        {
+          "name": "aws:MaxSessionDuration",
+          "value": "3600s"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-Role-AWSServiceRoleForAmazonSageMakerNotebooks",
+      "name": "AWSServiceRoleForAmazonSageMakerNotebooks",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "Role"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "AWSServiceRoleForAmazonSageMakerNotebooks"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:role/aws-service-role/sagemaker.amazonaws.com/AWSServiceRoleForAmazonSageMakerNotebooks"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2026-06-23T07:35:34+00:00"
+        },
+        {
+          "name": "aws:RoleId",
+          "value": "AROA6LNQDLNY4JLUON7YV"
+        },
+        {
+          "name": "aws:Description",
+          "value": "AWS SageMaker Notebooks Service Linked Role"
+        },
+        {
+          "name": "aws:MaxSessionDuration",
+          "value": "3600s"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-Role-cytex-codebuild-role",
+      "name": "cytex-codebuild-role",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "Role"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "cytex-codebuild-role"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:role/cytex-codebuild-role"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2026-06-19T10:44:44+00:00"
+        },
+        {
+          "name": "aws:RoleId",
+          "value": "AROA6LNQDLNYTPBCJTTBU"
+        },
+        {
+          "name": "aws:Description",
+          "value": "Service role for Cytex security scanning CodeBuild projects"
+        },
+        {
+          "name": "aws:MaxSessionDuration",
+          "value": "3600s"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-Role-cytex-codepipeline-role",
+      "name": "cytex-codepipeline-role",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "Role"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "cytex-codepipeline-role"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:role/cytex-codepipeline-role"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2026-06-19T11:13:18+00:00"
+        },
+        {
+          "name": "aws:RoleId",
+          "value": "AROA6LNQDLNYWLKBOPPOT"
+        },
+        {
+          "name": "aws:Description",
+          "value": "Service role for Cytex security scanning CodePipeline pipelines"
+        },
+        {
+          "name": "aws:MaxSessionDuration",
+          "value": "3600s"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-Role-Tutorial-CognitoIdentityExampleRole-WSU7BA2FIP7W",
+      "name": "Tutorial-CognitoIdentityExampleRole-WSU7BA2FIP7W",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "Role"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "Tutorial-CognitoIdentityExampleRole-WSU7BA2FIP7W"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:role/Tutorial-CognitoIdentityExampleRole-WSU7BA2FIP7W"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2018-11-14T11:49:35+00:00"
+        },
+        {
+          "name": "aws:RoleId",
+          "value": "AROAI4Q5LFUDQVFXO422I"
+        },
+        {
+          "name": "aws:MaxSessionDuration",
+          "value": "3600s"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-Role-AWSServiceRoleForSupport",
+      "name": "AWSServiceRoleForSupport",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "Role"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "AWSServiceRoleForSupport"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:role/aws-service-role/support.amazonaws.com/AWSServiceRoleForSupport"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2019-01-26T04:43:08+00:00"
+        },
+        {
+          "name": "aws:RoleId",
+          "value": "AROAJTBSCSJUEBJCEPVIA"
+        },
+        {
+          "name": "aws:Description",
+          "value": "Enables resource access for AWS to provide billing, administrative and support services"
+        },
+        {
+          "name": "aws:MaxSessionDuration",
+          "value": "3600s"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-Role-sumerian_dmoat",
+      "name": "sumerian_dmoat",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "Role"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "sumerian_dmoat"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:role/sumerian_dmoat"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2018-11-15T17:15:36+00:00"
+        },
+        {
+          "name": "aws:RoleId",
+          "value": "AROAIPHS2NGJNLL6SBSGO"
+        },
+        {
+          "name": "aws:Description",
+          "value": "allow access to sumerian dmoat scenes"
+        },
+        {
+          "name": "aws:MaxSessionDuration",
+          "value": "3600s"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-Role-tutorial2-CognitoIdentityExampleRole-2PDP2Y155A1D",
+      "name": "tutorial2-CognitoIdentityExampleRole-2PDP2Y155A1D",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "Role"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "tutorial2-CognitoIdentityExampleRole-2PDP2Y155A1D"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:role/tutorial2-CognitoIdentityExampleRole-2PDP2Y155A1D"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2018-11-14T11:55:56+00:00"
+        },
+        {
+          "name": "aws:RoleId",
+          "value": "AROAJGLXZUAHMXKAGTLWA"
+        },
+        {
+          "name": "aws:MaxSessionDuration",
+          "value": "3600s"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-Role-Cognito_dmoat_sumerianAuth_Role",
+      "name": "Cognito_dmoat_sumerianAuth_Role",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "Role"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "Cognito_dmoat_sumerianAuth_Role"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:role/Cognito_dmoat_sumerianAuth_Role"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2018-10-22T13:10:20+00:00"
+        },
+        {
+          "name": "aws:RoleId",
+          "value": "AROAJYR2FCKZOVD2YJUM2"
+        },
+        {
+          "name": "aws:MaxSessionDuration",
+          "value": "3600s"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-Role-AWSServiceRoleForLexChannels",
+      "name": "AWSServiceRoleForLexChannels",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "Role"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "AWSServiceRoleForLexChannels"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:role/aws-service-role/channels.lex.amazonaws.com/AWSServiceRoleForLexChannels"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2018-08-28T08:57:24+00:00"
+        },
+        {
+          "name": "aws:RoleId",
+          "value": "AROAIBW34GUDHR2HWNUSY"
+        },
+        {
+          "name": "aws:MaxSessionDuration",
+          "value": "3600s"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-Role-Cognito_testPoolUnauth_Role",
+      "name": "Cognito_testPoolUnauth_Role",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "Role"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "Cognito_testPoolUnauth_Role"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:role/Cognito_testPoolUnauth_Role"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2018-10-22T14:49:36+00:00"
+        },
+        {
+          "name": "aws:RoleId",
+          "value": "AROAIPZKUCPKSRM2HRWT2"
+        },
+        {
+          "name": "aws:MaxSessionDuration",
+          "value": "3600s"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-Role-AWSServiceRoleForSSO",
+      "name": "AWSServiceRoleForSSO",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "Role"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "AWSServiceRoleForSSO"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:role/aws-service-role/sso.amazonaws.com/AWSServiceRoleForSSO"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2025-09-25T19:28:45+00:00"
+        },
+        {
+          "name": "aws:RoleId",
+          "value": "AROA6LNQDLNY5TB6KL3QZ"
+        },
+        {
+          "name": "aws:Description",
+          "value": "Service-linked role used by AWS SSO to manage AWS resources, including IAM roles, policies and SAML IdP on your behalf."
+        },
+        {
+          "name": "aws:MaxSessionDuration",
+          "value": "3600s"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-Role-lambda_basic_execution",
+      "name": "lambda_basic_execution",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "Role"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "lambda_basic_execution"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:role/lambda_basic_execution"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2018-06-14T06:07:27+00:00"
+        },
+        {
+          "name": "aws:RoleId",
+          "value": "AROAJOJDEQGYTSQ5TPIU4"
+        },
+        {
+          "name": "aws:MaxSessionDuration",
+          "value": "3600s"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-Role-Cognito_dmoat_sumerianUnauth_Role",
+      "name": "Cognito_dmoat_sumerianUnauth_Role",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "Role"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "Cognito_dmoat_sumerianUnauth_Role"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:role/Cognito_dmoat_sumerianUnauth_Role"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2018-10-22T13:10:20+00:00"
+        },
+        {
+          "name": "aws:RoleId",
+          "value": "AROAI3PBYRNVGB42LLGOY"
+        },
+        {
+          "name": "aws:MaxSessionDuration",
+          "value": "3600s"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-Role-AWSServiceRoleForOrganizations",
+      "name": "AWSServiceRoleForOrganizations",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "Role"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "AWSServiceRoleForOrganizations"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:role/aws-service-role/organizations.amazonaws.com/AWSServiceRoleForOrganizations"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2018-11-16T01:10:00+00:00"
+        },
+        {
+          "name": "aws:RoleId",
+          "value": "AROAJSIDAWKMYFQEJMWCO"
+        },
+        {
+          "name": "aws:Description",
+          "value": "Service-linked role used by AWS Organizations to enable integration of other AWS services with Organizations."
+        },
+        {
+          "name": "aws:MaxSessionDuration",
+          "value": "3600s"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-Role-Cognito_testPoolAuth_Role",
+      "name": "Cognito_testPoolAuth_Role",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "Role"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "Cognito_testPoolAuth_Role"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:role/Cognito_testPoolAuth_Role"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2018-10-22T14:49:36+00:00"
+        },
+        {
+          "name": "aws:RoleId",
+          "value": "AROAJL7RXLRPZ5JDC7WLQ"
+        },
+        {
+          "name": "aws:MaxSessionDuration",
+          "value": "3600s"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "0"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-Role-AWSServiceRoleForResourceExplorer",
+      "name": "AWSServiceRoleForResourceExplorer",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "Role"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "AWSServiceRoleForResourceExplorer"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:role/aws-service-role/resource-explorer-2.amazonaws.com/AWSServiceRoleForResourceExplorer"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2026-01-04T20:56:36+00:00"
+        },
+        {
+          "name": "aws:RoleId",
+          "value": "AROA6LNQDLNYZXZSANPKO"
+        },
+        {
+          "name": "aws:MaxSessionDuration",
+          "value": "3600s"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-Role-AWSServiceRoleForTrustedAdvisor",
+      "name": "AWSServiceRoleForTrustedAdvisor",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "Role"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "AWSServiceRoleForTrustedAdvisor"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:role/aws-service-role/trustedadvisor.amazonaws.com/AWSServiceRoleForTrustedAdvisor"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2019-01-28T12:18:18+00:00"
+        },
+        {
+          "name": "aws:RoleId",
+          "value": "AROAIXDFKLV4YCHYWUHPE"
+        },
+        {
+          "name": "aws:Description",
+          "value": "Access for the AWS Trusted Advisor Service to help reduce cost, increase performance, and improve security of your AWS environment."
+        },
+        {
+          "name": "aws:MaxSessionDuration",
+          "value": "3600s"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-Role-AWSServiceRoleForLexBots",
+      "name": "AWSServiceRoleForLexBots",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "Role"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "AWSServiceRoleForLexBots"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:role/aws-service-role/lex.amazonaws.com/AWSServiceRoleForLexBots"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2018-08-28T07:43:51+00:00"
+        },
+        {
+          "name": "aws:RoleId",
+          "value": "AROAIWP4FYOIPWQBA7ZWA"
+        },
+        {
+          "name": "aws:MaxSessionDuration",
+          "value": "3600s"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-Role-AmazonSumerianLexPollyTut-CognitoIdentityExampleRo-1J5DCDZ98OBSA",
+      "name": "AmazonSumerianLexPollyTut-CognitoIdentityExampleRo-1J5DCDZ98OBSA",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "Role"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "AmazonSumerianLexPollyTut-CognitoIdentityExampleRo-1J5DCDZ98OBSA"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:role/AmazonSumerianLexPollyTut-CognitoIdentityExampleRo-1J5DCDZ98OBSA"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2018-11-14T12:30:05+00:00"
+        },
+        {
+          "name": "aws:RoleId",
+          "value": "AROAJGDX5CVUKMCTA2ZYQ"
+        },
+        {
+          "name": "aws:MaxSessionDuration",
+          "value": "3600s"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-Role-AmazonSumerianPollyTutori-CognitoIdentityExampleRo-WZMROL1NX8H4",
+      "name": "AmazonSumerianPollyTutori-CognitoIdentityExampleRo-WZMROL1NX8H4",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "Role"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "AmazonSumerianPollyTutori-CognitoIdentityExampleRo-WZMROL1NX8H4"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:role/AmazonSumerianPollyTutori-CognitoIdentityExampleRo-WZMROL1NX8H4"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2018-10-22T15:15:33+00:00"
+        },
+        {
+          "name": "aws:RoleId",
+          "value": "AROAIORDQH4FUQ2337YQG"
+        },
+        {
+          "name": "aws:MaxSessionDuration",
+          "value": "3600s"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-Role-cutomServiceBot",
+      "name": "cutomServiceBot",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "Role"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "cutomServiceBot"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:role/service-role/cutomServiceBot"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2018-08-28T08:00:37+00:00"
+        },
+        {
+          "name": "aws:RoleId",
+          "value": "AROAJAGON7GDW5PZLNDDQ"
+        },
+        {
+          "name": "aws:MaxSessionDuration",
+          "value": "3600s"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "iam_resource-Role-sumerian_dev",
+      "name": "sumerian_dev",
+      "authenticated": true,
+      "properties": [
+        {
+          "name": "aws:IAMResourceType",
+          "value": "Role"
+        },
+        {
+          "name": "aws:IAMResourceName",
+          "value": "sumerian_dev"
+        },
+        {
+          "name": "aws:EventSource",
+          "value": "iam.amazonaws.com"
+        },
+        {
+          "name": "aws:IAMResourceArn",
+          "value": "arn:aws:iam::986601184113:role/sumerian_dev"
+        },
+        {
+          "name": "aws:CreateDate",
+          "value": "2018-11-19T12:56:50+00:00"
+        },
+        {
+          "name": "aws:RoleId",
+          "value": "AROAIUKSN2A4OLPWL5AIA"
+        },
+        {
+          "name": "aws:Description",
+          "value": "Allows EC2 instances to call AWS services on your behalf."
+        },
+        {
+          "name": "aws:MaxSessionDuration",
+          "value": "3600s"
+        },
+        {
+          "name": "aws:AttachedPolicyCount",
+          "value": "1"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "root-aws-account",
+      "dependsOn": [
+        "iam_resource-Role-CloudWatch-CrossAccountSharingRole",
+        "iam_resource-User-amazon_cloudtrail_logs",
+        "iam_resource-Group-codecommit-user-TEST",
+        "iam_resource-Group-agentic",
+        "iam_resource-Group-Group_S3",
+        "iam_resource-Group-prytex",
+        "iam_resource-Group-developers",
+        "iam_resource-Group-insights_read_all",
+        "iam_resource-Group-ar_dev",
+        "iam_resource-User-amazon_lambda_logs",
+        "iam_resource-User-agentic-access",
+        "iam_resource-User-cytex",
+        "iam_resource-User-s3_user_test",
+        "iam_resource-User-amazon_bedrock_logs",
+        "iam_resource-User-cytexaudit",
+        "iam_resource-User-cytex-cur",
+        "iam_resource-User-jediar",
+        "iam_resource-User-amazon_s3_logs",
+        "iam_resource-User-s3readonly",
+        "iam_resource-User-codecommit-user-demo",
+        "iam_resource-User-amazon_sagemaker_logs",
+        "iam_resource-User-testcytex",
+        "iam_resource-User-taimur",
+        "iam_resource-Role-lambda-bom-demo-role-w1wm5nr5",
+        "iam_resource-Policy-AWSLambdaBasicExecutionRole-1c888903-94e8-47f8-87f3-f3f5035a1f3d",
+        "iam_resource-Role-AmazonSageMakerAdminIAMExecutionRole",
+        "iam_resource-Role-AWSServiceRoleForAmazonAthena",
+        "iam_resource-Role-AWSServiceRoleForAmazonSageMakerNotebooks",
+        "iam_resource-Role-cytex-codebuild-role",
+        "iam_resource-Role-cytex-codepipeline-role",
+        "iam_resource-Role-Tutorial-CognitoIdentityExampleRole-WSU7BA2FIP7W",
+        "iam_resource-Role-AWSServiceRoleForSupport",
+        "iam_resource-Role-sumerian_dmoat",
+        "iam_resource-Role-tutorial2-CognitoIdentityExampleRole-2PDP2Y155A1D",
+        "iam_resource-Role-Cognito_dmoat_sumerianAuth_Role",
+        "iam_resource-Role-AWSServiceRoleForLexChannels",
+        "iam_resource-Role-Cognito_testPoolUnauth_Role",
+        "iam_resource-Role-AWSServiceRoleForSSO",
+        "iam_resource-Role-lambda_basic_execution",
+        "iam_resource-Role-Cognito_dmoat_sumerianUnauth_Role",
+        "iam_resource-Role-AWSServiceRoleForOrganizations",
+        "iam_resource-Role-Cognito_testPoolAuth_Role",
+        "iam_resource-Role-AWSServiceRoleForResourceExplorer",
+        "iam_resource-Role-AWSServiceRoleForTrustedAdvisor",
+        "iam_resource-Role-AWSServiceRoleForLexBots",
+        "iam_resource-Role-AmazonSumerianLexPollyTut-CognitoIdentityExampleRo-1J5DCDZ98OBSA",
+        "iam_resource-Role-AmazonSumerianPollyTutori-CognitoIdentityExampleRo-WZMROL1NX8H4",
+        "iam_resource-Role-cutomServiceBot",
+        "iam_resource-Role-sumerian_dev"
+      ]
+    },
+    {
+      "ref": "iam_principal-arn-aws-iam--986601184113-user-agentic-access",
+      "dependsOn": [
+        "iam_resource-Group-prytex",
+        "iam_resource-User-cytexaudit",
+        "iam_resource-User-cytex",
+        "iam_resource-Group-insights_read_all",
+        "iam_resource-Group-ar_dev",
+        "iam_resource-User-codecommit-user-demo",
+        "iam_resource-User-taimur",
+        "iam_resource-User-amazon_cloudtrail_logs",
+        "iam_resource-User-agentic-access",
+        "iam_resource-User-s3_user_test",
+        "iam_resource-User-amazon_sagemaker_logs",
+        "iam_resource-Group-agentic",
+        "iam_resource-Role-lambda-bom-demo-role-w1wm5nr5",
+        "iam_resource-Group-developers",
+        "iam_resource-Group-Group_S3",
+        "iam_resource-User-amazon_bedrock_logs",
+        "iam_resource-Policy-AWSLambdaBasicExecutionRole-1c888903-94e8-47f8-87f3-f3f5035a1f3d",
+        "iam_resource-Group-codecommit-user-TEST",
+        "iam_resource-User-testcytex",
+        "iam_resource-User-s3readonly",
+        "iam_resource-User-amazon_lambda_logs",
+        "iam_resource-Role-CloudWatch-CrossAccountSharingRole",
+        "iam_resource-User-cytex-cur",
+        "iam_resource-User-amazon_s3_logs",
+        "iam_resource-User-jediar",
+        "iam_resource-Role-AmazonSageMakerAdminIAMExecutionRole"
+      ]
+    },
+    {
+      "ref": "iam_principal-arn-aws-iam--986601184113-role-aws-service-role-resource-explorer-2-amazonaws-com-AWSServiceRoleForResourceExplorer",
+      "dependsOn": [
+        "iam_resource-Role-AmazonSumerianLexPollyTut-CognitoIdentityExampleRo-1J5DCDZ98OBSA",
+        "iam_resource-Role-cutomServiceBot",
+        "iam_resource-Role-AWSServiceRoleForAmazonAthena",
+        "iam_resource-Role-cytex-codebuild-role",
+        "iam_resource-Role-cytex-codepipeline-role",
+        "iam_resource-Role-AWSServiceRoleForOrganizations",
+        "iam_resource-Role-sumerian_dev",
+        "iam_resource-Role-Cognito_dmoat_sumerianAuth_Role",
+        "iam_resource-Role-tutorial2-CognitoIdentityExampleRole-2PDP2Y155A1D",
+        "iam_resource-Role-AWSServiceRoleForResourceExplorer",
+        "iam_resource-Role-AWSServiceRoleForSSO",
+        "iam_resource-Role-lambda-bom-demo-role-w1wm5nr5",
+        "iam_resource-Role-Cognito_testPoolAuth_Role",
+        "iam_resource-Role-lambda_basic_execution",
+        "iam_resource-Role-AWSServiceRoleForLexBots",
+        "iam_resource-Role-AWSServiceRoleForTrustedAdvisor",
+        "iam_resource-Role-sumerian_dmoat",
+        "iam_resource-Role-AWSServiceRoleForSupport",
+        "iam_resource-Role-AWSServiceRoleForLexChannels",
+        "iam_resource-Role-AmazonSumerianPollyTutori-CognitoIdentityExampleRo-WZMROL1NX8H4",
+        "iam_resource-Role-Cognito_testPoolUnauth_Role",
+        "iam_resource-Role-AWSServiceRoleForAmazonSageMakerNotebooks",
+        "iam_resource-Role-AmazonSageMakerAdminIAMExecutionRole",
+        "iam_resource-Role-Tutorial-CognitoIdentityExampleRole-WSU7BA2FIP7W",
+        "iam_resource-Role-Cognito_dmoat_sumerianUnauth_Role"
+      ]
+    },
+    {
+      "ref": "iam_principal-arn-aws-iam--986601184113-role-service-role-AmazonSageMakerAdminIAMExecutionRole",
+      "dependsOn": [
+        "iam_resource-Role-AmazonSageMakerAdminIAMExecutionRole"
+      ]
+    },
+    {
+      "ref": "iam_principal-arn-aws-iam--986601184113-user-cytexaudit",
+      "dependsOn": [
+        "iam_resource-Group-prytex",
+        "iam_resource-User-cytexaudit",
+        "iam_resource-Role-AmazonSumerianLexPollyTut-CognitoIdentityExampleRo-1J5DCDZ98OBSA",
+        "iam_resource-User-cytex",
+        "iam_resource-Group-insights_read_all",
+        "iam_resource-Role-cutomServiceBot",
+        "iam_resource-Group-ar_dev",
+        "iam_resource-User-codecommit-user-demo",
+        "iam_resource-Role-cytex-codebuild-role",
+        "iam_resource-User-taimur",
+        "iam_resource-Role-cytex-codepipeline-role",
+        "iam_resource-Role-AWSServiceRoleForOrganizations",
+        "iam_resource-Role-sumerian_dev",
+        "iam_resource-User-agentic-access",
+        "iam_resource-Role-Cognito_dmoat_sumerianAuth_Role",
+        "iam_resource-User-s3_user_test",
+        "iam_resource-Role-tutorial2-CognitoIdentityExampleRole-2PDP2Y155A1D",
+        "iam_resource-Role-AWSServiceRoleForResourceExplorer",
+        "iam_resource-Role-AWSServiceRoleForSSO",
+        "iam_resource-Group-agentic",
+        "iam_resource-Role-Cognito_testPoolAuth_Role",
+        "iam_resource-Group-developers",
+        "iam_resource-Role-lambda_basic_execution",
+        "iam_resource-Group-Group_S3",
+        "iam_resource-User-amazon_bedrock_logs",
+        "iam_resource-Role-AWSServiceRoleForLexBots",
+        "iam_resource-Group-codecommit-user-TEST",
+        "iam_resource-User-testcytex",
+        "iam_resource-User-s3readonly",
+        "iam_resource-Role-AWSServiceRoleForTrustedAdvisor",
+        "iam_resource-Role-CloudWatch-CrossAccountSharingRole",
+        "iam_resource-Role-sumerian_dmoat",
+        "iam_resource-Role-AWSServiceRoleForSupport",
+        "iam_resource-Role-AWSServiceRoleForLexChannels",
+        "iam_resource-Role-AmazonSumerianPollyTutori-CognitoIdentityExampleRo-WZMROL1NX8H4",
+        "iam_resource-User-cytex-cur",
+        "iam_resource-User-amazon_s3_logs",
+        "iam_resource-User-jediar",
+        "iam_resource-Role-Cognito_testPoolUnauth_Role",
+        "iam_resource-Role-Tutorial-CognitoIdentityExampleRole-WSU7BA2FIP7W",
+        "iam_resource-Role-Cognito_dmoat_sumerianUnauth_Role"
+      ]
+    },
+    {
+      "ref": "iam_principal-arn-aws-iam--986601184113-user-codecommit-user-demo",
+      "dependsOn": [
+        "iam_resource-Role-cytex-codebuild-role",
+        "iam_resource-Role-cytex-codepipeline-role"
+      ]
+    }
+  ]
+}

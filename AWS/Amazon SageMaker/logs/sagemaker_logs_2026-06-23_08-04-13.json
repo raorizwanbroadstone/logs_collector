@@ -1,0 +1,200 @@
+[
+  {
+    "EventId": "fa1e6802-4aed-43da-9e89-f6903471bfd3",
+    "EventName": "ListEndpoints",
+    "EventTime": "2026-06-23T12:54:07+05:00",
+    "EventSource": "sagemaker.amazonaws.com",
+    "Username": "amazon_sagemaker_logs",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNY3TBRIWI5K",
+      "arn": "arn:aws:iam::986601184113:user/amazon_sagemaker_logs",
+      "accountId": "986601184113",
+      "accessKeyId": "AKIA6LNQDLNYTVR7RINQ",
+      "userName": "amazon_sagemaker_logs"
+    },
+    "requestParameters": {
+      "maxResults": 1
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "ae7fef89-db7f-45d3-9d70-bbcedd2839d6",
+    "EventName": "ListEndpoints",
+    "EventTime": "2026-06-23T12:41:42+05:00",
+    "EventSource": "sagemaker.amazonaws.com",
+    "Username": "amazon_sagemaker_logs",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNY3TBRIWI5K",
+      "arn": "arn:aws:iam::986601184113:user/amazon_sagemaker_logs",
+      "accountId": "986601184113",
+      "accessKeyId": "AKIA6LNQDLNYTVR7RINQ",
+      "userName": "amazon_sagemaker_logs"
+    },
+    "requestParameters": {
+      "maxResults": 1
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "0e0dde52-0177-4d5e-b0de-a4d462e4d4fa",
+    "EventName": "ListEndpoints",
+    "EventTime": "2026-06-23T12:30:53+05:00",
+    "EventSource": "sagemaker.amazonaws.com",
+    "Username": "amazon_sagemaker_logs",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNY3TBRIWI5K",
+      "arn": "arn:aws:iam::986601184113:user/amazon_sagemaker_logs",
+      "accountId": "986601184113",
+      "accessKeyId": "AKIA6LNQDLNYTVR7RINQ",
+      "userName": "amazon_sagemaker_logs"
+    },
+    "requestParameters": {
+      "maxResults": 1
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "9f37e78f-568d-4e4c-8c86-798957d429e0",
+    "EventName": "ListHubContents",
+    "EventTime": "2026-06-22T13:39:17+05:00",
+    "EventSource": "sagemaker.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYTHVDPB63",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "hubName": "SageMakerPublicHub",
+      "hubContentType": "Model",
+      "nextToken": "cIws2QhTXUIa8bi8VLDp4QWR9d/RMUOtxwCRG0sbfwcgUbj68HVOmTuGyv3CbzBhQqIyXZoe6cZ4FXYZs918i4X4uC4U38aFLt+3ou/EEK6w8q4t2Qcc7YUs+J1lD1ee7yawOLaQOqduV+CLNXoSuiSMjhXIgEy0dRgbHHBfCvA2NX51XLpWjlZM/t15K/KCREF4F09DDKad5g8M+796X52mWxu5pbc528R9D1BesKwfURyiiR9M3nKh5jvl31MO2WlMIX/0aeWHOo0Tf+OqLRc2GhCn1f0X45urgfGl1qU6K4eihCh8xaoZSGnXQknjdoMIJq16Eec77fuoeyTeSNTx0ci84mkJMT2CRLMMpdMBfV6KvzTbxAp4XrAVBQeNxdaJ6VG3tfKUTTYs67sBmzrUCIwvHSS55QK7fiwbdMCgck091FEWXZCshs/pwvXnZW28hkMgOz7Vm72UeRwHcnPMybMLYBKqYGWFOwEgGII8NjUXVoAI9S1wlPp1FKBrxVKQTesD44CfiykAYGdpqlM17RJFliJoFOddsSEQwURyUPbXROwuDb1dWABbxzjkEGQBipuNyHW+ZomMcR5X4l40jyeyc5a6WzANdlg9Q0SjaLKWhx7l+I8+Fbyl0VKWGM3mXsY+EOLqPpqIJ1uxdSYp9HIjHidfCYOwoipBVAodrUmXCfPBRmhLjjb5kkvLEGcGueWB5850hbGRTBLzzdNwJw9RlgqgZ9XsJe4sCVuTzeLWXWxr8NvO5ZTTXfDdB8N5uLROH7EpcnHpguSZ3KTGVJlPB9/L3wtXl0gwl1F5SmHB4if65+PdsYh66g0K1Shi2vwVkDueH7WBYstiy81d8RqBnM5oFn6vEeoDAnN0rflkaSnqnc6OAWsazvDh8bk/XVcPW68Kf/L3Jbl9mSvpMYk17Wil7E7/auRbbBTIWmZXYAnGywFEnluxEwssbftY9tNKW5sRVW0OJab1DtIO6IssHKWSUQzPVirdyApEvIx6hXg9dPXWtuLCvq02PnGAk5pjvW6li3BMFVdpSqwbakWjWjT+OKjI3Q6vtQ9bRgikjhwyjswHs6Msc0bAYoOAsNRPdQWADl5vgqkdT5lOxLJOdknR6NVz/C1nmCdbLFPqZKuP8oT16VicS2eJhbxiqFdqJY8UQ8f64s02Uu94wtjpL+IomGDeKWtxaCrw08qF7HdVfhmWN+hC7jY/M3z/n+/xSOup3rvsYhfQSQ=="
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "35ccafdd-0dd6-4b7a-98bc-97dcbac9451c",
+    "EventName": "ListHubContents",
+    "EventTime": "2026-06-22T13:39:15+05:00",
+    "EventSource": "sagemaker.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNYTHVDPB63",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "hubName": "SageMakerPublicHub",
+      "hubContentType": "Model"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "28dd58f3-51dd-4593-86e8-a67b79f499ff",
+    "EventName": "ListHubContents",
+    "EventTime": "2026-06-22T13:38:36+05:00",
+    "EventSource": "sagemaker.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNY6WK366QM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "hubName": "SageMakerPublicHub",
+      "hubContentType": "Model",
+      "nextToken": "cIws2QhTXUIa8bi8VLDp4QWR9d/RMUOtxwCRG0sbfwcgUbj68HVOmTuGyv3CbzBhQqIyXZoe6cZ4FXYZs918i4X4uC4U38aFLt+3ou/EEK6w8q4t2Qcc7YUs+J1lD1ee7yawOLaQOqduV+CLNXoSuiSMjhXIgEy0dRgbHHBfCvA2NX51XLpWjlZM/t15K/KCREF4F09DDKad5g8M+796X52mWxu5pbc528R9D1BesKwfURyiiR9M3nKh5jvl31MO2WlMIX/0aeWHOo0Tf+OqLRc2GhCn1f0X45urgfGl1qU6K4eihCh8xaoZSGnXQknjdoMIJq16Eec77fuoeyTeSNTx0ci84mkJMT2CRLMMpdMBfV6KvzTbxAp4XrAVBQeNxdaJ6VG3tfKUTTYs67sBmzrUCIwvHSS55QK7fiwbdMCgck091FEWXZCshs/pwvXnZW28hkMgOz7Vm72UeRwHcnPMybMLYBKqYGWFOwEgGII8NjUXVoAI9S1wlPp1FKBrxVKQTesD44CfiykAYGdpqlM17RJFliJoFOddsSEQwURyUPbXROwuDb1dWABbxzjkEGQBipuNyHW+ZomMcR5X4l40jyeyc5a6WzANdlg9Q0SjaLKWhx7l+I8+Fbyl0VKWGM3mXsY+EOLqPpqIJ1uxdSYp9HIjHidfCYOwoipBVAodrUmXCfPBRmhLjjb5kkvLEGcGueWB5850hbGRTBLzzdNwJw9RlgqgZ9XsJe4sCVuTzeLWXWxr8NvO5ZTTXfDdB8N5uLROH7EpcnHpguSZ3KTGVJlPB9/L3wtXl0gwl1F5SmHB4if65+PdsYh66g0K1Shi2vwVkDueH7WBYstiy81d8RqBnM5oFn6vEeoDAnN0rflkaSnqnc6OAWsazvDh8bk/XVcPW68Kf/L3Jbl9mSvpMYk17Wil7E7/auRbbBTIWmZXYAnGywFEnluxEwssbftY9tNKW5sRVW0OJab1DtIO6IssHKWSUQzPVirdyApEvIx6hXg9dPXWtuLCvq02PnGAk5pjvW6li3BMFVdpSqwbakWjWjT+OKjI3Q6vtQ9bRgikjhwyjswHs6Msc0bAYoOAsNRPdQWADl5vgqkdT5lOxLJOdknR6NVz/C1nmCdbLFPqZKuP8oT16VicS2eJhbxiqFdqJY8UQ8f64s02Uu94wtjpL+IomGDeKWtxaCrw08qF7HdVfhmWN+hC7jY/M3z/n+/xSOup3rvsYhfQSQ=="
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  },
+  {
+    "EventId": "e18be7a6-ac8d-4494-9097-dcad2e0db091",
+    "EventName": "ListHubContents",
+    "EventTime": "2026-06-22T13:38:35+05:00",
+    "EventSource": "sagemaker.amazonaws.com",
+    "Username": "agentic-access",
+    "Resources": [],
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDA6LNQDLNYQWKABZEKD",
+      "arn": "arn:aws:iam::986601184113:user/agentic-access",
+      "accountId": "986601184113",
+      "accessKeyId": "ASIA6LNQDLNY6WK366QM",
+      "userName": "agentic-access",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2026-06-22T08:05:30Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "requestParameters": {
+      "hubName": "SageMakerPublicHub",
+      "hubContentType": "Model"
+    },
+    "responseElements": {},
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "203.128.27.61",
+    "errorCode": "",
+    "errorMessage": ""
+  }
+]

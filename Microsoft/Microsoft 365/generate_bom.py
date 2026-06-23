@@ -3,6 +3,7 @@ import math
 import uuid
 from datetime import datetime, timezone
 from pathlib import Path
+
 import ijson
 import mmh3
 from bitarray import bitarray
@@ -297,7 +298,7 @@ def build_cyclonedx_bom(
                 "components": [
                     {
                         "type":    "application",
-                        "name":    "ms-logs-bom-generator",
+                        "name":    "m365-bom-generator",
                         "version": "1.0.0",
                     }
                 ]
@@ -399,7 +400,7 @@ def main(target_file: Path | None = None) -> None:
     output_path.write_text(json.dumps(bom, indent=2), encoding="utf-8")
 
     print(f"\nBOM report saved to: {output_path}")
-    print(f"Total: {len(all_components)} components, {len(all_services)} workloads")
+    print(f"Total: {len(all_components)} components, {len(all_services)} services")
 
 
 if __name__ == "__main__":

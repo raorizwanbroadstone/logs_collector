@@ -19,7 +19,7 @@ CLIENT_ID = os.getenv("AZURE_STORAGE_CLIENT_ID")
 CLIENT_SECRET = os.getenv("AZURE_STORAGE_CLIENT_SECRET")
 SUBSCRIPTION_IDS_ENV = os.getenv("AZURE_STORAGE_SUBSCRIPTION_ID")
 
-HOURS_BACK = 24
+LOOKBACK_HOURS = 24
 
 OUTPUT_DIR = Path(__file__).parent / "logs"
 
@@ -129,7 +129,7 @@ def extract_workspace_ids(all_diag_settings):
 
 def get_activity_logs(monitor_client, account_id):
     """Fetch Azure Activity (management-plane) logs for a storage account."""
-    start_time = datetime.now(timezone.utc) - timedelta(hours=HOURS_BACK)
+    start_time = datetime.now(timezone.utc) - timedelta(hours=LOOKBACK_HOURS)
     filter_str = (
         f"eventTimestamp ge '{start_time.strftime('%Y-%m-%dT%H:%M:%SZ')}' "
         f"and resourceId eq '{account_id}'"
@@ -148,13 +148,13 @@ def get_activity_logs(monitor_client, account_id):
 def query_log_analytics(logs_client, workspace_id, account_name):
     """Query Log Analytics storage tables for the given storage account name."""
     end_time = datetime.now(timezone.utc)
-    start_time = end_time - timedelta(hours=HOURS_BACK)
+    start_time = end_time - timedelta(hours=LOOKBACK_HOURS)
     results = {}
 
     for table in STORAGE_LOG_TABLES:
         query = (
             f"{table}\n"
-            f"| where TimeGenerated >= ago({HOURS_BACK}h)\n"
+            f"| where TimeGenerated >= ago({LOOKBACK_HOURS}h)\n"
             f"| where AccountName == '{account_name}'\n"
             f"| order by TimeGenerated desc\n"
             f"| limit 1000"

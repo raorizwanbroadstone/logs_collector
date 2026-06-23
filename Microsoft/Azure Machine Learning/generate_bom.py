@@ -512,8 +512,8 @@ def main(target_file: Path | None = None) -> None:
     output_path = REPORT_DIR / f"bom_{timestamp}.json"
     output_path.write_text(json.dumps(bom, indent=2), encoding="utf-8")
 
-    print(f"\nReport : {output_path}")
-    print(f"Total  : {len(all_components)} components, {len(all_services)} services")
+    print(f"\nBOM report saved to: {output_path}")
+    print(f"Total: {len(all_components)} components, {len(all_services)} services")
 
 
 if __name__ == "__main__":

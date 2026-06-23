@@ -1,7 +1,8 @@
 import json
+import os
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-import os
+
 from azure.identity import ClientSecretCredential
 from azure.monitor.query import LogsQueryClient, LogsQueryStatus
 from dotenv import load_dotenv
@@ -14,7 +15,7 @@ CLIENT_ID = os.getenv("AZURE_CLIENT_ID")
 CLIENT_SECRET = os.getenv("AZURE_CLIENT_SECRET")
 WORKSPACE_ID = os.getenv("AZURE_WORKSPACE_ID")
 
-HOURS_BACK = 24
+LOOKBACK_HOURS = 24
 OUTPUT_DIR = Path(__file__).parent / "logs"
 
 
@@ -31,7 +32,7 @@ def run_query(client, query: str, query_name: str):
 
     try:
         end_time = datetime.now(timezone.utc)
-        start_time = end_time - timedelta(hours=HOURS_BACK)
+        start_time = end_time - timedelta(hours=LOOKBACK_HOURS)
 
         response = client.query_workspace(
             workspace_id=WORKSPACE_ID,
@@ -58,7 +59,11 @@ def run_query(client, query: str, query_name: str):
 
 
 def main():
-    OUTPUT_DIR.mkdir(exist_ok=True)
+    if not all([TENANT_ID, CLIENT_ID, CLIENT_SECRET, WORKSPACE_ID]):
+        print("Missing required environment variables: AZURE_TENANT_ID, AZURE_CLIENT_ID, AZURE_CLIENT_SECRET, AZURE_WORKSPACE_ID")
+        return
+
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
     credential = get_credential()
     client = LogsQueryClient(credential)
@@ -96,7 +101,7 @@ def main():
         "results": all_results,
     }
 
-    output_file = OUTPUT_DIR / f"workspace_test_{timestamp}.json"
+    output_file = OUTPUT_DIR / f"azure_openai_{timestamp}.json"
 
     with open(output_file, "w", encoding="utf-8") as output_file_handle:
         json.dump(output_data, output_file_handle, indent=2, default=str)
@@ -104,7 +109,7 @@ def main():
     print(f"\nCompleted. Output saved to: {output_file}")
 
     print("\nGenerating BOM report...")
-    generate_bom.main(target_file=output_file.resolve())
+    generate_bom.main(target_file=output_file)
 
     if not all_results.get("Table_Counts"):
         print("\nWorkspace is reachable but currently contains no data.")

@@ -17,7 +17,7 @@ load_dotenv()
 TENANT_ID = os.getenv("AZURE_AML_TENANT_ID")
 CLIENT_ID = os.getenv("AZURE_AML_CLIENT_ID")
 CLIENT_SECRET = os.getenv("AZURE_AML_CLIENT_SECRET")
-HOURS_BACK = 24
+LOOKBACK_HOURS = 24
 OUTPUT_DIR = Path(__file__).parent / "logs"
 
 # Log Analytics tables produced by AML diagnostic settings
@@ -116,7 +116,7 @@ def extract_workspace_ids(diagnostic_settings):
 
 
 def get_activity_logs(monitor_client, resource_id):
-    start_time = datetime.now(timezone.utc) - timedelta(hours=HOURS_BACK)
+    start_time = datetime.now(timezone.utc) - timedelta(hours=LOOKBACK_HOURS)
     filter_str = (
         f"eventTimestamp ge '{start_time.strftime('%Y-%m-%dT%H:%M:%SZ')}' "
         f"and resourceId eq '{resource_id}'"
@@ -134,13 +134,13 @@ def get_activity_logs(monitor_client, resource_id):
 
 def query_aml_log_tables(logs_client, workspace_id):
     end_time = datetime.now(timezone.utc)
-    start_time = end_time - timedelta(hours=HOURS_BACK)
+    start_time = end_time - timedelta(hours=LOOKBACK_HOURS)
     results = {}
 
     for table in AML_LOG_TABLES:
         query = (
             f"{table}\n"
-            f"| where TimeGenerated >= ago({HOURS_BACK}h)\n"
+            f"| where TimeGenerated >= ago({LOOKBACK_HOURS}h)\n"
             f"| order by TimeGenerated desc\n"
             f"| limit 1000"
         )

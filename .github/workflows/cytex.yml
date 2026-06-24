@@ -1,0 +1,54 @@
+
+name: Cytex Scan
+on:
+  push:
+    branches:
+      - "master"
+      - "main"
+jobs:
+  analyze:
+    name: Code analysis
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install Grype
+        run: curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh | sh -s -- -b /usr/local/bin
+
+      - name: Install Semgrep
+        run: python3 -m pip install semgrep
+
+      - name: Install Cisco AIBOM (pre-release + Groq backend)
+        run: python3 -m pip install --pre "cisco-aibom[agentic]==1.0.0rc2" langchain-groq
+
+      - name: Download Cisco AIBOM catalog
+        run: |
+          mkdir -p ~/.aibom/catalogs
+          curl -L -o ~/.aibom/catalogs/aibom_catalog-1.0.0rc2.duckdb \
+            https://github.com/cisco-ai-defense/aibom/releases/download/1.0.0rc2/aibom_catalog-1.0.0rc2.duckdb
+          echo "b1165384a646094aa6a4762d676f285c1c68b6d7f9367c90a129b529904a3268  $HOME/.aibom/catalogs/aibom_catalog-1.0.0rc2.duckdb" | sha256sum -c -
+
+      - name: Run Grype
+        run: grype dir:./ -o json
+
+      - name: Run Semgrep
+        run: semgrep --config=auto ./ --json
+
+      - name: Run Cisco AIBOM
+        env:
+          AIBOM_LLM_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: >-
+          cisco-aibom analyze ./
+          -o cyclonedx
+          -O aibom-report.cdx.json
+          --llm-model llama-3.3-70b-versatile
+          --llm-provider groq
+          --llm-api-key "$AIBOM_LLM_API_KEY"
+
+      - name: Upload AIBOM report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: aibom-report
+          path: aibom-report.cdx.json
